@@ -1,0 +1,15 @@
+{
+  "name": "markussiering.de",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "author": "Markus Siering <markus277@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  }
+}

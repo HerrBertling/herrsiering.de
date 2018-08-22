@@ -1,0 +1,79 @@
+<template>
+  <nav>
+    <ul>
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/doing.html">Now</router-link>
+      </li>
+      <li>
+        <router-link to="/done.html">Earlier</router-link>
+      </li>
+      <li>
+        <router-link to="/books.html">Books</router-link>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<style scoped>
+nav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a:link,
+a:visited {
+  color: var(--textColorLight);
+  display: inline-block;
+  font-size: var(--fontSizeS);
+  padding: var(--spacingXS);
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--accentColor);
+  outline-color: var(--mainColor);
+}
+a::before {
+  content: "";
+  width: 80%;
+  position: absolute;
+  bottom: 2px;
+  height: 4px;
+  background-color: var(--mainColor);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 200ms ease-in-out;
+}
+.router-link-exact-active::before {
+  transform: scaleX(1);
+}
+
+@media (min-width: 750px) {
+  nav {
+    align-items: center;
+  }
+  nav ul {
+    justify-content: space-between;
+  }
+  nav a:link,
+  nav a:visited {
+    padding: var(--spacingXS) var(--spacingS);
+  }
+}
+</style>
