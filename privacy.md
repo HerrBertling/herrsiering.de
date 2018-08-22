@@ -1,5 +1,5 @@
-## Datenschutz
+## Privacy
 
-Ich tracke hier nichts. Ist das nicht schön?
+I'm not tracking anything on this website. Isn't that nice?
 
-Wer mir eine E-Mail schreibt, bekommt vielleicht eine Antwort. Und ich die E-Mail-Adresse dieser Person. Das ist dann wohl so.
+People writing an email will probably receive an answer. And I'll have their email address. Who would have thought!

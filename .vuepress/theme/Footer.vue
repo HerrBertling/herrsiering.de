@@ -2,10 +2,10 @@
   <nav>
     <ul>
       <li>
-        <router-link to="/imprint.html">Impressum</router-link>
+        <router-link to="/imprint.html">Imprint</router-link>
       </li>
       <li>
-        <router-link to="/privacy.html">Datenschutz</router-link>
+        <router-link to="/privacy.html">Privacy</router-link>
       </li>
     </ul>
   </nav>

@@ -1,10 +1,12 @@
-## Impressum
+## Imprint
 
-V.i.S.d.P. Inhalt­lich Ver­ant­wort­li­cher gemäß § 10 Absatz 3 MDStV.:
+Obviously, this is in german because we like to keep things ordentlich!
 
-Markus Siering
-Eppendorfer Stieg 8
-22299 Hamburg
+_V.i.S.d.P. Inhalt­lich Ver­ant­wort­li­cher gemäß § 10 Absatz 3 MDStV.:_
+
+Markus Siering<br />
+Eppendorfer Stieg 8<br />
+22299 Hamburg<br />
 
 per E-Mail erreichbar unter markus@herrbertling.de.
 
