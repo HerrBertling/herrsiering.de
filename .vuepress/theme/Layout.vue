@@ -107,6 +107,13 @@ p {
   margin: 0 0 1.5em;
 }
 
+blockquote {
+  border-left: 4px solid var(--mainColor);
+  margin: 1em;
+  padding: 0 1em;
+  color: var(--textColorLight);
+}
+
 a:link,
 a:visited {
   color: var(--mainColor);
