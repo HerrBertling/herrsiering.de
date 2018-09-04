@@ -7,7 +7,24 @@
     <Content />
   </main>
   <picture>
-    <img src='./markus-siering.jpg' alt="Image of Markus Siering" />
+    <img
+      sizes="(max-width: 1000px) 100vw, 1000px"
+      srcset="
+      ./images/markus-siering_xvfke1_c_scale_w_200.jpg 200w,
+      ./images/markus-siering_xvfke1_c_scale_w_291.jpg 291w,
+      ./images/markus-siering_xvfke1_c_scale_w_365.jpg 365w,
+      ./images/markus-siering_xvfke1_c_scale_w_432.jpg 432w,
+      ./images/markus-siering_xvfke1_c_scale_w_489.jpg 489w,
+      ./images/markus-siering_xvfke1_c_scale_w_540.jpg 540w,
+      ./images/markus-siering_xvfke1_c_scale_w_589.jpg 589w,
+      ./images/markus-siering_xvfke1_c_scale_w_633.jpg 633w,
+      ./images/markus-siering_xvfke1_c_scale_w_679.jpg 679w,
+      ./images/markus-siering_xvfke1_c_scale_w_716.jpg 716w,
+      ./images/markus-siering_xvfke1_c_scale_w_756.jpg 756w,
+      ./images/markus-siering_xvfke1_c_scale_w_829.jpg 829w,
+      ./images/markus-siering_xvfke1_c_scale_w_1000.jpg 1000w"
+      src="./images/markus-siering_xvfke1_c_scale_w_1000.jpg"
+      alt="">
   </picture>
   <footer>
     <Footer />
