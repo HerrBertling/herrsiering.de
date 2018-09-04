@@ -1,3 +1,10 @@
+---
+title: Things I worked on before
+meta:
+  - name: description
+    content: Find out where I worked on which projects before
+---
+
 # What I did earlier
 
 <article>
