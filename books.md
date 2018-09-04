@@ -17,6 +17,8 @@ A wonderful book about how life works and how you might approach it:
 
 I re-read it about every two years.
 
+[Get it on Amazon](https://amzn.to/2Q0WuVf)
+
 </article>
 <article>
 
@@ -25,6 +27,8 @@ I re-read it about every two years.
 This book helped a lot with setting things that happen in my life into perspective. Also, I love this bit:
 
 > Between stimulus and response, there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.
+
+[Get it on Amazon](https://amzn.to/2wDxESH)
 
 </article>
 <article>
@@ -35,4 +39,8 @@ Same as with Man's Search for Meaning and The Road Less Traveled, this book is a
 
 > Whenever I find myself challenged to a game of right and wrong, I stop playing. Next time you find yourself playing right and wrong, remember. You give everything in your life its meaning, so you can choose to end the game. It does not matter how right you are or how wrong they are; you lose just by playing.
 
+[Get it on Amazon](https://amzn.to/2PBFt2Z)
+
 </article>
+
+<small>Links to Amazon are affiliate links.</small>

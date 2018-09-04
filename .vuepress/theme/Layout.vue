@@ -147,6 +147,26 @@ a:active {
   color: var(--accentColor);
 }
 
+a[href^="https://amzn.to"] .outbound {
+  display: none;
+}
+
+a[href^="https://amzn.to"]::after {
+  content: " *";
+  display: inline;
+  color: var(--accentColor);
+}
+
+small {
+  font-size: var(--fontSizeXS);
+}
+
+small::before {
+  content: "* ";
+  display: inline;
+  color: var(--accentColor);
+}
+
 .header-anchor {
   display: none;
 }
