@@ -42,12 +42,12 @@ export default {
   --fontSizeL: 2.618rem;
   --fontSizeXL: 4.236rem;
   --fontSizeXXL: 6.854rem;
-  --mainColor: #0fabbf;
-  --textColor: #414a57;
-  --textColorLight: #646a77;
-  --textColorLightest: #888d98;
-  --accentColor: #e16a60;
-  --backgroundColorLight: #eeeace;
+  --mainColor: #1c71b1;
+  --textColor: #192c42;
+  --textColorLight: #4a5669;
+  --textColorLightest: #616b7d;
+  --accentColor: #d71c2f;
+  --backgroundColorLight: #eef0f1;
   --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
     Times New Roman, serif;
   --bodyFont: Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
@@ -80,27 +80,32 @@ body,
 
 /* Typography styles */
 
-h1 {
+.standout {
   color: var(--textColorLightest);
   font-family: var(--headlineFont);
   font-size: var(--fontSizeL);
+  font-weight: bold;
   margin: 0 0 1.5em;
 }
 
-h2 {
+h1 {
   color: var(--mainColor);
   font-size: var(--fontSizeM);
 }
 
-h3 {
+h2 {
   color: var(--accentColor);
   font-size: var(--fontSizeS);
 }
 
-h2,
-h3 {
+h1,
+h2 {
   font-family: var(--bodyFont);
   margin: 0 0 1.5em;
+}
+
+h3 {
+  color: var(--textColorLight);
 }
 
 p {

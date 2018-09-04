@@ -45,7 +45,8 @@ a:visited {
 
 a:hover,
 a:focus,
-a:active {
+a:active,
+.router-link-exact-active {
   color: var(--accentColor);
   outline-color: var(--mainColor);
 }

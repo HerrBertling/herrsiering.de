@@ -1,8 +1,8 @@
-## Books I _have_ and you _should_ read
+# Books I _have_ and you _should_ read
 
 <article>
 
-### The Road Less Traveled
+## The Road Less Traveled
 
 A wonderful book about how life works and how you might approach it:
 
@@ -13,7 +13,7 @@ I re-read it about every two years.
 </article>
 <article>
 
-### Man's Search for Meaning
+## Man's Search for Meaning
 
 This book helped a lot with setting things that happen in my life into perspective. Also, I love this bit:
 
@@ -22,7 +22,7 @@ This book helped a lot with setting things that happen in my life into perspecti
 </article>
 <article>
 
-### The Achievment Habit
+## The Achievment Habit
 
 Same as with Man's Search for Meaning and The Road Less Traveled, this book is a great read about how to appoach life. I loved the part about being right or wrong:
 
