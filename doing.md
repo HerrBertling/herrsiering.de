@@ -1,3 +1,10 @@
+---
+title: What I am currently doing
+meta:
+  - name: description
+    content: Find out what I am currently doing.
+---
+
 # What I am currently doing
 
 ## Family
