@@ -1,21 +1,24 @@
 <template>
   <nav>
     <ul>
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/doing.html">Now</router-link>
-      </li>
-      <li>
-        <router-link to="/done.html">Earlier</router-link>
-      </li>
-      <li>
-        <router-link to="/books.html">Books</router-link>
+      <li v-for="page in navList" :key="page.key">
+        <router-link :to="page.path">{{ page.title }}</router-link>
       </li>
     </ul>
   </nav>
 </template>
+
+<script>
+export default {
+  props: {
+    navList: {
+      type: Array,
+      required: true
+    }
+  }
+};
+</script>
+
 
 <style scoped>
 nav {

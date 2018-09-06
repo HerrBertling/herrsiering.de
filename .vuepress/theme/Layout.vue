@@ -1,10 +1,15 @@
 <template>
 <div class="wrapper">
   <header>
-    <Navigation />
+    <Navigation :navList="navList" />
   </header>
   <main>
-    <Content />
+    <section>
+      <Content />
+    </section>
+    <section v-if="isHome && postList.length > 3">
+      <PostList :posts="postList" />
+    </section>
   </main>
   <picture>
     <img
@@ -34,14 +39,29 @@
 
 <script>
 import Vue from "vue";
-import Navigation from "./Navigation.vue";
-import Footer from "./Footer.vue";
+import Navigation from "./components/Navigation.vue";
+import Footer from "./components/Footer.vue";
+import PostList from "./components/PostList.vue";
 
 export default {
-  components: { Navigation, Footer },
-  created() {
-    console.log(this.$site);
-    console.log(this.$page);
+  components: { Navigation, Footer, PostList },
+  computed: {
+    postList() {
+      const postDirectory = this.$site.themeConfig.postDir;
+      return this.$site.pages.filter(page =>
+        page.path.startsWith(postDirectory)
+      );
+    },
+    isHome() {
+      return this.$page.path === "/";
+    },
+    navList() {
+      return this.$site.pages
+        .filter(page => {
+          return page.frontmatter.inNavigation;
+        })
+        .sort((a, b) => a.frontmatter.navPosition - b.frontmatter.navPosition);
+    }
   }
 };
 </script>
@@ -53,12 +73,12 @@ export default {
   --spacingM: 40px;
   --spacingL: 100px;
   --spacingXL: 200px;
-  --fontSizeXS: 0.7rem;
+  --fontSizeXS: 0.8rem;
   --fontSizeS: 1rem;
   --fontSizeM: 1.618rem;
-  --fontSizeL: 2.618rem;
-  --fontSizeXL: 4.236rem;
-  --fontSizeXXL: 6.854rem;
+  --fontSizeL: 2.218rem;
+  --fontSizeXL: 2.618rem;
+  --fontSizeXXL: 4.236rem;
   --mainColor: #1c71b1;
   --textColor: #192c42;
   --textColorLight: #4a5669;
@@ -100,29 +120,38 @@ body,
 .standout {
   color: var(--textColorLightest);
   font-family: var(--headlineFont);
-  font-size: var(--fontSizeL);
+  font-size: var(--fontSizeXL);
   font-weight: bold;
-  margin: 0 0 1.5em;
+  margin: 0 0 0.5em;
 }
 
 h1 {
   color: var(--mainColor);
-  font-size: var(--fontSizeM);
+  font-size: var(--fontSizeL);
+  line-height: 1.15;
+  margin: 0 0 1em;
 }
 
 h2 {
   color: var(--accentColor);
-  font-size: var(--fontSizeS);
+  font-size: var(--fontSizeM);
+  line-height: 1.15;
+  margin: 1.5em 0 0.5em;
 }
 
 h1,
 h2 {
   font-family: var(--bodyFont);
-  margin: 0 0 1.5em;
 }
 
 h3 {
   color: var(--textColorLight);
+  font-size: var(--fontSizeS);
+  margin: 0.5em 0;
+}
+h4 {
+  font-size: var(--fontSizeS);
+  margin: 1.5em 0 0.5em;
 }
 
 p {
@@ -237,8 +266,12 @@ picture:after {
   left: -70vw;
 }
 
-article {
+article,
+section {
   margin-bottom: var(--spacingL);
+}
+article:last-of-type {
+  margin-bottom: 0;
 }
 
 @media (min-width: 750px) {

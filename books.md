@@ -1,5 +1,7 @@
 ---
-title: Books I have and you should read
+title: Books
+inNavigation: true
+navPosition: 15
 meta:
   - name: description
     content: A list of books I love and have read at least once
