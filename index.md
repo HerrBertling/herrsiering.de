@@ -1,3 +1,9 @@
+---
+title: Home
+inNavigation: true
+navPosition: 1
+---
+
 <p class="standout">Hi! I'm Markus.</p>
 
 # I help companies design and deliver digital products faster.
