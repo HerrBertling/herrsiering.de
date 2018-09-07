@@ -5,10 +5,9 @@
   </header>
   <main>
     <section>
-      <Content />
-    </section>
-    <section v-if="isHome && postList.length > 3">
-      <PostList :posts="postList" />
+      <h1>Sorry, couldn't find what you are looking for…</h1>
+      <p>So sorry to let you down, but apparently you're trying to reach a page that is not existing (anymore).</p>
+      <p>Check out the content of the pages linked in the navigation right on top, maybe you can find what you're looking for there.</p>
     </section>
   </main>
   <picture>
