@@ -75,10 +75,10 @@ export default {
   --spacingXL: 200px;
   --fontSizeXS: 0.8rem;
   --fontSizeS: 1rem;
-  --fontSizeM: 1.618rem;
-  --fontSizeL: 2.218rem;
-  --fontSizeXL: 2.618rem;
-  --fontSizeXXL: 4.236rem;
+  --fontSizeM: 1.414rem;
+  --fontSizeL: 1.999rem;
+  --fontSizeXL: 2.827rem;
+  --fontSizeXXL: 3.998rem;
   --mainColor: #1c71b1;
   --textColor: #192c42;
   --textColorLight: #4a5669;
@@ -120,21 +120,21 @@ body,
 .standout {
   color: var(--textColorLightest);
   font-family: var(--headlineFont);
-  font-size: var(--fontSizeXL);
+  font-size: var(--fontSizeXXL);
   font-weight: bold;
   margin: 0 0 0.5em;
 }
 
 h1 {
   color: var(--mainColor);
-  font-size: var(--fontSizeL);
+  font-size: var(--fontSizeXL);
   line-height: 1.15;
   margin: 0 0 1em;
 }
 
 h2 {
   color: var(--accentColor);
-  font-size: var(--fontSizeM);
+  font-size: var(--fontSizeL);
   line-height: 1.15;
   margin: 1.5em 0 0.5em;
 }
@@ -146,7 +146,8 @@ h2 {
 
 h3 {
   color: var(--textColorLight);
-  font-size: var(--fontSizeS);
+  font-size: var(--fontSizeM);
+
   margin: 0.5em 0;
 }
 h4 {
@@ -182,16 +183,6 @@ a[href^="https://amzn.to"] .outbound {
 
 a[href^="https://amzn.to"]::after {
   content: " *";
-  display: inline;
-  color: var(--accentColor);
-}
-
-small {
-  font-size: var(--fontSizeXS);
-}
-
-small::before {
-  content: "* ";
   display: inline;
   color: var(--accentColor);
 }

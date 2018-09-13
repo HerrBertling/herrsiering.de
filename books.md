@@ -44,5 +44,3 @@ Same as with Man's Search for Meaning and The Road Less Traveled, this book is a
 [Get it on Amazon](https://amzn.to/2PBFt2Z)
 
 </article>
-
-<small>Links to Amazon are affiliate links.</small>
