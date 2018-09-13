@@ -1,6 +1,7 @@
 ---
 title: Be kind
 summary: A great way to handle screw ups as a manager
+date: 2018-09-08
 ---
 
 # [Be kind](https://www.briangilham.com/be-kind)

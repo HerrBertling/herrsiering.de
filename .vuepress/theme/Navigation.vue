@@ -26,7 +26,6 @@ nav {
   display: flex;
   height: 100%;
 }
-
 ul {
   display: flex;
   justify-content: space-around;
@@ -40,7 +39,7 @@ a:link,
 a:visited {
   color: var(--textColorLight);
   display: inline-block;
-  font-size: var(--fontSizeS);
+  font-size: var(--fontSizeXS);
   padding: var(--spacingXS);
   position: relative;
   text-decoration: none;
@@ -75,9 +74,11 @@ a::before {
   nav ul {
     justify-content: space-between;
   }
-  nav a:link,
-  nav a:visited {
-    padding: var(--spacingXS) var(--spacingS);
+}
+@media (min-width: 1024px) {
+  a:link,
+  a:visited {
+    font-size: var(--fontSizeS);
   }
 }
 </style>
