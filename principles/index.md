@@ -21,6 +21,18 @@ This is a collection of what I think are my principles.
 
 This list is never done and will constantly change.
 
+## Take time to breathe
+
+I meditate daily for 20 minutes. It's the best habit I ever picked up. Make room in your day to do this. You will become calmer. You will be less agitated by things happening in your life. You will be able to step aside and reflect on things.
+
+Through all of this, you will make better decisions. You will be less driven by spontaneous reactions. It's a beautiful transformation that has happened in my life.
+
+I started out meditationg with the [Headspace](https://www.headspace.com/) app. By now, I have switched to [Oak](https://www.oakmeditation.com/), which is a free app. It does not offer as much content as Headspace. It does offer everything you need, though. A guided meditation, a loving kindness meditation and an unguided meditation with a timer.
+
+Staying with your breath for 20 minutes is not easy. You will be distracted again and again. Thoughts will come up again and again. You might not even get better _at_ meditation. What I can guarantee you: You will get better at being.
+
+So: Sit down. Close your eyes. Breathe for 20 minutes. Your life will change. It's that simple.
+
 ## Keep things simple.
 
 In the last days, one principle became more and more appealing to me: Keeping things simple. I don't mean easy. I mean simple. Not taking an easy way out, but rather distilling the problem and the solution to a bare minimum. Don't do more. Don't do less. Do what is required. This mostly is not easy. It should be simple, though.
