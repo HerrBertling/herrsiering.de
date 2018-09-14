@@ -27,7 +27,7 @@ I meditate daily for 20 minutes. It's the best habit I ever picked up. Make room
 
 Through all of this, you will make better decisions. You will be less driven by spontaneous reactions. It's a beautiful transformation that has happened in my life.
 
-I started out doing this with the [Headspace](https://www.headspace.com/) app. By now, I have switched to [Oak](https://www.oakmeditation.com/), which is a free app. It does not offer as much content as Headspace. It does offer everything you need, though. A guided meditation, a loving kindness meditation and an unguided meditation with a timer.
+I started out meditationg with the [Headspace](https://www.headspace.com/) app. By now, I have switched to [Oak](https://www.oakmeditation.com/), which is a free app. It does not offer as much content as Headspace. It does offer everything you need, though. A guided meditation, a loving kindness meditation and an unguided meditation with a timer.
 
 Staying with your breath for 20 minutes is not easy. You will be distracted again and again. Thoughts will come up again and again. You might not even get better _at_ meditation. What I can guarantee you: You will get better at being.
 
