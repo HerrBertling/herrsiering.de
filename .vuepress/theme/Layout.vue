@@ -200,7 +200,10 @@ export default {
   .header-anchor {
     display: none;
   }
-
+  div[class^="language-"] {
+    max-width: 95vw;
+    overflow: hidden;
+  }
   div[class^="language-"] pre {
     font-size: var(--fontSizeXS);
     margin-bottom: 1.5em;
@@ -215,6 +218,8 @@ export default {
   main {
     grid-column: 2;
     grid-row: 3;
+    max-width: 95vw;
+    word-break: break-word;
   }
 
   picture {

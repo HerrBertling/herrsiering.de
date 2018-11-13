@@ -40,7 +40,7 @@ Now, CSS "normally" has bundle sizes way smaller than whatever Javascript you sh
 
 Like I mentioned above, should you ever kick IE11 out of your setup, you'll still be left with CSS and probably HTML that is unnecessary since you optimized for IE11 initially. From an architectural perspective, it would make way more sense to separate the special solutions for IE11 somewhere else than in your default CSS.
 
-For the HTML markup, this of course poses some complicated if not impossible to solve problems. I guess that's a very, very good moment to mention http://dowebsitesneedtolookexactlythesameineverybrowser.com/
+For the HTML markup, this of course poses some complicated if not impossible to solve problems. I guess that's a very, very good moment to mention [this website](http://dowebsitesneedtolookexactlythesameineverybrowser.com/)
 
 I'd argue to ship adjustments within separate IE11 files, making the interface work as good as possible within IE11.
 
