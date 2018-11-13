@@ -7,7 +7,7 @@
     <section>
       <Content />
     </section>
-    <section v-if="isHome && postList.length > 3">
+    <section v-if="isHome && postList.length > 1">
       <PostList :posts="postList" />
     </section>
   </main>
@@ -50,7 +50,7 @@ export default {
       const postDirectory = this.$site.themeConfig.postDir;
       return this.$site.pages.filter(page =>
         page.path.startsWith(postDirectory)
-      );
+      ).reverse();
     },
     isHome() {
       return this.$page.path === "/";
@@ -67,6 +67,7 @@ export default {
 </script>
 
 <style>
+  @import '~prismjs/themes/prism-tomorrow.css';
   :root {
     --spacingXS: 8px;
     --spacingS: 20px;
@@ -161,6 +162,13 @@ export default {
     margin: 0 0 1.5em;
   }
 
+  p code {
+    background-color: var(--backgroundColorLight);
+    color: var(--textColor);
+    font-size: var(--fontSizeXS);
+    padding: 4px;
+  }
+
   blockquote {
     border-left: 4px solid var(--mainColor);
     margin: 1em;
@@ -191,6 +199,11 @@ export default {
 
   .header-anchor {
     display: none;
+  }
+
+  div[class^="language-"] pre {
+    font-size: var(--fontSizeXS);
+    margin-bottom: 1.5em;
   }
 
   /* Placement */
@@ -346,6 +359,10 @@ export default {
       --textColorLightest: #adc0de;
       --accentColor: #ee7068;
       --backgroundBasic: #192c42;
+      --backgroundColorLight: #192c42;
+      font-weight: 300;
+      line-height: 1.7;
+      word-spacing: .05em;
     }
   }
 </style>
