@@ -93,6 +93,10 @@ export default {
       Helvetica Neue, Arial, sans-serif;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 20px;
   }
@@ -111,11 +115,13 @@ export default {
     color: var(--textColor);
     display: grid;
     grid-row-gap: var(--spacingS);
-    grid-template-columns: 12px 1fr 12px;
-    grid-template-rows: 50vh var(--spacingM) 1fr var(--spacingM);
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px var(--spacingM) 1fr var(--spacingM);
     font-family: var(--bodyFont);
     font-size: var(--fontSizeS);
     line-height: 1.5;
+    max-width: 100vw;
+    padding: var(--spacingS);
   }
 
   /* Typography styles */
@@ -201,7 +207,7 @@ export default {
     display: none;
   }
   div[class^="language-"] {
-    max-width: 95vw;
+    max-width: 90vw;
     overflow: hidden;
   }
   div[class^="language-"] pre {
@@ -211,24 +217,28 @@ export default {
 
   /* Placement */
   header {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-row: 2;
   }
 
   main {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 3;
-    max-width: 95vw;
+    max-width: 90vw;
     word-break: break-word;
+    padding: 0 var(--spacingXS);
   }
 
   picture {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-row: 1;
-    height: 100%;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    border-radius: 50%;
   }
 
   footer {
@@ -236,10 +246,10 @@ export default {
     color: var(--textColorLight);
     display: flex;
     font-size: var(--fontSizeXS);
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 4;
     justify-content: flex-end;
-    padding-bottom: var(--spacingS);
+    padding: 0 var(--spacingXS) var(--spacingS);
     text-align: right;
   }
 
@@ -247,34 +257,6 @@ export default {
     filter: grayscale(1);
     height: auto;
     width: 100%;
-  }
-
-  picture:before,
-  picture:after {
-    content: "";
-    display: block;
-    mix-blend-mode: multiply;
-    opacity: 0.5;
-    position: absolute;
-    z-index: 1;
-  }
-
-  picture:before {
-    background-color: var(--accentColor);
-    border-radius: 50%;
-    height: 40vw;
-    width: 40vw;
-    top: -15%;
-    right: -20%;
-  }
-
-  picture:after {
-    background-color: var(--mainColor);
-    height: 90vh;
-    transform: rotate(-45deg);
-    width: 100vw;
-    top: 10vh;
-    left: -70vw;
   }
 
   article,
@@ -285,11 +267,17 @@ export default {
     margin-bottom: 0;
   }
 
-  @media (min-width: 750px) {
+  @media (min-width: 840px) {
     .wrapper {
-      grid-gap: var(--spacingM);
-      grid-template-columns: 49vw 1fr 12px;
+      grid-gap: var(--spacingS);
+      grid-template-columns: minmax(100px, 1fr) minmax(700px, 3fr);
       grid-template-rows: var(--spacingL) 1fr var(--spacingM);
+      padding: var(--spacingS);
+    }
+    header,
+    main,
+    footer {
+      max-width: 700px;
     }
     header {
       grid-column: 2;
@@ -301,58 +289,29 @@ export default {
       grid-row: 2;
     }
     picture {
-      height: 100vh;
-      width: 48vw;
-      position: fixed;
+      grid-column: 1;
+      border-radius: 50%;
+      height: var(--spacingL);
+      width: var(--spacingL);
     }
     picture img {
-      height: 100%;
-      transform: translateX(-2vw);
-      width: auto;
+      height: auto;
+      width: 100%;
     }
-    picture:before {
-      right: -20vw;
-      top: -15vh;
-    }
+    picture:before,
     picture:after {
-      bottom: -60%;
-      height: 100%;
-      top: auto;
+      display: none;
     }
     footer {
+      grid-column: 2;
       grid-row: 3;
       z-index: 2;
     }
   }
 
-  @media (min-width: 810px) {
-    picture img {
-      height: 100%;
-      transform: translateX(0);
-      width: auto;
-    }
-  }
-
   @media (min-width: 1130px) {
     .wrapper {
-      grid-template-columns: 560px 1fr 24px;
-    }
-    header,
-    main,
-    footer {
-      max-width: 700px;
-    }
-    picture {
-      width: 540px;
-    }
-    picture:before {
-      right: -25vw;
-      top: -25vh;
-    }
-    picture:after {
-      bottom: -90%;
-      height: 130%;
-      top: auto;
+      grid-template-columns: 200px 1fr 24px;
     }
   }
 
