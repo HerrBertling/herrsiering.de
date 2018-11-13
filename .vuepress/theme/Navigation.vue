@@ -24,6 +24,7 @@ export default {
 nav {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
 }
 ul {
@@ -67,12 +68,15 @@ a::before {
   transform: scaleX(1);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 840px) {
   nav {
     align-items: center;
   }
   nav ul {
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  nav ul li {
+    margin-right: var(--spacingS);
   }
 }
 @media (min-width: 1024px) {
