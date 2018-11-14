@@ -26,6 +26,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
+  --animationDuration: 200ms;
 }
 ul {
   display: flex;
@@ -62,12 +63,16 @@ a::before {
   background-color: var(--mainColor);
   transform: scaleX(0);
   transform-origin: top left;
-  transition: transform 200ms ease-in-out;
+  transition: transform var(--animationDuration) ease-in-out;
 }
 .router-link-exact-active::before {
   transform: scaleX(1);
 }
-
+@media (prefers-reduced-motion: reduce) {
+  nav {
+    --animationDuration: 0ms;
+  }
+}
 @media (min-width: 840px) {
   nav {
     align-items: center;
