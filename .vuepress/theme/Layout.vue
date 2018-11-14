@@ -344,61 +344,30 @@ export default {
     --bodyFont: 'Permanent Marker', Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   }
   [data-theme="back-to-the-future"] #app {
-    perspective: 80vh;
     background:
+      linear-gradient(to bottom,
+        transparent 0,
+        rgb(246,191,163) 1px,
+        rgb(254,245,166) 2px,
+        rgb(254,245,199) 3px,
+        white 4px,
+        rgb(254,245,199) 5px,
+        rgb(254,245,166) 6px,
+        rgb(246,191,163) 7px,
+        rgba(219, 44, 187, 0.7) 8px,
+        transparent 100%
+      ),
+      url('./images/80mesh.jpg'),
       radial-gradient(circle at center, rgb(243, 198, 51) 18%, rgb(254,245,166)  26%, transparent 28.1%),
       radial-gradient(circle at center, rgb(219, 44, 187) 0%, rgba(219, 44, 187, 0.2) 30%, transparent 35%),
       linear-gradient(to bottom, rgb(4,0,9) 0%, rgb(25, 0, 66) 7%, rgb(54, 0, 148) 21%, rgb(114, 22, 163) 34%, rgb(219, 44, 187) 45%);
-      background-size: 75vh 75vh, 75vh 75vh, 100%;
-      background-position: center 55vh, center 55vh, 0 0;
-      background-repeat: no-repeat;
+    background-size: 100% 20%, 100% 20%, 75vh 75vh, 75vh 75vh, 100%;
+    background-position: bottom center, bottom center, center 55vh, center 55vh, 0 0;
+    background-repeat: no-repeat;
   }
-  [data-theme="back-to-the-future"] #app::before {
-    position: fixed;
-    bottom: -20vh;
-    left: -1000px;
-    content: '';
-    display: block;
-    height: 1200px;
-    width: 6000px;
-    pointer-events: none;
-    box-shadow: 0 0 600px rgb(54, 0, 148);
-    transform: rotateX(-100deg);
-    background:
-      linear-gradient(to top,
-        transparent 0,
-        rgb(246,191,163) 1px,
-        rgb(254,245,166) 8px,
-        rgb(254,245,199) 10px,
-        white 12px,
-        rgb(254,245,199) 14px,
-        rgb(254,245,166) 16px,
-        rgb(246,191,163) 23px,
-        rgba(219, 44, 187, 0.7) 24px,
-        transparent 100%
-      ),
-      repeating-linear-gradient(0deg,
-      transparent 0,
-      transparent 40px,
-      rgb(45, 44, 193) 46px,
-      rgb(102, 248, 253) 50px,
-      rgb(102, 248, 253) 52px,
-      rgb(45, 44, 193) 54px,
-      transparent 60px,
-      transparent 120px
-      ),
-      repeating-linear-gradient(90deg,
-      rgb(43, 0, 120) 0,
-      rgb(43, 0, 120) 40px,
-      rgb(45, 44, 193) 46px,
-      rgb(102, 248, 253) 50px,
-      rgb(102, 248, 253) 52px,
-      rgb(45, 44, 193) 54px,
-      rgb(43, 0, 120) 60px,
-      rgb(43, 0, 120) 120px
-      )
-    ;
-    z-index: -1;
+  [data-theme="back-to-the-future"] .wrapper {
+    position: relative;
+    z-index: 1;
   }
 
   [data-theme="back-to-the-future"] #app .standout {
@@ -421,7 +390,7 @@ export default {
   }
   [data-theme="back-to-the-future"] picture {
     background: linear-gradient(135deg, rgb(219, 44, 187), rgb(54, 0, 148));
-    mix-blend-mode: multiply;
+    mix-blend-mode: screen;
     box-shadow: 0 0 20px rgba(219,44,187,0.8);
   }
   [data-theme="back-to-the-future"] picture img {
