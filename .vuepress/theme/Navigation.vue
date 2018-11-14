@@ -26,7 +26,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  --animationDuration: 200ms;
 }
 ul {
   display: flex;
@@ -67,11 +66,6 @@ a::before {
 }
 .router-link-exact-active::before {
   transform: scaleX(1);
-}
-@media (prefers-reduced-motion: reduce) {
-  nav {
-    --animationDuration: 0ms;
-  }
 }
 @media (min-width: 840px) {
   nav {
