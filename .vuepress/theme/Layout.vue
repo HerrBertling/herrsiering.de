@@ -2,6 +2,7 @@
 <div class="wrapper">
   <header>
     <Navigation :navList="navList" />
+    <ThemeSwitch />
   </header>
   <main>
     <section>
@@ -13,23 +14,11 @@
   </main>
   <picture>
     <img
-      sizes="(max-width: 1000px) 100vw, 1000px"
       srcset="
       ./images/markus-siering_xvfke1_c_scale_w_200.jpg 200w,
-      ./images/markus-siering_xvfke1_c_scale_w_291.jpg 291w,
-      ./images/markus-siering_xvfke1_c_scale_w_365.jpg 365w,
-      ./images/markus-siering_xvfke1_c_scale_w_432.jpg 432w,
-      ./images/markus-siering_xvfke1_c_scale_w_489.jpg 489w,
-      ./images/markus-siering_xvfke1_c_scale_w_540.jpg 540w,
-      ./images/markus-siering_xvfke1_c_scale_w_589.jpg 589w,
-      ./images/markus-siering_xvfke1_c_scale_w_633.jpg 633w,
-      ./images/markus-siering_xvfke1_c_scale_w_679.jpg 679w,
-      ./images/markus-siering_xvfke1_c_scale_w_716.jpg 716w,
-      ./images/markus-siering_xvfke1_c_scale_w_756.jpg 756w,
-      ./images/markus-siering_xvfke1_c_scale_w_829.jpg 829w,
-      ./images/markus-siering_xvfke1_c_scale_w_1000.jpg 1000w"
-      src="./images/markus-siering_xvfke1_c_scale_w_1000.jpg"
-      alt="">
+      ./images/markus-siering_xvfke1_c_scale_w_489.jpg 489w"
+      src="./images/markus-siering_xvfke1_c_scale_w_489.jpg"
+      alt="An image of me, Markus Siering">
   </picture>
   <footer>
     <Footer />
@@ -41,10 +30,11 @@
 import Vue from "vue";
 import Navigation from "./Navigation.vue";
 import Footer from "./Footer.vue";
+import ThemeSwitch from "./ThemeSwitch.vue";
 import PostList from "./components/PostList.vue";
 
 export default {
-  components: { Navigation, Footer, PostList },
+  components: { Navigation, Footer, PostList, ThemeSwitch },
   computed: {
     postList() {
       const postDirectory = this.$site.themeConfig.postDir;
@@ -91,6 +81,12 @@ export default {
       Times New Roman, serif;
     --bodyFont: Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
       Helvetica Neue, Arial, sans-serif;
+    --animationDuration: 200ms;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    nav {
+      --animationDuration: 0ms;
+    }
   }
 
   * {
@@ -328,5 +324,115 @@ export default {
       line-height: 1.7;
       word-spacing: .05em;
     }
+  }
+  /*  */
+  [data-theme="back-to-the-future"] {
+    --fontSizeXS: 18px;
+    --fontSizeS: 28px;
+    --fontSizeM: 40px;
+    --fontSizeL: 48px;
+    --fontSizeXL: 64px;
+    --fontSizeXXL: 80px;
+    --mainColor: rgb(54, 0, 148);
+    --textColor: white;
+    --textColorLight: white;
+    --textColorLightest: white;
+    --accentColor: rgb(219, 44, 187);
+    --backgroundColorLight: rgb(254,245,166);
+    --backgroundBasic: white;
+    --headlineFont: 'Permanent Marker', Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+    --bodyFont: 'Permanent Marker', Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  }
+  [data-theme="back-to-the-future"] #app {
+    perspective: 80vh;
+    background:
+      radial-gradient(circle at center, rgb(243, 198, 51) 18%, rgb(254,245,166)  26%, transparent 28.1%),
+      radial-gradient(circle at center, rgb(219, 44, 187) 0%, rgba(219, 44, 187, 0.2) 30%, transparent 35%),
+      linear-gradient(to bottom, rgb(4,0,9) 0%, rgb(25, 0, 66) 7%, rgb(54, 0, 148) 21%, rgb(114, 22, 163) 34%, rgb(219, 44, 187) 45%);
+      background-size: 75vh 75vh, 75vh 75vh, 100%;
+      background-position: center 55vh, center 55vh, 0 0;
+      background-repeat: no-repeat;
+  }
+  [data-theme="back-to-the-future"] #app::before {
+    position: fixed;
+    bottom: -20vh;
+    left: -1000px;
+    content: '';
+    display: block;
+    height: 1200px;
+    width: 6000px;
+    pointer-events: none;
+    box-shadow: 0 0 600px rgb(54, 0, 148);
+    transform: rotateX(-100deg);
+    background:
+      linear-gradient(to top,
+        transparent 0,
+        rgb(246,191,163) 1px,
+        rgb(254,245,166) 8px,
+        rgb(254,245,199) 10px,
+        white 12px,
+        rgb(254,245,199) 14px,
+        rgb(254,245,166) 16px,
+        rgb(246,191,163) 23px,
+        rgba(219, 44, 187, 0.7) 24px,
+        transparent 100%
+      ),
+      repeating-linear-gradient(0deg,
+      transparent 0,
+      transparent 40px,
+      rgb(45, 44, 193) 46px,
+      rgb(102, 248, 253) 50px,
+      rgb(102, 248, 253) 52px,
+      rgb(45, 44, 193) 54px,
+      transparent 60px,
+      transparent 120px
+      ),
+      repeating-linear-gradient(90deg,
+      rgb(43, 0, 120) 0,
+      rgb(43, 0, 120) 40px,
+      rgb(45, 44, 193) 46px,
+      rgb(102, 248, 253) 50px,
+      rgb(102, 248, 253) 52px,
+      rgb(45, 44, 193) 54px,
+      rgb(43, 0, 120) 60px,
+      rgb(43, 0, 120) 120px
+      )
+    ;
+    z-index: -1;
+  }
+
+  [data-theme="back-to-the-future"] #app .standout {
+    transform: rotate(-6deg);
+    margin-bottom: var(--spacingL);
+  }
+  [data-theme="back-to-the-future"] #app h1 {
+    margin-top: var(--spacingM);
+    margin-bottom: var(--spacingM);
+  }
+  [data-theme="back-to-the-future"] #app .standout,
+  [data-theme="back-to-the-future"] #app h1,
+  [data-theme="back-to-the-future"] #app h2,
+  [data-theme="back-to-the-future"] #app h3,
+  [data-theme="back-to-the-future"] #app h4,
+  [data-theme="back-to-the-future"] #app p {
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 0 1px 3px rgb(54, 0, 148);
+  }
+  [data-theme="back-to-the-future"] picture {
+    background: linear-gradient(135deg, rgb(219, 44, 187), rgb(54, 0, 148));
+    mix-blend-mode: multiply;
+    box-shadow: 0 0 20px rgba(219,44,187,0.8);
+  }
+  [data-theme="back-to-the-future"] picture img {
+    opacity: 0.7;
+  }
+  [data-theme="back-to-the-future"] blockquote {
+    border-color: var(--textColor);
+  }
+  [data-theme="back-to-the-future"] a:link,
+  [data-theme="back-to-the-future"] a:visited,
+  [data-theme="back-to-the-future"] a:link .icon.outbound {
+    color: var(--textColor);
   }
 </style>
