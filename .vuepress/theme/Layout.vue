@@ -70,7 +70,7 @@ export default {
     --fontSizeL: 1.999rem;
     --fontSizeXL: 2.827rem;
     --fontSizeXXL: 3.998rem;
-    --mainColor: #1c71b1;
+    --mainColor: fuchsia;
     --textColor: #192c42;
     --textColorLight: #4a5669;
     --textColorLightest: #616b7d;
