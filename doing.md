@@ -13,7 +13,7 @@ meta:
 
 ## Family
 
-Almost there. I'm going to be a dad. This is exciting!
+Like so many others, I'm a very, _very_ proud dad since February 2019. It's so much fun watching a child grow up, exploring the world and finding wonders in the tiniest things we grownups take for granted.
 
 </article>
 <article>
@@ -24,12 +24,23 @@ I work as a UI Engineer at sum.cumo GmbH. Yes. No Senior. We don't do career lev
 
 So just consider me being senior anyways.
 
+**Buzzwords**: Vue, Components, Frontend Architecture, Storybook
+
 </article>
 <article>
 
 ## Playing around
 
-I just built this website. Used Vuepress, a custom theme for it. And quite a lot of CSS Grid magic to arrange the content. Inspect it. Check out the [repo](http://github.com/herrBertling/herrsiering.de/). Tell me what I could do better [on Twitter](https://twitter.com/HerrBertling/)!
+I built this website about a year ago. Used Vuepress, a custom theme for it. And quite a lot of CSS Grid magic to arrange the content. Inspect it. Check out the [repo](http://github.com/herrBertling/herrsiering.de/). Tell me what I could do better [on Twitter](https://twitter.com/HerrBertling/)!
+
+Besides that, I'm spending most of my free time to play with my daughter rather than with technology. Thankfully, I get to explore a lot of technology at work :blush:
+
+Things I think about a lot currently:
+
+- How to build themeable components.
+- How to best make components available for different projects. Vue + CSS Custom Properties + Web Components sounds like I [should explore that](https://twitter.com/HerrBertling/status/1164191715563114496).
+- How to use what I know and apply it to climate change.
+- How to get my daughter to be still for diaper changes. Which frankly is the most complicated thing I think about right now :smile:
 
 </article>
 
@@ -41,7 +52,7 @@ I just built this website. Used Vuepress, a custom theme for it. And quite a lot
 
 ### 01/2017 – 07/2018
 
-In a fantastic team, I helped build a web design system for more than 40 product teams. We build up a library of over 60 components. It includes contribution guidelines and extensive documentation for the whole design system. I was lucky to work with awesome people like [Daniel](https://twitter.com/dmbch), [Yan](https://twitter.com/yanwalton), [Robin](https://twitter.com/RobinDrexler/) and [Matthias](https://twitter.com/aithir).
+In a fantastic team, I helped build a web design system for more than 40 product teams. We built up a library of over 60 components. It includes contribution guidelines and extensive documentation for the whole design system. I was lucky to work with awesome people like [Daniel](https://twitter.com/dmbch), [Yan](https://twitter.com/yanwalton), [Robin](https://twitter.com/RobinDrexler/) and [Matthias](https://twitter.com/aithir).
 
 **Buzzwords**: React, CSS Modules, Components, Design System, coordination, communication
 
