@@ -160,8 +160,13 @@ h4 {
   margin: 1.5em 0 0.5em;
 }
 
-p {
+p,
+ul {
   margin: 0 0 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
 }
 
 p code {
