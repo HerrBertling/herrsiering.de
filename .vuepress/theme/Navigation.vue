@@ -64,7 +64,8 @@ a::before {
   transform-origin: top left;
   transition: transform var(--animationDuration) ease-in-out;
 }
-.router-link-exact-active::before {
+.router-link-exact-active[href="/"]::before,
+.router-link-active:not([href="/"])::before {
   transform: scaleX(1);
 }
 @media (min-width: 840px) {

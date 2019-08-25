@@ -13,20 +13,10 @@ meta:
 
 ## Family
 
-Like so many others, I'm a very, _very_ proud dad since February 2019. It's so much fun watching a child grow up, exploring the world and finding wonders in the tiniest things we grownups take for granted.
+Like so many others, I'm a very, _very_ proud dad. It's so much fun watching a child grow up, exploring the world and finding wonders in the tiniest things we grownups take for granted.
 
 </article>
-<article>
 
-## Work
-
-I work as a UI Engineer at sum.cumo GmbH. Yes. No Senior. We don't do career levels. I get my first gray hairs, though. And do awful dad jokes.
-
-So just consider me being senior anyways.
-
-**Buzzwords**: Vue, Components, Frontend Architecture, Storybook
-
-</article>
 <article>
 
 ## Playing around
@@ -41,6 +31,18 @@ Things I think about a lot currently:
 - How to best make components available for different projects. Vue + CSS Custom Properties + Web Components sounds like I [should explore that](https://twitter.com/HerrBertling/status/1164191715563114496).
 - How to use what I know and apply it to climate change.
 - How to get my daughter to be still for diaper changes. Which frankly is the most complicated thing I think about right now :smile:
+
+</article>
+
+<article>
+
+## Work
+
+I work as a UI Engineer at sum.cumo GmbH. Yes. No Senior. We don't do career levels. I get my first gray hairs, though. And do awful dad jokes.
+
+So just consider me being senior anyways.
+
+**Buzzwords**: Vue, Components, Frontend Architecture, Storybook
 
 </article>
 
