@@ -21,7 +21,7 @@ This is a collection of what I think are my principles.
 
 This list is never done and will constantly change.
 
-## Take time to breathe
+## Stillness
 
 I meditate daily for 20 minutes. It's the best habit I ever picked up. Make room in your day to do this. You will become calmer. You will be less agitated by things happening in your life. You will be able to step aside and reflect on things.
 
@@ -33,7 +33,20 @@ Staying with your breath for 20 minutes is not easy. You will be distracted agai
 
 So: Sit down. Close your eyes. Breathe for 20 minutes. Your life will change. It's that simple.
 
-## Keep things simple.
+## Enough
+
+The idea of "knowing your enough" came up at a seminar I visited. Look at the different areas of your life. What do you want to achieve? At which point are you satisfied?
+
+How much money is enough?<br />
+How much work is enough?<br />
+Which career level is enough?<br />
+Which fitness level is enough?<br />
+How many children are enough?<br />
+How big does your ideal flat or house have to be?
+
+Take every area of your life, think about this and be happy if you've reached your stage of "enough".
+
+## Simplicity
 
 In the last days, one principle became more and more appealing to me: Keeping things simple. I don't mean easy. I mean simple. Not taking an easy way out, but rather distilling the problem and the solution to a bare minimum. Don't do more. Don't do less. Do what is required. This mostly is not easy. It should be simple, though.
 
@@ -53,71 +66,19 @@ I code a lot by now. I've done communication surrounding code projects as well. 
 
 Other projects went like a breeze. They were… well: Simple. We knew what we wanted to solve. We had a clear idea how to solve it. And everyone could see the value in solving the problem. That's what you want.
 
-#### Keep your code simple
-
-When it comes to coding, I like to think of a concept outlined in "[No more zero days](https://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af/)", one of the best comments I've ever read on Reddit:
-
-> BE GRATEFUL TO THE 3 YOU'S. Uh what? 3 me's? That sounds like mumbo jumbo bullshit. News flash, there are three you's homeslice. There's the past you, the present you, and the future you. […] you gotta do your future self a favour, just like you would for your best fucking friend
-
-I avoid writing "clever" code as much as possible. If I absolutely have to, I write an extended comment, e.g. why I'm using a specific value (CSS mostly for that). I know that either future me or someone else will inevitably stumble upon this code part. And they will be mad if they cannot figure out what the hell is going on.
-
-Same goes for functions. No side-effects. Clear naming of functions, e.g. `itemHasChildren` instead of `check`. Splitting out components if possible. No shortcuts. Things might make sense at the moment of writing. They definitely will not two months later.
-
-If you keep your code clear and well structured, you (and maybe others) will thank yourself down the road. Simple.
+What you will encounter are problems that are inherently hard. Keep thinking, keep trying, keep being curious. A simple solution for your problem(s) will reveal itself over time.
 
 ### Keep your finances simple
 
-I thought quite a lot about how to handle money and came up with a – you guessed it – simple system. It involves some bank accounts and automated payments.
-
-My main account takes care of things like rent, insurance payments and so on. The basic monthly costs are covered there. From that account, I transfer investment, backup and my "monthly allowance" into other accounts. I donate some money per month automatically to [The Ocean Cleanup](https://www.theoceancleanup.com/) and to the [Kinderhospiz Sternenbrücke](https://sternenbruecke.de/home). From my investment savings, I buy one [ETF](https://en.wikipedia.org/wiki/Exchange-traded_fund) monthly on a savings plan.
-
-Whatever is left over at the end of the month goes into the savings account. That's it. Set up once, I don't even think about it anymore. I can use my monthly allowance, the rest is automated away. Simple.
-
-#### Keep your saving simple
-
-I try to cut down recurring costs for different things.
-
-I replaced a recurring gym membership with two kettlebells. They were pretty much the price of three gym months. And they will be with my for all my life, it's rather hard to break them, you know?
-
-I standardized my breakfast, see above. It clocks in at about 30€ when I shop for all items. But that's all whole foods, great quality and I have breakfast for three to four weeks from that.
-
-I cut out unnecessary insurances. I ended subscriptions I did not need or take full advantage of.
-
-#### Keep your investing simple
-
-That's an interesting topic. I guess the "managing options" idea from sports & diet applies here as well. Everyone has ideas. Everyone has shortcuts or "safe" investments they think will do the trick. Me too. I tried individual stocks. Too stressful. I thought about trading options. Too much hassle. I dabbled with some cryptocurrencies. That's playing, not investing.
-
-I cut out retirement plans where I was either just parking the money because the costs ate the possible gains. Or in worse cases even would have lost money across the years due to the costs. Calculate the costs of your investments. It does not take a lot of time, but future you (that one again…) will be very thankful years from now that you took that one hour on that one Sunday.
-
-What I stick with is investing in some ETFs. It has the savings plan for the main ETF. I rebalance the rest from time to time. That's it. A whole lot of mental capacity freed up by… well, actually by not doing a lot.
-
-For a very straightforward introduction to investing in ETFs, check this (german) [blogpost from Finanzwesir](https://www.finanzwesir.com/blog/etf-depot-geld-anlegen-vermoegensaufbau).
+Check out [my finance principles](/principles/finance.html).
 
 ### Keep your workouts simple
 
-I'm currently reading [some essays](https://amzn.to/2xcqyEY) by [Dan John](http://danjohn.net/). He talks a lot about how for ordinary people, it's not about setting up a perfect workout and diet routine. It's about managing options.
-
-> Every diet works. Stick with it. Almost any training program is going to be perfect for you. You just have to let it run its course. You have to follow both. Try not to flip from thing to thing to thing.
-
-I got rid of my gym subscription. I bought two kettlebells instead. I do [Simple & Sinister](https://amzn.to/2NGHMoe) – that's two kettlebell movements and some warmup. Simple. I also have a pullup bar at home. That's it. Is it perfect? No. Is it something I could do every day for the rest of my life without spending a lot of thought on it? Sure!
-
-From time to time, I switch to a bodyweight workout instead. And that's simply because it is hard to stick with such a simple workout routine. Like I said in the beginning, it is not easy.
+Check out [my workout principles](/principles/workout.html).
 
 ### Keep your diet simple
 
-I eat vegan food as much as possible. I don't go to great lengths to make sure everything is vegan, though. If I can only get a vegetarian option when I'm out, I'm fine with that. At home, though, it's easy (yes, easy) to stick to a vegan diet.
-
-For breakfast, for example, I prepare a mix for overnight oats about every three weeks:
-
-- Oats or spelt as base
-- Flax seeds
-- Chia seeds
-- Psyllium husk (yes, I googled that. Flohsamenschalen in german)
-- Grated coconut
-- Crushed almonds
-- Goji berries
-
-Six tablespoons of that in a water glass, some kind of vegan milk on top, some blueberries on top. Done. I don't think about this anymore. I just eat it and am fine until lunch. Simple.
+Check out [my diet principles](/principles/diet.html).
 
 ### Keep your clothing simple
 
