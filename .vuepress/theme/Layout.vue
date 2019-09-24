@@ -69,7 +69,7 @@ export default {
   --fontSizeM: 1.414rem;
   --fontSizeL: 1.999rem;
   --fontSizeXL: 2.827rem;
-  --fontSizeXXL: 3.998rem;
+  --fontSizeXXL: 3.598rem;
   --mainColor: #1c71b1;
   --textColor: #192c42;
   --textColorLight: #4a5669;
@@ -83,9 +83,25 @@ export default {
     Helvetica Neue, Arial, sans-serif;
   --animationDuration: 200ms;
 }
+
 @media (prefers-reduced-motion: reduce) {
   nav {
     --animationDuration: 0ms;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainColor: #7399c8;
+    --textColor: #f2f5fa;
+    --textColorLight: #d6e0ef;
+    --textColorLightest: #adc0de;
+    --accentColor: #ee7068;
+    --backgroundBasic: #192c42;
+    --backgroundColorLight: #192c42;
+    font-weight: 300;
+    line-height: 1.7;
+    word-spacing: 0.05em;
   }
 }
 
@@ -228,6 +244,9 @@ div[class^="language-"] pre {
 header {
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
@@ -324,22 +343,35 @@ article:last-of-type {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --mainColor: #7399c8;
-    --textColor: #f2f5fa;
-    --textColorLight: #d6e0ef;
-    --textColorLightest: #adc0de;
-    --accentColor: #ee7068;
-    --backgroundBasic: #192c42;
-    --backgroundColorLight: #192c42;
-    font-weight: 300;
-    line-height: 1.7;
-    word-spacing: 0.05em;
-  }
+[data-theme="light"] {
+  --mainColor: #1c71b1;
+  --textColor: #192c42;
+  --textColorLight: #4a5669;
+  --textColorLightest: #616b7d;
+  --accentColor: #d71c2f;
+  --backgroundColorLight: #eef0f1;
+  --backgroundBasic: white;
+  --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
+    Times New Roman, serif;
+  --bodyFont: Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
+    Helvetica Neue, Arial, sans-serif;
+  --animationDuration: 200ms;
 }
-/*  */
-[data-theme="back-to-the-future"] {
+
+[data-theme="dark"] {
+  --mainColor: #7399c8;
+  --textColor: #f2f5fa;
+  --textColorLight: #d6e0ef;
+  --textColorLightest: #adc0de;
+  --accentColor: #ee7068;
+  --backgroundBasic: #192c42;
+  --backgroundColorLight: #192c42;
+  font-weight: 300;
+  line-height: 1.7;
+  word-spacing: 0.05em;
+}
+
+[data-theme="eighties"] {
   --fontSizeXS: 18px;
   --fontSizeS: 28px;
   --fontSizeM: 40px;
@@ -358,7 +390,7 @@ article:last-of-type {
   --bodyFont: "Permanent Marker", Avenir, Segoe UI, Frutiger, Frutiger Linotype,
     Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
-[data-theme="back-to-the-future"] #app {
+[data-theme="eighties"] #app {
   background: linear-gradient(
       to bottom,
       transparent 0,
@@ -398,43 +430,43 @@ article:last-of-type {
     0 0;
   background-repeat: no-repeat;
 }
-[data-theme="back-to-the-future"] .wrapper {
+[data-theme="eighties"] .wrapper {
   position: relative;
   z-index: 1;
 }
 
-[data-theme="back-to-the-future"] #app .standout {
+[data-theme="eighties"] #app .standout {
   transform: rotate(-6deg);
   margin-bottom: var(--spacingL);
 }
-[data-theme="back-to-the-future"] #app h1 {
+[data-theme="eighties"] #app h1 {
   margin-top: var(--spacingM);
   margin-bottom: var(--spacingM);
 }
-[data-theme="back-to-the-future"] #app .standout,
-[data-theme="back-to-the-future"] #app h1,
-[data-theme="back-to-the-future"] #app h2,
-[data-theme="back-to-the-future"] #app h3,
-[data-theme="back-to-the-future"] #app h4,
-[data-theme="back-to-the-future"] #app p {
+[data-theme="eighties"] #app .standout,
+[data-theme="eighties"] #app h1,
+[data-theme="eighties"] #app h2,
+[data-theme="eighties"] #app h3,
+[data-theme="eighties"] #app h4,
+[data-theme="eighties"] #app p {
   color: white;
   font-variant: small-caps;
   text-shadow: 0 1px 3px rgb(54, 0, 148);
 }
-[data-theme="back-to-the-future"] picture {
+[data-theme="eighties"] picture {
   background: linear-gradient(135deg, rgb(219, 44, 187), rgb(54, 0, 148));
   mix-blend-mode: screen;
   box-shadow: 0 0 20px rgba(219, 44, 187, 0.8);
 }
-[data-theme="back-to-the-future"] picture img {
+[data-theme="eighties"] picture img {
   opacity: 0.7;
 }
-[data-theme="back-to-the-future"] blockquote {
+[data-theme="eighties"] blockquote {
   border-color: var(--textColor);
 }
-[data-theme="back-to-the-future"] a:link,
-[data-theme="back-to-the-future"] a:visited,
-[data-theme="back-to-the-future"] a:link .icon.outbound {
+[data-theme="eighties"] a:link,
+[data-theme="eighties"] a:visited,
+[data-theme="eighties"] a:link .icon.outbound {
   color: var(--textColor);
 }
 </style>
