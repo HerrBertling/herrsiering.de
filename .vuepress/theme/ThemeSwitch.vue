@@ -112,6 +112,7 @@ label {
   display: block;
   font-size: var(--fontSizeXS);
   margin-bottom: var(--spacingXS);
+  cursor: pointer;
 }
 
 label > input {
@@ -134,6 +135,7 @@ button {
   padding: calc(var(--spacingXS) / 2) calc(var(--spacingXS) * 1.5);
   font-family: inherit;
   font-size: var(--fontSizeXS);
+  cursor: pointer;
 }
 
 .popup {

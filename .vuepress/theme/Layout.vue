@@ -389,6 +389,8 @@ article:last-of-type {
     Times, Times New Roman, serif;
   --bodyFont: "Permanent Marker", Avenir, Segoe UI, Frutiger, Frutiger Linotype,
     Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  --navHighlightBoxShadow: 0 0 20px rgba(219, 44, 187, 0.8);
+  --navHighlightBorderRadius: 2px;
 }
 [data-theme="eighties"] #app {
   background: linear-gradient(
@@ -456,7 +458,7 @@ article:last-of-type {
 [data-theme="eighties"] picture {
   background: linear-gradient(135deg, rgb(219, 44, 187), rgb(54, 0, 148));
   mix-blend-mode: screen;
-  box-shadow: 0 0 20px rgba(219, 44, 187, 0.8);
+  box-shadow: var(--navHighlightBoxShadow);
 }
 [data-theme="eighties"] picture img {
   opacity: 0.7;
