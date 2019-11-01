@@ -52,6 +52,7 @@ a:active,
 .router-link-exact-active {
   color: var(--accentColor);
   outline-color: var(--mainColor);
+  text-shadow: var(--navHighlightBoxShadow, none);
 }
 a::before {
   content: "";
@@ -60,6 +61,8 @@ a::before {
   bottom: 2px;
   height: 4px;
   background-color: var(--mainColor);
+  box-shadow: var(--navHighlightBoxShadow, none);
+  border-radius: var(--navHighlightBorderRadius, 0);
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform var(--animationDuration) ease-in-out;
@@ -68,6 +71,7 @@ a::before {
 .router-link-active:not([href="/"])::before {
   transform: scaleX(1);
 }
+
 @media (min-width: 840px) {
   nav {
     align-items: center;
