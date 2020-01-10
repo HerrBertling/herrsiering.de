@@ -2,7 +2,6 @@
 <div class="wrapper">
   <header>
     <Navigation :navList="navList" />
-    <ThemeSwitch />
   </header>
   <main>
     <section>
@@ -29,11 +28,10 @@
 import Vue from "vue";
 import Navigation from "./Navigation.vue";
 import Footer from "./Footer.vue";
-import ThemeSwitch from "./ThemeSwitch.vue";
 import PostList from "./components/PostList.vue";
 
 export default {
-  components: { Navigation, Footer, PostList, ThemeSwitch },
+  components: { Navigation, Footer, PostList },
   computed: {
     postList() {
       const postDirectory = this.$site.themeConfig.postDir;

@@ -38,7 +38,7 @@ ul {
 
 a:link,
 a:visited {
-  color: var(--textColorLight);
+  color: var(--textColorLightest);
   display: inline-block;
   font-size: var(--fontSizeXS);
   padding: var(--spacingXS);
@@ -82,8 +82,6 @@ a::before {
   nav ul li {
     margin-right: var(--spacingS);
   }
-}
-@media (min-width: 1024px) {
   a:link,
   a:visited {
     font-size: var(--fontSizeS);

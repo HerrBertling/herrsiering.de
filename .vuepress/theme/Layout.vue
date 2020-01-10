@@ -2,7 +2,6 @@
 <div class="wrapper">
   <header>
     <Navigation :navList="navList" />
-    <ThemeSwitch />
   </header>
   <main>
     <section>
@@ -30,11 +29,10 @@
 import Vue from "vue";
 import Navigation from "./Navigation.vue";
 import Footer from "./Footer.vue";
-import ThemeSwitch from "./ThemeSwitch.vue";
 import PostList from "./components/PostList.vue";
 
 export default {
-  components: { Navigation, Footer, PostList, ThemeSwitch },
+  components: { Navigation, Footer, PostList },
   computed: {
     postList() {
       const postDirectory = this.$site.themeConfig.postDir;
@@ -66,21 +64,20 @@ export default {
   --spacingXL: 200px;
   --fontSizeXS: 0.8rem;
   --fontSizeS: 1rem;
-  --fontSizeM: 1.414rem;
-  --fontSizeL: 1.999rem;
-  --fontSizeXL: 2.827rem;
-  --fontSizeXXL: 3.598rem;
+  --fontSizeM: 1.2rem;
+  --fontSizeL: 1.728rem;
+  --fontSizeXL: 2.074rem;
+  --fontSizeXXL: 2.488rem;
   --mainColor: #1c71b1;
   --textColor: #192c42;
   --textColorLight: #4a5669;
   --textColorLightest: #616b7d;
-  --accentColor: #d71c2f;
+  --accentColor: #ba1727;
   --backgroundColorLight: #eef0f1;
   --backgroundBasic: white;
   --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
     Times New Roman, serif;
-  --bodyFont: Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
-    Helvetica Neue, Arial, sans-serif;
+  --bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   --animationDuration: 200ms;
 }
 
@@ -110,7 +107,7 @@ export default {
 }
 
 html {
-  font-size: 20px;
+  font-size: 24px;
 }
 body {
   margin: 0;
@@ -126,7 +123,7 @@ body,
 .wrapper {
   color: var(--textColor);
   display: grid;
-  grid-row-gap: var(--spacingS);
+  grid-gap: var(--spacingM);
   grid-template-columns: 1fr;
   grid-template-rows: 240px var(--spacingM) 1fr var(--spacingM);
   font-family: var(--bodyFont);
@@ -149,6 +146,7 @@ body,
 h1 {
   color: var(--mainColor);
   font-size: var(--fontSizeXL);
+  font-family: var(--headlineFont);
   line-height: 1.15;
   margin: 0 0 1em;
 }
@@ -156,20 +154,15 @@ h1 {
 h2 {
   color: var(--accentColor);
   font-size: var(--fontSizeL);
+  font-family: var(--headlineFont);
   line-height: 1.15;
-  margin: 1.5em 0 0.5em;
-}
-
-h1,
-h2 {
-  font-family: var(--bodyFont);
+  margin: 2em 0 0.5em;
 }
 
 h3 {
   color: var(--textColorLight);
   font-size: var(--fontSizeM);
-
-  margin: 0.5em 0;
+  margin: 2em 0 0.5em;
 }
 h4 {
   font-size: var(--fontSizeS);
@@ -252,9 +245,7 @@ header {
 main {
   grid-column: 1;
   grid-row: 3;
-  max-width: 90vw;
   word-break: break-word;
-  padding: 0 var(--spacingXS);
 }
 
 picture {
@@ -277,7 +268,6 @@ footer {
   grid-column: 1;
   grid-row: 4;
   justify-content: flex-end;
-  padding: 0 var(--spacingXS) var(--spacingS);
   text-align: right;
 }
 
@@ -297,15 +287,9 @@ article:last-of-type {
 
 @media (min-width: 840px) {
   .wrapper {
-    grid-gap: var(--spacingS);
-    grid-template-columns: minmax(100px, 1fr) minmax(700px, 3fr);
+    grid-template-columns: minmax(100px, 1fr) minmax(640px, 3fr);
     grid-template-rows: var(--spacingL) 1fr var(--spacingM);
     padding: var(--spacingS);
-  }
-  header,
-  main,
-  footer {
-    max-width: 700px;
   }
   header {
     grid-column: 2;
@@ -339,136 +323,7 @@ article:last-of-type {
 
 @media (min-width: 1130px) {
   .wrapper {
-    grid-template-columns: 200px 1fr 24px;
+    grid-template-columns: 200px 640px auto;
   }
-}
-
-[data-theme="light"] {
-  --mainColor: #1c71b1;
-  --textColor: #192c42;
-  --textColorLight: #4a5669;
-  --textColorLightest: #616b7d;
-  --accentColor: #d71c2f;
-  --backgroundColorLight: #eef0f1;
-  --backgroundBasic: white;
-  --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
-    Times New Roman, serif;
-  --bodyFont: Avenir, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
-    Helvetica Neue, Arial, sans-serif;
-  --animationDuration: 200ms;
-}
-
-[data-theme="dark"] {
-  --mainColor: #7399c8;
-  --textColor: #f2f5fa;
-  --textColorLight: #d6e0ef;
-  --textColorLightest: #adc0de;
-  --accentColor: #ee7068;
-  --backgroundBasic: #192c42;
-  --backgroundColorLight: #192c42;
-  font-weight: 300;
-  line-height: 1.7;
-  word-spacing: 0.05em;
-}
-
-[data-theme="eighties"] {
-  --fontSizeXS: 18px;
-  --fontSizeS: 28px;
-  --fontSizeM: 40px;
-  --fontSizeL: 48px;
-  --fontSizeXL: 64px;
-  --fontSizeXXL: 80px;
-  --mainColor: rgb(54, 0, 148);
-  --textColor: white;
-  --textColorLight: white;
-  --textColorLightest: white;
-  --accentColor: rgb(219, 44, 187);
-  --backgroundColorLight: rgb(254, 245, 166);
-  --backgroundBasic: white;
-  --headlineFont: "Permanent Marker", Rockwell, Courier Bold, Courier, Georgia,
-    Times, Times New Roman, serif;
-  --bodyFont: "Permanent Marker", Avenir, Segoe UI, Frutiger, Frutiger Linotype,
-    Dejavu Sans, Helvetica Neue, Arial, sans-serif;
-  --navHighlightBoxShadow: 0 0 20px rgba(219, 44, 187, 0.8);
-  --navHighlightBorderRadius: 2px;
-}
-[data-theme="eighties"] #app {
-  background: linear-gradient(
-      to bottom,
-      transparent 0,
-      rgb(246, 191, 163) 1px,
-      rgb(254, 245, 166) 2px,
-      rgb(254, 245, 199) 3px,
-      white 4px,
-      rgb(254, 245, 199) 5px,
-      rgb(254, 245, 166) 6px,
-      rgb(246, 191, 163) 7px,
-      rgba(219, 44, 187, 0.7) 8px,
-      transparent 100%
-    ),
-    url("./images/80mesh.jpg"),
-    radial-gradient(
-      circle at center,
-      rgb(243, 198, 51) 18%,
-      rgb(254, 245, 166) 26%,
-      transparent 28.1%
-    ),
-    radial-gradient(
-      circle at center,
-      rgb(219, 44, 187) 0%,
-      rgba(219, 44, 187, 0.2) 30%,
-      transparent 35%
-    ),
-    linear-gradient(
-      to bottom,
-      rgb(4, 0, 9) 0%,
-      rgb(25, 0, 66) 7%,
-      rgb(54, 0, 148) 21%,
-      rgb(114, 22, 163) 34%,
-      rgb(219, 44, 187) 45%
-    );
-  background-size: 100% 20%, 100% 20%, 75vh 75vh, 75vh 75vh, 100%;
-  background-position: bottom center, bottom center, center 55vh, center 55vh,
-    0 0;
-  background-repeat: no-repeat;
-}
-[data-theme="eighties"] .wrapper {
-  position: relative;
-  z-index: 1;
-}
-
-[data-theme="eighties"] #app .standout {
-  transform: rotate(-6deg);
-  margin-bottom: var(--spacingL);
-}
-[data-theme="eighties"] #app h1 {
-  margin-top: var(--spacingM);
-  margin-bottom: var(--spacingM);
-}
-[data-theme="eighties"] #app .standout,
-[data-theme="eighties"] #app h1,
-[data-theme="eighties"] #app h2,
-[data-theme="eighties"] #app h3,
-[data-theme="eighties"] #app h4,
-[data-theme="eighties"] #app p {
-  color: white;
-  font-variant: small-caps;
-  text-shadow: 0 1px 3px rgb(54, 0, 148);
-}
-[data-theme="eighties"] picture {
-  background: linear-gradient(135deg, rgb(219, 44, 187), rgb(54, 0, 148));
-  mix-blend-mode: screen;
-  box-shadow: var(--navHighlightBoxShadow);
-}
-[data-theme="eighties"] picture img {
-  opacity: 0.7;
-}
-[data-theme="eighties"] blockquote {
-  border-color: var(--textColor);
-}
-[data-theme="eighties"] a:link,
-[data-theme="eighties"] a:visited,
-[data-theme="eighties"] a:link .icon.outbound {
-  color: var(--textColor);
 }
 </style>

@@ -7,7 +7,7 @@ meta:
     content: A list of books I love and have read at least once
 ---
 
-# Books I _have_ and you _should_ read
+# Books I really like
 
 <article>
 
