@@ -72,7 +72,7 @@ export default {
   --textColor: #192c42;
   --textColorLight: #4a5669;
   --textColorLightest: #616b7d;
-  --accentColor: #d71c2f;
+  --accentColor: #ba1727;
   --backgroundColorLight: #eef0f1;
   --backgroundBasic: white;
   --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
@@ -156,14 +156,13 @@ h2 {
   font-size: var(--fontSizeL);
   font-family: var(--headlineFont);
   line-height: 1.15;
-  margin: 1.5em 0 0.5em;
+  margin: 2em 0 0.5em;
 }
 
 h3 {
   color: var(--textColorLight);
   font-size: var(--fontSizeM);
-
-  margin: 0.5em 0;
+  margin: 2em 0 0.5em;
 }
 h4 {
   font-size: var(--fontSizeS);
@@ -247,7 +246,6 @@ main {
   grid-column: 1;
   grid-row: 3;
   word-break: break-word;
-  padding: 0;
 }
 
 picture {
@@ -270,7 +268,6 @@ footer {
   grid-column: 1;
   grid-row: 4;
   justify-content: flex-end;
-  padding: 0 var(--spacingXS) var(--spacingS);
   text-align: right;
 }
 
