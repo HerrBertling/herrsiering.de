@@ -21,5 +21,6 @@ module.exports = {
     },
     // defaults to '/posts/' if postDir isn't provided.
     postDir: "/thoughts/"
-  }
+  },
+  evergreen: true,
 };

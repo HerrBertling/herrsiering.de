@@ -287,7 +287,7 @@ article:last-of-type {
 
 @media (min-width: 840px) {
   .wrapper {
-    grid-template-columns: minmax(100px, 1fr) minmax(640px, 3fr);
+    grid-template-columns: 120px 620px;
     grid-template-rows: var(--spacingL) 1fr var(--spacingM);
     padding: var(--spacingS);
   }
