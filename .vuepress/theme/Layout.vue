@@ -77,7 +77,7 @@ export default {
   --backgroundBasic: white;
   --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
     Times New Roman, serif;
-  --bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --bodyFont: Avenir, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   --animationDuration: 200ms;
 }
 
@@ -90,10 +90,10 @@ export default {
 @media (prefers-color-scheme: dark) {
   :root {
     --mainColor: #7399c8;
-    --textColor: #f2f5fa;
-    --textColorLight: #d6e0ef;
-    --textColorLightest: #adc0de;
-    --accentColor: #ee7068;
+    --textColor: rgba(242, 245, 250, 0.8);
+    --textColorLight: rgba(214, 224, 239, 0.8);
+    --textColorLightest: rgba(173, 192, 222, 0.8);
+    --accentColor: #d8645c;
     --backgroundBasic: #192c42;
     --backgroundColorLight: #192c42;
     font-weight: 300;
@@ -131,6 +131,7 @@ body,
   line-height: 1.5;
   max-width: 100vw;
   padding: var(--spacingS);
+  border-top: 6px solid var(--mainColor);
 }
 
 /* Typography styles */

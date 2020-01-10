@@ -49,20 +49,17 @@ a:visited {
 a:hover,
 a:focus,
 a:active,
-.router-link-exact-active {
+a.router-link-exact-active {
   color: var(--accentColor);
-  outline-color: var(--mainColor);
-  text-shadow: var(--navHighlightBoxShadow, none);
 }
+
 a::before {
   content: "";
   width: 80%;
   position: absolute;
   bottom: 2px;
   height: 4px;
-  background-color: var(--mainColor);
-  box-shadow: var(--navHighlightBoxShadow, none);
-  border-radius: var(--navHighlightBorderRadius, 0);
+  background-color: var(--accentColor);
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform var(--animationDuration) ease-in-out;
