@@ -64,10 +64,10 @@ export default {
   --spacingXL: 200px;
   --fontSizeXS: 0.8rem;
   --fontSizeS: 1rem;
-  --fontSizeM: 1.414rem;
-  --fontSizeL: 1.999rem;
-  --fontSizeXL: 2.827rem;
-  --fontSizeXXL: 3.598rem;
+  --fontSizeM: 1.2rem;
+  --fontSizeL: 1.728rem;
+  --fontSizeXL: 2.074rem;
+  --fontSizeXXL: 2.488rem;
   --mainColor: #1c71b1;
   --textColor: #192c42;
   --textColorLight: #4a5669;
@@ -107,7 +107,7 @@ export default {
 }
 
 html {
-  font-size: 20px;
+  font-size: 24px;
 }
 body {
   margin: 0;
@@ -123,7 +123,7 @@ body,
 .wrapper {
   color: var(--textColor);
   display: grid;
-  grid-row-gap: var(--spacingS);
+  grid-gap: var(--spacingM);
   grid-template-columns: 1fr;
   grid-template-rows: 240px var(--spacingM) 1fr var(--spacingM);
   font-family: var(--bodyFont);
@@ -246,9 +246,8 @@ header {
 main {
   grid-column: 1;
   grid-row: 3;
-  max-width: 90vw;
   word-break: break-word;
-  padding: 0 var(--spacingXS);
+  padding: 0;
 }
 
 picture {
@@ -291,15 +290,9 @@ article:last-of-type {
 
 @media (min-width: 840px) {
   .wrapper {
-    grid-gap: var(--spacingS);
-    grid-template-columns: minmax(100px, 1fr) minmax(700px, 3fr);
+    grid-template-columns: minmax(100px, 1fr) minmax(640px, 3fr);
     grid-template-rows: var(--spacingL) 1fr var(--spacingM);
     padding: var(--spacingS);
-  }
-  header,
-  main,
-  footer {
-    max-width: 700px;
   }
   header {
     grid-column: 2;
@@ -333,7 +326,7 @@ article:last-of-type {
 
 @media (min-width: 1130px) {
   .wrapper {
-    grid-template-columns: 200px 1fr 24px;
+    grid-template-columns: 200px 640px auto;
   }
 }
 </style>
