@@ -93,7 +93,7 @@ export default {
     --textColor: rgba(242, 245, 250, 0.8);
     --textColorLight: rgba(214, 224, 239, 0.8);
     --textColorLightest: rgba(173, 192, 222, 0.8);
-    --accentColor: #d8645c;
+    --accentColor: rgb(220, 117, 111);
     --backgroundBasic: #192c42;
     --backgroundColorLight: #192c42;
     font-weight: 300;
