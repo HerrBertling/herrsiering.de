@@ -1,21 +1,19 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "markussiering.de",
+  "version": "2.0.0",
+  "description": "My personal website",
+  "author": "Markus Siering <markus277@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
-    "start": "node __sapper__/build",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "build": "sapper build",
+    "export": "sapper export",
+    "start": "node __sapper__/build"
   },
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^0.4.0",
-    "snarkdown": "^1.2.2"
+    "sirv": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -30,7 +28,7 @@
     "rollup": "^1.20.0",
     "rollup-plugin-babel": "^4.0.2",
     "rollup-plugin-svelte": "^5.0.1",
-    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-terser": "^5.2.0",
     "sapper": "^0.27.0",
     "svelte": "^3.0.0"
   }
