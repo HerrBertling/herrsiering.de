@@ -1,27 +1,24 @@
-<template>
-  <nav>
-    <ul>
-      <li v-for="page in navList" :key="page.key">
-        <router-link :to="page.path">{{ page.title }}</router-link>
-      </li>
-    </ul>
-  </nav>
-</template>
-
 <script>
-export default {
-  props: {
-    navList: {
-      type: Array,
-      required: true
-    }
-  }
-};
+	export let segment;
+
+	const navigation = [
+		{
+			title: 'About',
+			slug: 'about'
+		},
+		{
+			title: 'Books',
+			slug: 'books'
+		},
+		{
+			title: 'Principles',
+			slug: 'principles'
+		},
+	]
 </script>
 
-
-<style scoped>
-nav {
+<style>
+	nav {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +46,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active,
-a.router-link-exact-active {
+a[aria-current] {
   color: var(--accentColor);
 }
 
@@ -64,8 +61,7 @@ a::before {
   transform-origin: top left;
   transition: transform var(--animationDuration) ease-in-out;
 }
-.router-link-exact-active[href="/"]::before,
-.router-link-active:not([href="/"])::before {
+[aria-current]::before {
   transform: scaleX(1);
 }
 
@@ -85,3 +81,28 @@ a::before {
   }
 }
 </style>
+
+<nav>
+	<ul>
+		<li>
+			<a
+				aria-current={segment === undefined ? "page" : undefined}
+				class:active={segment === undefined}
+				href="."
+			>
+				Home
+			</a>
+		</li>
+		{#each navigation as page}
+			<li>
+				<a
+					aria-current={segment === page.slug ? "page" : undefined}
+					class:active={segment === page.slug}
+					href={page.slug}
+				>
+					{page.title}
+				</a>
+			</li>
+		{/each}
+	</ul>
+</nav>
