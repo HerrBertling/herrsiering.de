@@ -22,7 +22,6 @@ export default {
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
-			md(),
 			svelte({
 				dev,
 				hydratable: true,
