@@ -6,7 +6,7 @@
 </script>
 
 <style>
-	.wrapper {
+.wrapper {
   color: var(--textColor);
   display: grid;
   grid-gap: var(--spacingM);
@@ -20,12 +20,80 @@
   padding: var(--spacingS);
   border-top: 6px solid var(--mainColor);
 }
+/* Placement */
+.header {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  grid-column: 1;
+  grid-row: 3;
+  word-break: break-word;
+}
+
+.picture {
+  grid-column: 1;
+  grid-row: 1;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.footer {
+  align-items: flex-end;
+  color: var(--textColorLight);
+  display: flex;
+  font-size: var(--fontSizeXS);
+  grid-column: 1;
+  grid-row: 4;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.image {
+  filter: grayscale(1);
+  height: auto;
+  width: 100%;
+}
 
 @media (min-width: 840px) {
   .wrapper {
     grid-template-columns: 120px 620px;
     grid-template-rows: var(--spacingL) 1fr var(--spacingM);
     padding: var(--spacingS);
+  }
+  
+  .header {
+    grid-column: 2;
+    grid-row: 1;
+    z-index: 2;
+  }
+  .main {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .picture {
+    grid-column: 1;
+    border-radius: 50%;
+    height: var(--spacingL);
+    width: var(--spacingL);
+  }
+  .image {
+    height: auto;
+    width: 100%;
+  }
+  .footer {
+    grid-column: 2;
+    grid-row: 3;
+    z-index: 2;
   }
 }
 
@@ -34,29 +102,27 @@
     grid-template-columns: 200px 640px auto;
   }
 }
-
 </style>
+
 <div class="wrapper">
-  <header>
+  <header class="header">
     <Nav {segment} />
   </header>
-  <main>
+  <main class="main">
     <section>
       <slot />
     </section>
-    <!-- <section v-if="isHome && postList.length > 1">
-      <PostList :posts="postList" />
-    </section> -->
   </main>
-  <picture>
+  <picture class="picture">
     <img
+      class="image"
       srcset="
       /images/markus-siering_xvfke1_c_scale_w_200.jpg 200w,
       /images/markus-siering_xvfke1_c_scale_w_489.jpg 489w"
       src="/images/markus-siering_xvfke1_c_scale_w_489.jpg"
       alt="An image of me, Markus Siering">
   </picture>
-  <footer>
+  <footer class="footer">
     <Footer />
   </footer>
 </div>
