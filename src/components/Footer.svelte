@@ -1,0 +1,40 @@
+<nav>
+  <small>Links to Amazon are affiliate links.</small>
+  <ul>
+    <li>
+      <a href="imprint">Imprint</a>
+    </li>
+    <li>
+      <a href="privacy">Privacy</a>
+    <li>
+  </ul>
+</nav>
+
+<style>
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a:link,
+a:visited {
+  font-size: var(--fontSizeXS);
+  margin-left: var(--spacingS);
+}
+small {
+  font-size: var(--fontSizeXS);
+}
+
+small::before {
+  content: "* ";
+  display: inline;
+  color: var(--accentColor);
+}
+</style>
