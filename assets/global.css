@@ -19,13 +19,14 @@
   --backgroundBasic: white;
   --headlineFont: Rockwell, Courier Bold, Courier, Georgia, Times,
     Times New Roman, serif;
-  --bodyFont: Avenir, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --bodyFont: Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   --animationDuration: 200ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
   nav {
-    --animationDuration: 0ms;
+    --animationDuration: 1ms;
   }
 }
 
@@ -139,12 +140,14 @@ a:active {
   color: var(--accentColor);
 }
 
-a[href^="https://amzn.to"] .outbound {
+a[href^="https://amzn.to"] .outbound
+{
   display: none;
 }
 
-a[href^="https://amzn.to"]::after {
-  content: " *";
+a[href^="https://amzn.to"]::after
+{
+  content: ' *';
   display: inline;
   color: var(--accentColor);
 }

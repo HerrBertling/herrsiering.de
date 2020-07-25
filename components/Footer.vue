@@ -1,16 +1,18 @@
-<nav>
-  <small>Links to Amazon are affiliate links.</small>
-  <ul>
-    <li>
-      <a href="imprint">Imprint</a>
-    </li>
-    <li>
-      <a href="privacy">Privacy</a>
-    <li>
-  </ul>
-</nav>
+<template>
+  <nav>
+    <small>Links to Amazon are affiliate links.</small>
+    <ul>
+      <li>
+        <nuxt-link to="/imprint">Imprint</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/privacy">Privacy</nuxt-link>
+      </li>
+    </ul>
+  </nav>
+</template>
 
-<style>
+<style scoped>
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,7 +35,7 @@ small {
 }
 
 small::before {
-  content: "* ";
+  content: '* ';
   display: inline;
   color: var(--accentColor);
 }

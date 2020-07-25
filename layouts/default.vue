@@ -1,11 +1,35 @@
-<script>
-	import Footer from '../components/Footer.svelte';
-	import Nav from '../components/Nav.svelte';
+<template>
+  <div class="wrapper">
+    <header class="header">
+      <Nav />
+    </header>
+    <main class="main">
+      <section>
+        <nuxt />
+      </section>
+    </main>
+    <picture class="picture">
+      <img
+        class="image"
+        srcset="
+          ~/assets/images/markus-siering_xvfke1_c_scale_w_200.jpg 200w,
+          ~/assets/images/markus-siering_xvfke1_c_scale_w_489.jpg 489w
+        "
+        src="~/assets/images/markus-siering_xvfke1_c_scale_w_489.jpg"
+        alt="An image of me, Markus Siering"
+      />
+    </picture>
+    <footer class="footer">
+      <Footer />
+    </footer>
+  </div>
+</template>
 
-	export let segment;
+<script>
+export default {}
 </script>
 
-<style>
+<style scoped>
 .wrapper {
   color: var(--textColor);
   display: grid;
@@ -15,12 +39,12 @@
   font-family: var(--bodyFont);
   font-size: var(--fontSizeS);
   line-height: 1.5;
-	min-height: 100vh;
+  min-height: 100vh;
   max-width: 100vw;
   padding: var(--spacingS);
   border-top: 6px solid var(--mainColor);
 }
-/* Placement */
+
 .header {
   grid-column: 1;
   grid-row: 2;
@@ -70,7 +94,7 @@
     grid-template-rows: var(--spacingL) 1fr var(--spacingM);
     padding: var(--spacingS);
   }
-  
+
   .header {
     grid-column: 2;
     grid-row: 1;
@@ -103,26 +127,3 @@
   }
 }
 </style>
-
-<div class="wrapper">
-  <header class="header">
-    <Nav {segment} />
-  </header>
-  <main class="main">
-    <section>
-      <slot />
-    </section>
-  </main>
-  <picture class="picture">
-    <img
-      class="image"
-      srcset="
-      /images/markus-siering_xvfke1_c_scale_w_200.jpg 200w,
-      /images/markus-siering_xvfke1_c_scale_w_489.jpg 489w"
-      src="/images/markus-siering_xvfke1_c_scale_w_489.jpg"
-      alt="An image of me, Markus Siering">
-  </picture>
-  <footer class="footer">
-    <Footer />
-  </footer>
-</div>

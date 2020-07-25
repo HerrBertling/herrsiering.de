@@ -1,24 +1,46 @@
-<script>
-	export let segment;
+<template>
+  <nav>
+    <ul>
+      <li>
+        <nuxt-link to="/">
+          Home
+        </nuxt-link>
+      </li>
+      <li v-for="page in navigation" :key="page.slug">
+        <nuxt-link :to="page.slug">
+          {{ page.title }}
+        </nuxt-link>
+      </li>
+    </ul>
+  </nav>
+</template>
 
-	const navigation = [
-		{
-			title: 'About',
-			slug: 'about'
-		},
-		{
-			title: 'Books',
-			slug: 'books'
-		},
-		{
-			title: 'Principles',
-			slug: 'principles'
-		},
-	]
+<script>
+export default {
+  name: 'Nav',
+  data() {
+    return {
+      navigation: [
+        {
+          title: 'About',
+          slug: '/about',
+        },
+        {
+          title: 'Books',
+          slug: '/books',
+        },
+        {
+          title: 'Principles',
+          slug: '/principles',
+        },
+      ],
+    }
+  },
+}
 </script>
 
-<style>
-	nav {
+<style scoped>
+nav {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +73,7 @@ a[aria-current] {
 }
 
 a::before {
-  content: "";
+  content: '';
   width: 80%;
   position: absolute;
   bottom: 2px;
@@ -81,28 +103,3 @@ a::before {
   }
 }
 </style>
-
-<nav>
-	<ul>
-		<li>
-			<a
-				aria-current={segment === undefined ? "page" : undefined}
-				class:active={segment === undefined}
-				href="."
-			>
-				Home
-			</a>
-		</li>
-		{#each navigation as page}
-			<li>
-				<a
-					aria-current={segment === page.slug ? "page" : undefined}
-					class:active={segment === page.slug}
-					href={page.slug}
-				>
-					{page.title}
-				</a>
-			</li>
-		{/each}
-	</ul>
-</nav>
