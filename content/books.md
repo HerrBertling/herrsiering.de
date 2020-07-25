@@ -32,7 +32,7 @@ Mark Manson writes a **lot** of [clever things](https://markmanson.net/how-to-gr
 
 > To try to avoid pain is to give too many fucks about pain. In contrast, if you're able to not give a fuck about the pain, you become unstoppable.
 
-([Cold showers](/principles/workout#take-cold-showers)! 😅)
+([Cold showers](/workout#take-cold-showers)! 😅)
 
 > Self-awareness is like an onion. There are multiple layers to it, and the more you peel them back, the more likely you're going to start crying at inappropriate times.
 
