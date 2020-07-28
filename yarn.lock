@@ -947,19 +947,20 @@
     rc9 "^1.0.0"
     std-env "^2.2.1"
 
-"@nuxt/content@^1.3.2":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-1.4.1.tgz#87da60a704a3fa15afe8027a785d95af524d91b9"
-  integrity sha512-1mEJ/nV6Cu3pDUV0bKAwkqr/G1kb/LAz3xEH6mN3aPjF2mcKfDNYm3BmZhfXOIIYRljll7yqA42QHoOPAleZZA==
+"@nuxt/content@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-1.5.0.tgz#4244a14b3b3b3aa08672dad5df82d2ee4f221a48"
+  integrity sha512-Uyo/kfY7vQXX8BD69hWBBG/ZUXLNYEJ+JVY4NZ2y5k+Wl2GRvcJY7U7/7HpAp8lLfKLXZsEl+wWXH4FYR8IHDw==
   dependencies:
     "@lokidb/full-text-search" "^2.0.0-beta.9"
     "@lokidb/loki" "^2.0.0-beta.9"
     change-case "^4.1.1"
-    chokidar "^3.4.0"
+    chokidar "^3.4.1"
     consola "^2.14.0"
     csvtojson "^2.0.10"
     defu "^2.0.4"
     escape-html "^1.0.3"
+    graceful-fs "^4.2.4"
     gray-matter "^4.0.2"
     hookable "^4.1.1"
     html-tags "^3.1.0"
@@ -968,7 +969,7 @@
     mkdirp "^1.0.4"
     node-req "^2.1.2"
     node-res "^5.0.1"
-    p-queue "6.5.0"
+    p-queue "6.6.0"
     prismjs "^1.20.0"
     rehype-raw "^4.0.2"
     rehype-sort-attribute-values "^3.0.2"
@@ -976,12 +977,12 @@
     remark-autolink-headings "^6.0.1"
     remark-external-links "^6.1.0"
     remark-footnotes "^1.0.0"
-    remark-parse "^8.0.2"
+    remark-parse "^8.0.3"
     remark-rehype "^7.0.0"
     remark-slug "^6.0.0"
     remark-squeeze-paragraphs "^4.0.0"
-    unified "^9.0.0"
-    ws "^7.3.0"
+    unified "^9.1.0"
+    ws "^7.3.1"
     xml2js "^0.4.23"
 
 "@nuxt/core@2.13.3":
@@ -4411,7 +4412,7 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2:
+graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2, graceful-fs@^4.2.4:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
@@ -6492,10 +6493,10 @@ p-map@^3.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
-p-queue@6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.5.0.tgz#40d6bafdd3bb0c8eaa03e0649ba6fa3ce7249947"
-  integrity sha512-FLaTTD9Am6TeDfNuN0d+INeyVJoICoBS+OVP5K1S84v4w51LN3nRkCT+WC7xLBepV2s+N4LibM7Ys7xcSc0+1A==
+p-queue@6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.6.0.tgz#263f2b73add4cefca81d8d6b2696ee74b326de2f"
+  integrity sha512-zPHXPNy9jZsiym0PpJjvnHQysx1fSd/QdaNVwiDRLU2KFChD6h9CkCB6b8i3U8lBwJyA+mHgNZCzcy77glUssQ==
   dependencies:
     eventemitter3 "^4.0.4"
     p-timeout "^3.1.0"
@@ -7936,7 +7937,7 @@ remark-footnotes@^1.0.0:
   resolved "https://registry.yarnpkg.com/remark-footnotes/-/remark-footnotes-1.0.0.tgz#9c7a97f9a89397858a50033373020b1ea2aad011"
   integrity sha512-X9Ncj4cj3/CIvLI2Z9IobHtVi8FVdUrdJkCNaL9kdX8ohfsi18DXHsCVd/A7ssARBdccdDb5ODnt62WuEWaM/g==
 
-remark-parse@^8.0.0, remark-parse@^8.0.2:
+remark-parse@^8.0.0, remark-parse@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-8.0.3.tgz#9c62aa3b35b79a486454c690472906075f40c7e1"
   integrity sha512-E1K9+QLGgggHxCQtLt++uXltxEprmWzNfg+MxpfHsZlrddKzZ/hZyWHDbK3/Ap8HJQqYJRXP+jHczdL6q6i85Q==
@@ -9239,7 +9240,7 @@ unicode-property-aliases-ecmascript@^1.0.4:
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-1.1.0.tgz#dd57a99f6207bedff4628abefb94c50db941c8f4"
   integrity sha512-PqSoPh/pWetQ2phoj5RLiaqIk4kCNwoV3CI+LfGmWLKI3rE3kl1h59XpX2BjgDrmbxD9ARtQobPGU1SguCYuQg==
 
-unified@^9.0.0:
+unified@^9.0.0, unified@^9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/unified/-/unified-9.1.0.tgz#7ba82e5db4740c47a04e688a9ca8335980547410"
   integrity sha512-VXOv7Ic6twsKGJDeZQ2wwPqXs2hM0KNu5Hkg9WgAZbSD1pxhZ7p8swqg583nw1Je2fhwHy6U8aEjiI79x1gvag==
@@ -9901,7 +9902,7 @@ ws@^6.0.0:
   dependencies:
     async-limiter "~1.0.0"
 
-ws@^7.3.0:
+ws@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.3.1.tgz#d0547bf67f7ce4f12a72dfe31262c68d7dc551c8"
   integrity sha512-D3RuNkynyHmEJIpD2qrgVkc9DQ23OrN/moAwZX4L8DfvszsJxpjQuUq3LMx6HoYji9fbIOBY18XWBsAux1ZZUA==
