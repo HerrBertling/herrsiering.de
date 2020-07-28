@@ -6,12 +6,9 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "nuxt dev",
     "start": "nuxt start",
-    "export": "nuxt export",
-    "serve": "nuxt serve",
-    "generate": "nuxt build && nuxt export",
+    "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style"
