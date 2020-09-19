@@ -6,24 +6,21 @@ Like so many others, I'm a very, _very_ proud dad. It's so much fun watching a c
 
 ## Playing around
 
-I built this website about a year ago. Used Vuepress, a custom theme for it. And quite a lot of CSS Grid magic to arrange the content. Inspect it. Check out the [repo](http://github.com/herrBertling/herrsiering.de/). Tell me what I could do better [on Twitter](https://twitter.com/HerrBertling/)!
+I built this website about two years ago. By now, it has been a [Vuepress](https://vuepress.vuejs.org/) page, a [Sapper](https://sapper.svelte.dev/) page and now it is using [NuxtJS](https://nuxtjs.org/) with the [nuxt/content](https://content.nuxtjs.org/) plugin. And quite a lot of CSS Grid magic to arrange the content. Inspect it. Check out the [repo](http://github.com/herrBertling/herrsiering.de/). Tell me what I could do better [on Twitter](https://twitter.com/HerrBertling/)!
 
 Besides that, I'm spending most of my free time to play with my daughter rather than with technology. Thankfully, I get to explore a lot of technology at work 😊
 
 Things I think about a lot currently:
 
-- How to build themeable components.
+- How to build reusable layout components.
 - How to best make components available for different projects. Vue + CSS Custom Properties + Web Components sounds like I [should explore that](https://twitter.com/HerrBertling/status/1164191715563114496).
 - How to use what I know and apply it to climate change.
-- How to get my daughter to be still for diaper changes. Which frankly is the most complicated thing I think about right now 😅
 
 ## Work
 
-I work as a UI Engineer at sum.cumo GmbH. Yes. No Senior. We don't do career levels. I get my first gray hairs, though. And do awful dad jokes.
+I work as a UI Architect at sum.cumo GmbH. I take care of setting up and kickstarting projects with a proper foundation. My task is to get the project up and running while making sure the code stays modular, reusable and robust. This always involves the following:
 
-So just consider me being senior anyways.
-
-**Buzzwords**: Vue, Components, Frontend Architecture, Storybook
+**Buzzwords**: Vue, (Layout) Components, Frontend/CSS Architecture, Storybook
 
 # What I did earlier
 

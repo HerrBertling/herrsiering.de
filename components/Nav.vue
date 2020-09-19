@@ -2,9 +2,7 @@
   <nav>
     <ul>
       <li>
-        <nuxt-link to="/">
-          Home
-        </nuxt-link>
+        <nuxt-link to="/">Home</nuxt-link>
       </li>
       <li v-for="page in navigation" :key="page.slug">
         <nuxt-link :to="page.slug">
