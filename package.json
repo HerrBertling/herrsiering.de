@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/pwa": "^3.2.2",
-    "nuxt": "^2.14.7"
+    "nuxt": "^2.14.10"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
