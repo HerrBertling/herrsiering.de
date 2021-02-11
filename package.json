@@ -14,7 +14,7 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@nuxt/content": "^1.12.0",
+    "@nuxt/content": "^1.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "nuxt": "^2.14.12"
   },
