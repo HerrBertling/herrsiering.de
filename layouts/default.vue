@@ -20,7 +20,7 @@
         py-2
         px-4
         lg:px-16
-        lg:py-16
+        lg:py-12
         lg:rounded-3xl
       "
     >

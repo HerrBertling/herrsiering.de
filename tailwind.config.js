@@ -42,6 +42,26 @@ module.exports = {
             },
           },
         },
+        lg: {
+          css: {
+            h1: {
+              lineHeight: 1.15,
+            },
+            h2: {
+              lineHeight: 1.15,
+            },
+          },
+        },
+        xl: {
+          css: {
+            h1: {
+              lineHeight: 1.15,
+            },
+            h2: {
+              lineHeight: 1.15,
+            },
+          },
+        },
       }),
     },
   },

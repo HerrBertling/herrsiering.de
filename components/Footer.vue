@@ -1,7 +1,7 @@
 <template>
-  <nav class="text-white text-center mt-8">
-    <small>Links to Amazon are affiliate links.</small>
-    <ul class="flex flex-row justify-center w-full mt-4 text-sm">
+  <nav class="text-white text-right py-6">
+    <small class="px-4">Links to Amazon are affiliate links.</small>
+    <ul class="flex flex-row justify-end w-full mt-4 text-sm">
       <li>
         <nuxt-link
           to="/imprint"

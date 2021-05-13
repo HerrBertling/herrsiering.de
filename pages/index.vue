@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-8">
-    <picture class="lg:col-span-3 lg:col-start-6 mt-16 max-h-96">
+    <picture class="lg:col-span-3 lg:col-start-6 mt-16 max-h-72">
       <source
         srcset="
           ~/assets/images/markus-siering_2x.jpg 2x,
@@ -16,7 +16,7 @@
         type="image/webp"
       />
       <img
-        class="h-full object-contain mx-auto"
+        class="h-full object-contain mx-auto max-h-60"
         src="~/assets/images/markus-siering.jpg"
         alt="An image of me, Markus Siering"
       />

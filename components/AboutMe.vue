@@ -1,6 +1,6 @@
 <template>
-  <aside class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-8">
-    <div class="prose-sm lg:col-span-3">
+  <aside class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6">
+    <div class="prose-sm md:col-span-3">
       <hr />
       <h3>Hi! I'm Markus.</h3>
       <h4>I help companies design and deliver digital products faster.</h4>
@@ -15,7 +15,7 @@
         Yoga.
       </p>
     </div>
-    <picture class="lg:col-span-1 mt-4 max-h-48">
+    <picture class="md:col-span-1 mt-4 max-h-48">
       <source
         srcset="
           ~/assets/images/markus-siering_2x.jpg 2x,
@@ -31,7 +31,7 @@
         type="image/webp"
       />
       <img
-        class="h-full object-contain mx-auto"
+        class="h-full object-contain mx-auto max-h-36"
         src="~/assets/images/markus-siering.jpg"
         alt="An image of me, Markus Siering"
       />
