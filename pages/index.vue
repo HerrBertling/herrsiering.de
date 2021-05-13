@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-8">
-    <picture class="lg:col-span-3 lg:col-start-6 mt-16 max-h-72">
+  <div class="grid grid-cols-1 md:grid-cols-8">
+    <picture class="md:col-span-3 md:col-start-6 mt-16 max-h-72 md:max-h-96">
       <source
         srcset="
           ~/assets/images/markus-siering_2x.jpg 2x,
@@ -16,12 +16,12 @@
         type="image/webp"
       />
       <img
-        class="h-full object-contain mx-auto max-h-60"
+        class="h-full object-contain mx-auto max-h-60 lg:max-h-80"
         src="~/assets/images/markus-siering.jpg"
         alt="An image of me, Markus Siering"
       />
     </picture>
-    <div class="prose lg:prose-lg lg:col-span-5 lg:col-start-1 lg:row-start-1">
+    <div class="prose lg:prose-lg md:col-span-5 md:col-start-1 md:row-start-1">
       <nuxt-content :document="page" />
     </div>
   </div>

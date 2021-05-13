@@ -1,43 +1,39 @@
+const colors = require('windicss/colors')
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     fontFamily: {
       sans: ['Inter', 'system-ui'],
     },
     extend: {
-      typography: (theme) => ({
+      typography: {
         DEFAULT: {
           css: {
             h1: {
               color: 'transparent',
               backgroundClip: 'text',
-              backgroundImage: `linear-gradient(to bottom right, ${theme(
-                'colors.yellow.500'
-              )}, ${theme('colors.red.400')}, ${theme('colors.pink.600')})`,
-              lineHeight: 1.15,
+              backgroundImage:
+                'linear-gradient(to bottom right, #eab308, #fb7185, #db2777)',
             },
             h2: {
               color: 'transparent',
               backgroundClip: 'text',
-              backgroundImage: `linear-gradient(to bottom right, ${theme(
-                'colors.yellow.500'
-              )}, ${theme('colors.red.400')}, ${theme('colors.pink.600')})`,
-              lineHeight: 1.15,
+              backgroundImage:
+                'linear-gradient(to bottom right, #eab308, #fb7185, #db2777)',
             },
             h3: {
-              color: theme('colors.gray.600'),
+              color: '#52525b',
             },
             h4: {
-              color: theme('colors.gray.600'),
+              color: '#52525b',
             },
             h5: {
-              color: theme('colors.gray.600'),
+              color: '#52525b',
             },
             a: {
-              color: theme('colors.blue.500'),
+              color: '#3b82f6',
               '&:hover': {
-                color: theme('colors.blue.600'),
+                color: '#2563eb',
               },
             },
           },
@@ -62,11 +58,12 @@ module.exports = {
             },
           },
         },
-      }),
+      },
     },
   },
-  variants: {
-    extend: {},
+  extract: {
+    include: ['./**/*.html', './**/*.vue'],
   },
-  plugins: [require('@tailwindcss/typography')],
+  safelist: ['prose', 'prose-sm', 'm-auto'],
+  plugins: [require('windicss/plugin/typography')],
 }

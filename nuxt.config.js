@@ -19,7 +19,7 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/tailwindcss',
+    'nuxt-windicss',
   ],
   vite: { ssr: true },
   modules: ['@nuxtjs/pwa', '@nuxt/content'],
