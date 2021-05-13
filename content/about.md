@@ -22,6 +22,8 @@ I work as a UI Architect at sum.cumo GmbH. I take care of setting up and kicksta
 
 **Buzzwords**: Vue, (Layout) Components, Frontend/CSS Architecture, Storybook
 
+---
+
 # What I did earlier
 
 ## Senior UI Engineer at XING SE

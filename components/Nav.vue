@@ -1,11 +1,19 @@
 <template>
   <nav>
-    <ul>
-      <li>
-        <nuxt-link to="/">Home</nuxt-link>
-      </li>
+    <ul class="flex flex-row w-full lg:justify-end justify-between">
       <li v-for="page in navigation" :key="page.slug">
-        <nuxt-link :to="page.slug">
+        <nuxt-link
+          :to="page.slug"
+          class="
+            px-2
+            lg:px-4
+            py-2
+            hover:bg-clip-text hover:bg-gradient-to-br
+            hover:from-yellow-500
+            hover:via-red-400
+            hover:to-pink-600
+          "
+        >
           {{ page.title }}
         </nuxt-link>
       </li>
@@ -15,10 +23,14 @@
 
 <script>
 export default {
-  name: 'Nav',
+  name: 'SiteNav',
   data() {
     return {
       navigation: [
+        {
+          title: 'Home',
+          slug: '/',
+        },
         {
           title: 'About',
           slug: '/about',
@@ -36,68 +48,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-nav {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
-ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-a:link,
-a:visited {
-  color: var(--textColorLightest);
-  display: inline-block;
-  font-size: var(--fontSizeXS);
-  padding: var(--spacingXS);
-  position: relative;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus,
-a:active,
-a[aria-current] {
-  color: var(--accentColor);
-}
-
-a::before {
-  content: '';
-  width: 80%;
-  position: absolute;
-  bottom: 2px;
-  height: 4px;
-  background-color: var(--accentColor);
-  transform: scaleX(0);
-  transform-origin: top left;
-  transition: transform var(--animationDuration) ease-in-out;
-}
-[aria-current]::before {
-  transform: scaleX(1);
-}
-
-@media (min-width: 840px) {
-  nav {
-    align-items: center;
-  }
-  nav ul {
-    justify-content: flex-start;
-  }
-  nav ul li {
-    margin-right: var(--spacingS);
-  }
-  a:link,
-  a:visited {
-    font-size: var(--fontSizeS);
-  }
-}
-</style>
