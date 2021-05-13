@@ -1,42 +1,29 @@
 <template>
-  <nav>
-    <small>Links to Amazon are affiliate links.</small>
-    <ul>
+  <nav class="text-white text-right py-6">
+    <small class="px-4">Links to Amazon are affiliate links.</small>
+    <ul class="flex flex-row justify-end w-full mt-4 text-sm">
       <li>
-        <nuxt-link to="/imprint">Imprint</nuxt-link>
+        <nuxt-link
+          to="/imprint"
+          class="px-4 py-2 text-white opacity-90 hover:opacity-100"
+        >
+          Imprint
+        </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/privacy">Privacy</nuxt-link>
+        <nuxt-link
+          to="/privacy"
+          class="px-4 py-2 text-white opacity-90 hover:opacity-100"
+        >
+          Privacy
+        </nuxt-link>
       </li>
     </ul>
   </nav>
 </template>
 
-<style scoped>
-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
+<script>
+export default {
+  name: 'SiteFooter',
 }
-ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-a:link,
-a:visited {
-  font-size: var(--fontSizeXS);
-  margin-left: var(--spacingS);
-}
-small {
-  font-size: var(--fontSizeXS);
-}
-
-small::before {
-  content: '* ';
-  display: inline;
-  color: var(--accentColor);
-}
-</style>
+</script>

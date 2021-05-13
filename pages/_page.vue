@@ -1,5 +1,8 @@
 <template>
-  <nuxt-content :document="page" />
+  <section class="prose lg:prose-xl pt-12">
+    <nuxt-content :document="page" />
+    <about-me />
+  </section>
 </template>
 
 <script>
