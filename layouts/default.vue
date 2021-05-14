@@ -9,11 +9,15 @@
       pt-2
       lg:px-4
       lg:py-16
+      dark:from-amber-500
+      dark:via-red-600
+      dark:to-pink-700
     "
   >
     <div
       class="
         bg-white
+        dark:bg-gray-800
         max-w-6xl
         lg:mx-auto
         lg:shadow-xl
