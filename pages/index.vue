@@ -3,25 +3,35 @@
     <picture class="md:col-span-3 md:col-start-6 mt-16 max-h-72 md:max-h-96">
       <source
         srcset="
-          ~/assets/images/markus-siering_2x.jpg 2x,
-          ~/assets/images/markus-siering.jpg    1x
+          ~/assets/images/markus-siering_2x.png 2x,
+          ~/assets/images/markus-siering.png
         "
-        type="image/jpeg"
+        type="image/png"
       />
       <source
         srcset="
           ~/assets/images/markus-siering_2x.webp 2x,
-          ~/assets/images/markus-siering.webp    1x
+          ~/assets/images/markus-siering.webp
         "
         type="image/webp"
       />
       <img
+        loading="lazy"
         class="h-full object-contain mx-auto max-h-60 lg:max-h-80"
-        src="~/assets/images/markus-siering.jpg"
+        height="320"
+        src="~/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"
       />
     </picture>
-    <div class="prose lg:prose-lg md:col-span-5 md:col-start-1 md:row-start-1">
+    <div
+      class="
+        prose
+        lg:prose-xl
+        dark:prose-dark
+        md:col-span-5 md:col-start-1
+        md:row-start-1
+      "
+    >
       <nuxt-content :document="page" />
     </div>
   </div>

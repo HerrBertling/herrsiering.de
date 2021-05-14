@@ -4,8 +4,15 @@
       <li v-for="page in navigation" :key="page.slug">
         <nuxt-link
           :to="page.slug"
-          class="px-2 mx-2 py-2 border-transparent border-b-2"
-          exact-active-class="text-red-400 border-pink-600"
+          class="
+            text-gray-600
+            dark:text-gray-200
+            px-2
+            mx-2
+            py-2
+            border-transparent border-b-2
+          "
+          exact-active-class="text-red-400 dark:text-red-400 border-pink-600"
         >
           {{ page.title }}
         </nuxt-link>

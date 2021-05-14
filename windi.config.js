@@ -1,4 +1,3 @@
-const colors = require('windicss/colors')
 module.exports = {
   darkMode: 'media',
   theme: {
@@ -58,12 +57,37 @@ module.exports = {
             },
           },
         },
+        dark: {
+          css: {
+            color: '#cbd5e1',
+            blockquote: {
+              color: '#94a3b8',
+              borderLeftColor: '#94a3b8',
+            },
+            h3: {
+              color: '#cbd5e1',
+            },
+            h4: {
+              color: '#cbd5e1',
+            },
+            h5: {
+              color: '#cbd5e1',
+            },
+            strong: {
+              color: '#cbd5e1',
+            },
+          },
+        },
       },
     },
   },
   extract: {
     include: ['./**/*.html', './**/*.vue'],
   },
-  safelist: ['prose', 'prose-sm', 'm-auto'],
-  plugins: [require('windicss/plugin/typography')],
+  safelist: ['prose', 'prose-sm', 'prose-xl', 'm-auto'],
+  plugins: [
+    require('windicss/plugin/typography')({
+      modifiers: ['sm', 'lg', 'xl', 'dark'],
+    }),
+  ],
 }

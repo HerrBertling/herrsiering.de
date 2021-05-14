@@ -2,7 +2,7 @@
   <aside class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6">
     <div class="prose-sm md:col-span-3">
       <hr />
-      <h3>Hi! I'm Markus.</h3>
+      <h3>Hi! I'm Markus 👋</h3>
       <h4>I help companies design and deliver digital products faster.</h4>
       <p>
         Doing so, I like well written CSS. Working with designers and frontend
@@ -18,21 +18,23 @@
     <picture class="md:col-span-1 mt-4 max-h-48">
       <source
         srcset="
-          ~/assets/images/markus-siering_2x.jpg 2x,
-          ~/assets/images/markus-siering.jpg    1x
+          ~/assets/images/markus-siering_2x.png 2x,
+          ~/assets/images/markus-siering.png
         "
-        type="image/jpeg"
+        type="image/png"
       />
       <source
         srcset="
           ~/assets/images/markus-siering_2x.webp 2x,
-          ~/assets/images/markus-siering.webp    1x
+          ~/assets/images/markus-siering.webp
         "
         type="image/webp"
       />
       <img
+        loading="lazy"
         class="h-full object-contain mx-auto max-h-36"
-        src="~/assets/images/markus-siering.jpg"
+        height="144"
+        src="~/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"
       />
     </picture>
