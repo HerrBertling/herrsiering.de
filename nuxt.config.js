@@ -9,7 +9,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: 'Personal website of Markus Siering',
       },
     ],
   },

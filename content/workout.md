@@ -18,6 +18,8 @@ All of these let me clock in my workout without a lot of planning. I just decide
 
 I also have a pullup bar at home. That’s it. Is it perfect? No. Is it something I could do every day for the rest of my life without spending a lot of thought on it? Sure!
 
+Since people asked me about the kettlebell part quite often: [Kettlebell Beginner Tips](/kettlebell-beginner-tips)
+
 ## Take cold showers.
 
 Quite some time ago, our water heater broke down. I had no other option than taking cold showers back then. On the day it got fixed, the cold shower suddenly felt good. So I kept doing it.
