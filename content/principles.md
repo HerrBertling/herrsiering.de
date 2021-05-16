@@ -70,11 +70,3 @@ Check out [my workout principles](/workout).
 ### Keep your diet simple
 
 Check out [my diet principles](/diet).
-
-### Keep your clothing simple
-
-I’m (very) slowly getting there. I love the idea of a [minimalist wardrobe](https://levels.io/minimalist-wardrobe/) Pieter Levels lined out. My wardrobe is currently far from that. Still, I get better at buying “more of the same”. And with that only things that I really will wear.
-
-There’s quite some work to do with sorting out older stuff I never wear at all. That’s a process I’m still exploring, though.
-
-Also, the idea of wearing basically the same every day to not have to make a decision there is also very appealing.
