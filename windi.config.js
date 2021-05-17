@@ -64,6 +64,18 @@ module.exports = {
               color: '#94a3b8',
               borderLeftColor: '#94a3b8',
             },
+            h1: {
+              color: 'transparent',
+              backgroundClip: 'text',
+              backgroundImage:
+                'linear-gradient(to bottom right, #5b21b6, #4338ca, #1d4ed8)',
+            },
+            h2: {
+              color: 'transparent',
+              backgroundClip: 'text',
+              backgroundImage:
+                'linear-gradient(to bottom right, #5b21b6, #4338ca, #1d4ed8)',
+            },
             h3: {
               color: '#cbd5e1',
             },

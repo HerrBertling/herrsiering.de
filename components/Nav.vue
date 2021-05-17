@@ -12,7 +12,7 @@
             py-2
             border-transparent border-b-2
           "
-          exact-active-class="text-red-400 dark:text-red-400 border-pink-600"
+          exact-active-class="text-red-400 !dark:text-violet-700 border-pink-600 dark:border-purple-800"
         >
           {{ page.title }}
         </nuxt-link>

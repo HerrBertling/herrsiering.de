@@ -17,7 +17,14 @@
       />
       <img
         loading="lazy"
-        class="h-full object-contain mx-auto max-h-60 lg:max-h-80"
+        class="
+          h-full
+          object-contain
+          mx-auto
+          max-h-60
+          lg:max-h-80
+          dark:hue-rotate-90
+        "
         height="320"
         src="~/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"

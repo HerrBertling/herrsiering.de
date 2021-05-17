@@ -15,7 +15,7 @@
         Yoga.
       </p>
     </div>
-    <picture class="md:col-span-1 mt-4 max-h-48">
+    <picture class="md:col-span-1 mt-4 max-h-48 dark:hue-rotate-90">
       <source
         srcset="
           ~/assets/images/markus-siering_2x.png 2x,

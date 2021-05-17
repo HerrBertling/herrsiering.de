@@ -9,9 +9,9 @@
       pt-2
       lg:px-4
       lg:py-16
-      dark:from-amber-500
-      dark:via-red-600
-      dark:to-pink-700
+      dark:from-violet-900
+      dark:via-indigo-900
+      dark:to-blue-gray-900
     "
   >
     <div
