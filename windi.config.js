@@ -88,6 +88,12 @@ module.exports = {
             strong: {
               color: '#cbd5e1',
             },
+            a: {
+              color: '#cbd5e1',
+              '&:hover': {
+                color: '#cbd5e1',
+              },
+            },
           },
         },
       },
