@@ -1,3 +1,8 @@
+---
+  title: "Books I really like"
+  description: "A list of my favorite books"
+---
+
 # Books I really like
 
 ## The Road Less Traveled

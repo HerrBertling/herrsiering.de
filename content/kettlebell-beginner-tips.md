@@ -1,6 +1,11 @@
+---
+  title: "Kettlebell tips for beginners"
+  description: "Learn how to get started with kettlebell training, including book tips, simple workouts and which kettlebells to use."
+---
+
 # Kettlebell tips for beginners
 
-Since quite some people asked be about how to start working out with kettlebells, I figured I shouldn't bury that advice in Twitter direct messages or WhatsApp messages. Here we go.
+Since quite some people asked me about how to start working out with kettlebells, I figured I shouldn't bury that advice in Twitter direct messages or WhatsApp messages. Here we go.
 
 ## Preparation
 

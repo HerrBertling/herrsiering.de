@@ -1,3 +1,8 @@
+---
+  title: "My principles"
+  description: "Principles I wove into my daily life."
+---
+
 # Principles
 
 I love the book [Principles](https://amzn.to/2CSDh5M) by Ray Dalio. This is his idea behind them:

@@ -1,3 +1,8 @@
+---
+  title: "Privacy"
+  description: "A privacy statement."
+---
+
 ## Privacy
 
 I'm not tracking anything on this website. Isn't that nice?

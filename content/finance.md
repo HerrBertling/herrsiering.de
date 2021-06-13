@@ -1,3 +1,8 @@
+---
+  title: "Finance principles"
+  description: "How I structure my financial investments"
+---
+
 # Finance Principles
 
 Here are some thoughts on how you might structure your finances. Your mileage and possiblities may vary. The basic ideas here are what you find as advice in several finance books. You’re welcome :smile:
