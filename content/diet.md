@@ -1,3 +1,8 @@
+---
+  title: "Diet principles"
+  description: "Some thoughts about my diet"
+---
+
 # Diet Principles
 
 Concerning food, I’m as much an expert as you are. Recently, I read a summary of [“Food Rules: An Eater’s Manual”](https://amzn.to/320yIhj) by Michael Pollan. The one memorable sentence from it is:

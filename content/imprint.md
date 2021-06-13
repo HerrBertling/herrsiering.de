@@ -1,3 +1,8 @@
+---
+  title: "Legal"
+  description: "Legal stuff mandatory in Germany"
+---
+
 ## Imprint
 
 Obviously, this is in german because we like to keep things ordentlich!

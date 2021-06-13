@@ -26,6 +26,7 @@
           dark:hue-rotate-90
         "
         height="320"
+        width="245"
         src="~/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"
       />

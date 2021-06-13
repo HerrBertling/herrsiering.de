@@ -1,3 +1,8 @@
+---
+  title: "Workout principles"
+  description: "My thoughts about workouts, movement, staying fit."
+---
+
 # Workout Principles
 
 ## Make your workouts fit your life

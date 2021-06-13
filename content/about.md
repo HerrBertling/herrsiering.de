@@ -1,3 +1,8 @@
+---
+  title: "About me"
+  description: "What I am doing, what I like, what I did"
+---
+
 # What I am currently doing
 
 ## Family

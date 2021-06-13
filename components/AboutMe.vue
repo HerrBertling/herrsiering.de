@@ -34,6 +34,7 @@
         loading="lazy"
         class="h-full object-contain mx-auto max-h-36"
         height="144"
+        width="110"
         src="~/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"
       />

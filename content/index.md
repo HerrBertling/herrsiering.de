@@ -1,3 +1,8 @@
+---
+  title: "Hi, I'm Markus"
+  description: "I help companies design and deliver digital products faster"
+---
+
 ### Hi! I'm Markus 👋
 
 # I help companies design and deliver digital products faster.
