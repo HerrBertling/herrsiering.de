@@ -13,6 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
   },
+  css: ['~assets/global.css'],
   plugins: [],
   components: true,
   buildModules: [
