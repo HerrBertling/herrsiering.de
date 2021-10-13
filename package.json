@@ -29,7 +29,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "nuxt-vite": "^0.3.5",
-    "nuxt-windicss": "^1.2.4",
+    "nuxt-windicss": "^1.2.5",
     "prettier": "^2.4.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.2",
