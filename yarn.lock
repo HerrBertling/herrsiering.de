@@ -8012,10 +8012,10 @@ nuxt-vite@^0.3.5:
     vite "^2.5.7"
     vite-plugin-vue2 "^1.8.2"
 
-nuxt-windicss@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.0.1.tgz#23b4da419d34379a6bf5a438e02207fa37d8ccab"
-  integrity sha512-uVlC+gMXXHn+thMMrH0yK2iLh7/8S4wI6S//YNQzw/wlzAzXGG9sPW6IFRWeH0JA4J1bxLSdq/7z46ipVca4sA==
+nuxt-windicss@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.0.3.tgz#6218066070f1162a3c0175e710aca0006e6380d2"
+  integrity sha512-xwh1/PPRvuG75gC3SJn1QG+aQaqW978FbYOBucVC1dMzdU0TQvShPdQZY0pCCMbo8LHYZDtHMxlt0T85o1koaw==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
     defu "^5.0.0"
