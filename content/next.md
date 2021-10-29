@@ -12,11 +12,11 @@ I've established open source libraries instead of using costly in-house wheel re
 
 ### Fun & side projects
 
-I've built[a small machine learning app](https://github.com/HerrBertling/wireframe-to-code) as a hack week project.
+I've built [a small machine learning app](https://github.com/HerrBertling/wireframe-to-code) as a hack week project.
 
-I bootstrapped a[serverless email newsletter side project with the AWS CDK + Python](https://github.com/HerrBertling/swing-trading-newsletter-aws-cdk). I've automated transcriptions for my wife's podcast through a quick AWS Step Function + AWS Transcribe. I've provided a new website for[virtualsupporttalks.de](https://www.virtualsupporttalks.de/en/), a German initiative for mental health during the pandemic.
+I bootstrapped a [serverless email newsletter side project with the AWS CDK + Python](https://github.com/HerrBertling/swing-trading-newsletter-aws-cdk). I've automated transcriptions for my wife's podcast through a quick AWS Step Function + AWS Transcribe. I've provided a new website for [virtualsupporttalks.de](https://www.virtualsupporttalks.de/en/), a German initiative for mental health during the pandemic.
 
-I've dabbled with web3 stuff. Results: A[simple Vue/Vite starter template](https://github.com/HerrBertling/simple-vite-eth) + an Ethereum[ blockies implementation in Vue3](https://github.com/HerrBertling/vue-blockies)
+I've dabbled with web3 stuff. Results: A [simple Vue/Vite starter template](https://github.com/HerrBertling/simple-vite-eth) + an Ethereum [blockies implementation in Vue3](https://github.com/HerrBertling/vue-blockies)
 
 I try to fix open source projects when I hit a wall or find a bug.
 
