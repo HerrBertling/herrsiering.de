@@ -22,7 +22,7 @@ I try to fix open source projects when I hit a wall or find a bug.
 
 I've successfully avoided managing my own server, database or backend by using services like Netlify, Vercel, Contentful/GraphCMS, AWS Amplify and the AWS CDK.
 
-Exploring new technologies is a lot of fun for me. I even read documentation to solve issues :P And I somehow manage to get up and running with most of these things quickly. I've started looking into Rust. That's a frightening thing, coming from CSS. I'm drawn towards learning it anyway, and can't yet explain why that is.
+Exploring new technologies is a lot of fun for me. I even read documentation to solve issues 😅 And I somehow manage to get up and running with most of these things quickly. I've started looking into Rust. That's a frightening thing, coming from CSS. I'm drawn towards learning it anyway, and can't yet explain why that is.
 
 ### Managing
 
