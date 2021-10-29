@@ -17,13 +17,27 @@ Besides that, I'm spending most of my free time to play with my daughter rather 
 
 ## Work
 
-I work as a UI Architect at sum.cumo GmbH. I take care of setting up and kickstarting projects with a proper foundation. My task is to get the project up and running while making sure the code stays modular, reusable and robust. This always involves the following:
+## Teamlead Development Division at sum.cumo Sapiens GmbH
 
-**Buzzwords**: Vue, (Layout) Components, Frontend/CSS Architecture, Storybook
+### since 08/2021, ending 01/2022
+
+Due to some organizational changes, I was asked to fill an open teamlead position at sum.cumo Sapiens GmbH. In a rather difficult environment, I managed a team of 15 people through regular 1on1s and initiatives around the organizational change that was happening. I've led the efforts to implement explicit career levels for all development division members which were introduced and implemented by the end of 2021.
+
+Based on various reasons, I made the decision to open myself up to other opportunities. 
+
+Interested? [Check out what I can do for you and your company.](/next)
 
 ---
 
 # What I did earlier
+
+## UI Architect at sum.cumo Sapiens GmbH
+
+### 08/2018 - 07/2021
+
+I work as a UI Architect at sum.cumo Sapiens GmbH. I take care of setting up and kickstarting projects with a proper foundation. My task is to get the project up and running while making sure the code stays modular, reusable and robust. This always involves the following:
+
+**Buzzwords**: Vue, (Layout) Components, Frontend/CSS Architecture, Storybook
 
 ## Senior UI Engineer at XING SE
 
