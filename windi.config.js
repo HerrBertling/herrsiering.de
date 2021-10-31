@@ -2,7 +2,7 @@ module.exports = {
   darkMode: 'media',
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui'],
+      sans: ['Rubik', 'system-ui'],
     },
     extend: {
       typography: {
@@ -33,6 +33,17 @@ module.exports = {
               color: '#3b82f6',
               '&:hover': {
                 color: '#2563eb',
+              },
+            },
+            '.button': {
+              padding: '0.75rem 1rem',
+              borderRadius: '0.25rem',
+              textDecoration: 'none',
+              backgroundColor: '#3b82f6',
+              color: 'white',
+              '&:hover': {
+                backgroundColor: '#2563eb',
+                color: 'white',
               },
             },
           },
