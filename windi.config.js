@@ -2,7 +2,7 @@ module.exports = {
   darkMode: 'media',
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui'],
+      sans: ['Rubik', 'system-ui'],
     },
     extend: {
       typography: {
