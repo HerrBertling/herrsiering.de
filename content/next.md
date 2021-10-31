@@ -10,6 +10,8 @@ I've worked with React and VueJS, played with Svelte and web components. I've bu
 
 I've established open source libraries instead of using costly in-house wheel reinventions. Ranging from brand new tech stacks to years old code bases, I’ve worked on all kinds of projects. Doing that, I've learned when to use frameworks and libraries and when to build your own solution. I created complicated frontends for insurances and lotteries in close communication with UX and design. I have written more TypeScript than I ever expected. More GraphQL, too.
 
+You can throw any agile-ish working style at me because I’ve most certainly used and worked in it by now. If you’re uncertain or unsatisfied with your current way of working, I can moderate a retrospective or help to shape a better process. Another great tool I enjoy using are [Wardley Maps](https://medium.com/wardleymaps)
+
 ### Fun & side projects
 
 I've built [a small machine learning app](https://github.com/HerrBertling/wireframe-to-code) as a hack week project.
@@ -23,6 +25,8 @@ I try to fix open source projects when I hit a wall or find a bug.
 I've successfully avoided managing my own server, database or backend by using services like Netlify, Vercel, Contentful/GraphCMS, AWS Amplify and the AWS CDK.
 
 Exploring new technologies is a lot of fun for me. I even read documentation to solve issues 😅 And I somehow manage to get up and running with most of these things quickly. I've started looking into Rust. That's a frightening thing, coming from CSS. I'm drawn towards learning it anyway, and can't yet explain why that is.
+
+If I attend a (un-)conference or meetup, I try to come up with a talk I could hold. I’ve shared knowledge at various barcamps, meetups and at the JSUnconf Hamburg. Of course, I did the same at every company I’ve worked at so far.
 
 ### Managing
 
