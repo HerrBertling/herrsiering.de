@@ -67,4 +67,4 @@ I'm not afraid of jumping into other programming languages besides JavaScript. I
 
 Still reading? Great! Feel free to get in touch with me:
 
-[Get in touch!](mailto&#x3A;weshouldtalk@herrsiering.de?subject=Hi%20Markus%20%F0%9F%91%8B%20I%20think%20we%20should%20talk)
+<a class="button" href="mailto&#x3A;weshouldtalk@herrsiering.de?subject=Hi%20Markus%20%F0%9F%91%8B%20I%20think%20we%20should%20talk">Get in touch! 📨</a>
