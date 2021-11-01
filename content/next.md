@@ -15,7 +15,7 @@ I've worked with React and VueJS, played with Svelte and web components. I've bu
 
 I've established open source libraries instead of using costly in-house wheel reinventions. Ranging from brand new tech stacks to years old code bases, I’ve worked on all kinds of projects. Doing that, I've learned when to use frameworks and libraries and when to build your own solution. I created complicated frontends for insurances and lotteries in close communication with UX and design. I have written more TypeScript than I ever expected. More GraphQL, too.
 
-You can throw any agile-ish working style at me because I’ve most certainly used and worked in it by now. If you’re uncertain or unsatisfied with your current way of working, I can moderate a retrospective or help to shape a better process. Another great tool I enjoy using are [Wardley Maps](https://medium.com/wardleymaps)
+You can throw any agile-ish working style at me because I’ve most certainly used and worked in it by now. If you’re uncertain or unsatisfied with your current way of working, I can moderate a retrospective or help shape a better process. Another great tool I enjoy using are [Wardley Maps](https://medium.com/wardleymaps).
 
 ### Fun & side projects
 
@@ -45,11 +45,11 @@ I've been working four days a week since mid 2018. I'd like to keep spending tim
 
 ### Salary
 
-I want to set the right expectations regarding salary for both of us, so here we go. In my last job, I earned slightly above senior level range. I plan to keep doing that. Happy to find out what "slightly above senior level" means to you 😅
+I want to set the right expectations regarding salary for both of us, so here we go. In my last job, I earned slightly above senior level range. I plan to keep doing that. Happy to find out what "slightly above senior level" means to you 😊
 
 ### Remote
 
-I'm not bound to my current city (Hamburg, Germany). Throughout the pandemic, I've got used to working from home/remotely. I'd love to meet colleagues from time to time in whichever way, so I'm open to doing off-site events or team huddles from time to time. Just don't keep me away from my family for too long, okay?
+I will stay here, but I'm not bound to employers located in my current city (Hamburg, Germany). Throughout the pandemic, I've got used to working remotely. I'd love to meet colleagues from time to time in whichever way, so I'm open to doing off-site events, team huddles or whatever you fancy. Just don't keep me away from my family for too long, okay?
 
 ### Coding
 
