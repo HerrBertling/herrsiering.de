@@ -79,13 +79,13 @@ module.exports = {
               color: 'transparent',
               backgroundClip: 'text',
               backgroundImage:
-                'linear-gradient(to bottom right, #5b21b6, #4338ca, #1d4ed8)',
+                'linear-gradient(to bottom right, #7C3AED, #6366F1, #3B82F6)',
             },
             h2: {
               color: 'transparent',
               backgroundClip: 'text',
               backgroundImage:
-                'linear-gradient(to bottom right, #5b21b6, #4338ca, #1d4ed8)',
+                'linear-gradient(to bottom right, #7C3AED, #6366F1, #3B82F6)',
             },
             h3: {
               color: '#cbd5e1',
