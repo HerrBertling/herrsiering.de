@@ -6,33 +6,28 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "dev": "nuxt dev",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "iles --open",
+    "build": "iles build",
+    "preview": "vite preview --open",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.0",
-    "@nuxtjs/pwa": "^3.3.5",
     "@tailwindcss/typography": "^0.4.1",
-    "nuxt": "^2.15.8"
+    "iles": "^0.6.4"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^7.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/stylelint-module": "^4.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "nuxt-vite": "^0.3.5",
-    "nuxt-windicss": "^2.0.1",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^22.0.0",
+    "vite-plugin-windicss": "^1.5.1",
+    "windicss": "^3.2.1"
   }
 }

@@ -18,15 +18,15 @@
     <picture class="md:col-span-1 mt-4 max-h-48 dark:hue-rotate-90">
       <source
         srcset="
-          ~/assets/images/markus-siering_2x.png 2x,
-          ~/assets/images/markus-siering.png
+          @/assets/images/markus-siering_2x.png 2x,
+          @/assets/images/markus-siering.png
         "
         type="image/png"
       />
       <source
         srcset="
-          ~/assets/images/markus-siering_2x.webp 2x,
-          ~/assets/images/markus-siering.webp
+          @/assets/images/markus-siering_2x.webp 2x,
+          @/assets/images/markus-siering.webp
         "
         type="image/webp"
       />
@@ -35,7 +35,7 @@
         class="h-full object-contain mx-auto max-h-36"
         height="144"
         width="110"
-        src="~/assets/images/markus-siering.png"
+        src="@/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"
       />
     </picture>

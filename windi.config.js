@@ -11,12 +11,14 @@ module.exports = {
             h1: {
               color: 'transparent',
               backgroundClip: 'text',
+              "-webkit-background-clip": 'text',
               backgroundImage:
                 'linear-gradient(to bottom right, #eab308, #fb7185, #db2777)',
             },
             h2: {
               color: 'transparent',
               backgroundClip: 'text',
+              "-webkit-background-clip": 'text',
               backgroundImage:
                 'linear-gradient(to bottom right, #eab308, #fb7185, #db2777)',
             },
@@ -78,12 +80,14 @@ module.exports = {
             h1: {
               color: 'transparent',
               backgroundClip: 'text',
+              "-webkit-background-clip": 'text',
               backgroundImage:
                 'linear-gradient(to bottom right, #7C3AED, #6366F1, #3B82F6)',
             },
             h2: {
               color: 'transparent',
               backgroundClip: 'text',
+              "-webkit-background-clip": 'text',
               backgroundImage:
                 'linear-gradient(to bottom right, #7C3AED, #6366F1, #3B82F6)',
             },
