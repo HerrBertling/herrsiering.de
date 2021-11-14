@@ -3,7 +3,7 @@
     <small class="px-4">Links to Amazon are affiliate links.</small>
     <ul class="flex flex-row justify-end w-full mt-4 text-sm">
       <li>
-        <nuxt-link
+        <router-link
           to="/imprint"
           class="
             px-4
@@ -15,10 +15,10 @@
           "
         >
           Imprint
-        </nuxt-link>
+        </router-link>
       </li>
       <li>
-        <nuxt-link
+        <router-link
           to="/privacy"
           class="
             px-4
@@ -30,7 +30,7 @@
           "
         >
           Privacy
-        </nuxt-link>
+        </router-link>
       </li>
     </ul>
   </nav>
