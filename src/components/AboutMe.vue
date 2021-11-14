@@ -15,19 +15,13 @@
         Yoga.
       </p>
     </div>
-    <picture class="md:col-span-1 mt-4 max-h-48 dark:hue-rotate-90">
+    <picture class="max-h-48 dark:hue-rotate-90 md:(col-span-1 self-end) ">
       <source
-        srcset="
-          ~/assets/images/markus-siering_2x.png 2x,
-          ~/assets/images/markus-siering.png
-        "
+        :srcset="pngSrc"
         type="image/png"
       />
       <source
-        srcset="
-          ~/assets/images/markus-siering_2x.webp 2x,
-          ~/assets/images/markus-siering.webp
-        "
+        :srcset="webpSrc"
         type="image/webp"
       />
       <img
@@ -35,7 +29,7 @@
         class="h-full object-contain mx-auto max-h-36"
         height="144"
         width="110"
-        src="~/assets/images/markus-siering.png"
+        src="@/assets/images/markus-siering.png"
         alt="An image of me, Markus Siering"
       />
     </picture>
@@ -43,7 +37,23 @@
 </template>
 
 <script>
+import { computed } from "vue"
+import png1x from '@/assets/images/markus-siering.png'
+import png2x from '@/assets/images/markus-siering_2x.png'
+import webp1x from '@/assets/images/markus-siering.webp'
+import webp2x from '@/assets/images/markus-siering_2x.webp'
+
 export default {
   name: 'AboutMe',
+
+  setup() {
+    const webpSrc = computed(() => `${webp2x} 2x, ${webp1x}`)
+    const pngSrc = computed(() => `${png2x} 2x, ${png1x}`)
+
+    return {
+      pngSrc,
+      webpSrc,
+    }
+  },
 }
 </script>

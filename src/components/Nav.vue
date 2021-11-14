@@ -2,7 +2,7 @@
   <nav class="max-w-md">
     <ul class="flex flex-row w-full lg:justify-end justify-between">
       <li v-for="page in navigation" :key="page.slug">
-        <nuxt-link
+        <router-link
           :to="page.slug"
           class="
             text-gray-600
@@ -15,7 +15,7 @@
           exact-active-class="text-red-400 !dark:text-violet-700 border-pink-600 dark:border-purple-800"
         >
           {{ page.title }}
-        </nuxt-link>
+        </router-link>
       </li>
     </ul>
   </nav>

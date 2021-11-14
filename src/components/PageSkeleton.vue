@@ -19,8 +19,9 @@
         bg-white
         dark:bg-gray-800
         max-w-6xl
+        mb-4
         lg:mx-auto
-        lg:shadow-xl
+        lg:shadow-2xl
         py-2
         px-4
         lg:px-16
@@ -32,7 +33,7 @@
         <Nav />
       </header>
       <main>
-        <nuxt />
+        <slot />
       </main>
     </div>
     <footer class="max-w-6xl mx-auto">
@@ -43,6 +44,26 @@
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: 'PageSkeleton',
 }
 </script>
+
+<style>
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  src: local('Rubik'),
+    url(@/static/fonts/Rubik/Rubik-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 700;
+  src: local('Rubik'),
+    url(@/static/fonts/Rubik/Rubik-Bold.ttf) format('truetype');
+}
+
+html {
+  font-family: 'Rubik';
+}
+</style>
