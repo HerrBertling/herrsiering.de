@@ -15,7 +15,7 @@
         Yoga.
       </p>
     </div>
-    <picture class="md:col-span-1 mt-4 max-h-48 dark:hue-rotate-90">
+    <picture class="max-h-48 dark:hue-rotate-90 md:(col-span-1 self-end) ">
       <source
         :srcset="pngSrc"
         type="image/png"

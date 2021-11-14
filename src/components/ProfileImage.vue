@@ -1,5 +1,5 @@
 <template>
-  <picture class="md:col-span-3 md:col-start-6 mt-16 max-h-72 md:max-h-96">
+  <picture class="max-h-72 mb-8 mt-8 md:(max-h-96 mb-0 mt-16 col-span-3 col-start-6)">
     <source
         :srcset="pngSrc"
         type="image/png"
