@@ -21,7 +21,7 @@
         max-w-6xl
         mb-4
         lg:mx-auto
-        lg:shadow-xl
+        lg:shadow-2xl
         py-2
         px-4
         lg:px-16
