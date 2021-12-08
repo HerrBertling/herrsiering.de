@@ -132,10 +132,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@islands/frontmatter@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@islands/frontmatter/-/frontmatter-0.4.0.tgz#19e48a98c1c729a9df3b5a44769a52469d76f850"
-  integrity sha512-QDdQZuugTiJfc3CEGRV/J3F/cfsyfbOu+pvvjQMQ0JrwASMXHQt4LEnkLW+GZK6E5QWGIEGKQkrm5q319TznGw==
+"@islands/frontmatter@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@islands/frontmatter/-/frontmatter-0.4.2.tgz#d67ee3ac632a0867d1b143abe2572cf3b3fcccb5"
+  integrity sha512-HZo5NZ8ytwrJBoRSR4Xuf3PH+VUb5iny9M91GE+3e9a/BOgcLStG4lgf/tU6UKXtzq4azRa9fDfn4YVtFkNqSg==
   dependencies:
     estree-util-is-identifier-name "^2.0.0"
     estree-util-value-to-estree "^1.3.0"
@@ -143,22 +143,22 @@
     mdast-util-frontmatter "^1.0.0"
     micromark-extension-frontmatter "^1.0.0"
 
-"@islands/hydration@^0.3.0":
+"@islands/hydration@^0.3.0", "@islands/hydration@^0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@islands/hydration/-/hydration-0.3.3.tgz#196ef5f20fc4a576166202571b61cb030e58c802"
   integrity sha512-CAUXsjot2Wf5fL7h5gmyprZScMpyHhKEn22YN3DNv5loZ7KoVAoe3FQ6scZXU4/hQLRnVCkPL3l4oeS0YEQEjQ==
 
-"@islands/mdx@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@islands/mdx/-/mdx-0.3.0.tgz#faca0a16b9c8dc6dc882ef6ddc72a4381c24a43b"
-  integrity sha512-pH1vKonnTdKFTgBUxqcgbXqQXfIZKDmJGnkRwpb5JcMBoPdIOhDHnPpc7dzdThYZcFLdX5kEZXXKrTFY+Ips0g==
+"@islands/mdx@^0.3.2":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@islands/mdx/-/mdx-0.3.3.tgz#9e4223198abc466baa541d5eb28738bcc5a0df49"
+  integrity sha512-msdcPxRxnx30mtZF1iM9+v2O+g06GbZqYp5xMXJvj/jnkUpbDW1LDgVKzMmBFmOF/h6PRhuUnQxX8+ZPDX0EHg==
   dependencies:
     estree-walker "^3.0"
     hash-sum "^2.0"
     source-map "^0.7.3"
     xdm "3.3"
 
-"@islands/prerender@^0.3.0":
+"@islands/prerender@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@islands/prerender/-/prerender-0.3.1.tgz#a1bc0a32175ea148c5309352230905040cea7729"
   integrity sha512-4rxPxs1NK58AdbTRpXZUiqsuTQUF9onsuK7AnphWfnb6jX71LA/xvxJ5x1UtvxFqpm+Kxdz/mGpixdlF3nzUQA==
@@ -345,10 +345,10 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-"@vitejs/plugin-vue@^1.10.0-beta.0":
-  version "1.10.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.10.0-beta.0.tgz#6c5619482c51e2748b19e0e0d8c855e1aa01b893"
-  integrity sha512-HVdqMh9Bi9Wdk9YN5ho+VlBTxmZFWO2LCM/856pSlRK2qN2i7O2mFHFVAjTCRLtZjBpOwwB6W9RkKem4Q7oiwg==
+"@vitejs/plugin-vue@^1.10.2":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.10.2.tgz#d718479e2789d8a94b63e00f23f1898ba239253a"
+  integrity sha512-/QJ0Z9qfhAFtKRY+r57ziY4BSbGUTGsPRMpB/Ron3QPwBZM4OZAZHdTa4a8PafCwU5DTatXG8TMDoP8z+oDqJw==
 
 "@vue/compiler-core@3.2.23":
   version "3.2.23"
@@ -1684,17 +1684,17 @@ ignore@^5.1.4, ignore@^5.1.9:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.9.tgz#9ec1a5cbe8e1446ec60d4420060d43aa6e7382fb"
   integrity sha512-2zeMQpbKz5dhZ9IwL0gbxSW5w0NK/MSAMtNuhgIHEPmaU3vPdKPL0UdvUCXs5SS4JAwsBxysK5sFMW8ocFiVjQ==
 
-iles@^0.6.10:
-  version "0.6.10"
-  resolved "https://registry.yarnpkg.com/iles/-/iles-0.6.10.tgz#7cf44de95bb6aebb60c04e65e02557ff93029641"
-  integrity sha512-oxCglwDQmZa+PuPfUd2FD0vsx7j/WQ0A9mXcLpRs/O/fkdXWOW4vEWYTfdtY5Bg8bQ/u+ptMeDOoDYFAXoz6/w==
+iles@^0.6.13:
+  version "0.6.13"
+  resolved "https://registry.yarnpkg.com/iles/-/iles-0.6.13.tgz#fadffbd8ae07df3399ee9bf8097d1b6b606284b7"
+  integrity sha512-Z91vnfiutp3JqiA2OtBPol5g6Ax/6iU3xdif0UP8hq8fsUqNrNm2Ja3NLpbcG0moXCC3ypWlA94CtGb2VMcyQg==
   dependencies:
-    "@islands/frontmatter" "^0.4.0"
-    "@islands/hydration" "^0.3.0"
-    "@islands/mdx" "^0.3.0"
-    "@islands/prerender" "^0.3.0"
+    "@islands/frontmatter" "^0.4.2"
+    "@islands/hydration" "^0.3.3"
+    "@islands/mdx" "^0.3.2"
+    "@islands/prerender" "^0.3.1"
     "@nuxt/devalue" "^2.0.0"
-    "@vitejs/plugin-vue" "^1.10.0-beta.0"
+    "@vitejs/plugin-vue" "^1.10.2"
     "@vue/devtools-api" "^6.0.0-beta.20.1"
     "@vue/server-renderer" "^3.2.23"
     "@vueuse/head" "^0.6.0"
@@ -1707,11 +1707,11 @@ iles@^0.6.10:
     picocolors "^1.0.0"
     unist-util-visit "^4.1.0"
     unplugin-vue-components "npm:@islands/components@0.17.0"
-    vite "^2.7.0-beta.10"
+    vite "^2.7.0"
     vite-plugin-pages "npm:@mussi/vite-plugin-pages@0.18.3-beta.2"
     vue "^3.2.23"
     vue-router "^4.0.12"
-    xdm "3.3.0"
+    xdm "3.3.1"
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -3698,10 +3698,10 @@ vite-plugin-windicss@^1.5.4:
     kolorist "^1.5.0"
     windicss "^3.2.1"
 
-vite@^2.7.0-beta.10:
-  version "2.7.0-beta.10"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.0-beta.10.tgz#268a0e111019918193a7092f888bce01c2e2564b"
-  integrity sha512-BiZ0SOnvNtB4Q5Y8YJDYf9O2h7Abld6wsT3SCEM5k4KJstMt1oZdO1M3+L3mhSu0mVJX5wHsyt9CEv5o1lz8vg==
+vite@^2.7.0:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.1.tgz#be50ad13214290ecbebbe5ad389ed423cb5f137e"
+  integrity sha512-TDXXhcu5lyQ6uosK4ZWaOyB4VzOiizk0biitRzDzaEtgSUi8rVYPc4k1xgOjLSf0OuceDJmojFKXHOX9DB1WuQ==
   dependencies:
     esbuild "^0.13.12"
     postcss "^8.3.11"
@@ -3818,10 +3818,10 @@ write-file-atomic@^3.0.3:
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
 
-xdm@3.3, xdm@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/xdm/-/xdm-3.3.0.tgz#6080ac156460b1dc6dcbc0b68ef3fdedd6ff7b8b"
-  integrity sha512-h8n2cHkwKX9Ewjow3hsqm7uaXq0qFjRW27ls/kQHRtT6pSesk5PgQcLnCD/VgW4UbLLkXzKu99NUXg75kw50dg==
+xdm@3.3, xdm@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/xdm/-/xdm-3.3.1.tgz#a76d42830f590702211c3cfcb60b47ce5a27729c"
+  integrity sha512-+bePFAMIxKyhBd2QQcGsG5oVy16THJm7WjAd8GD4VC21LTYM0SWySTGVPBhwXA71H6P96pgUBzg3r8GPi+178A==
   dependencies:
     "@rollup/pluginutils" "^4.0.0"
     "@types/estree-jsx" "^0.0.1"
