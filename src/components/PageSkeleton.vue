@@ -54,6 +54,7 @@ export default {
   font-weight: 400;
   src: local('Rubik'),
     url(@/static/fonts/Rubik/Rubik-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -61,6 +62,7 @@ export default {
   font-weight: 700;
   src: local('Rubik'),
     url(@/static/fonts/Rubik/Rubik-Bold.ttf) format('truetype');
+  font-display: swap;
 }
 
 html {

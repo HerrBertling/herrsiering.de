@@ -9,7 +9,6 @@ export default defineApp({
         { property: 'author', content: site.author },
         { property: 'keywords', content: computed(() => frontmatter.tags) },
       ],
-      link: [{ href: '/global.css', ref: 'stylesheet' }],
     }
   },
   enhanceApp({ app, head, router }) {
