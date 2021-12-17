@@ -132,10 +132,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@islands/hydration@^0.3.0", "@islands/hydration@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@islands/hydration/-/hydration-0.3.3.tgz#196ef5f20fc4a576166202571b61cb030e58c802"
-  integrity sha512-CAUXsjot2Wf5fL7h5gmyprZScMpyHhKEn22YN3DNv5loZ7KoVAoe3FQ6scZXU4/hQLRnVCkPL3l4oeS0YEQEjQ==
+"@islands/hydration@^0.3.0", "@islands/hydration@^0.3.4":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@islands/hydration/-/hydration-0.3.6.tgz#9d12b4515e74ebb7562b268e9f5cf0d8e11f759c"
+  integrity sha512-Gm0AkuQvfvzy6P1iiKXLHmKv2att/QeNKcZEfrlhUn/F5z2fkkO3ud+SNnKFE29v9VdzYVIuKMQw/GIHinXK3A==
 
 "@islands/mdx@^0.7.2":
   version "0.7.2"
@@ -1679,12 +1679,12 @@ ignore@^5.1.4, ignore@^5.1.9:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.9.tgz#9ec1a5cbe8e1446ec60d4420060d43aa6e7382fb"
   integrity sha512-2zeMQpbKz5dhZ9IwL0gbxSW5w0NK/MSAMtNuhgIHEPmaU3vPdKPL0UdvUCXs5SS4JAwsBxysK5sFMW8ocFiVjQ==
 
-iles@^0.7.8:
-  version "0.7.8"
-  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.8.tgz#7444df42d419f428821fc5b159e6bc3cda8ba2bf"
-  integrity sha512-RWvJnraHE86JgTgpivfadH+78e+SMVFbpGIhfKivoTCOwFyidi93+HlVqUu3cGenJ++Hr45nF4sw1SP/khndJw==
+iles@^0.7.11:
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.11.tgz#bf0a9249fa56e7685cf314e8dd3cbfc69d1ea9ed"
+  integrity sha512-VVLXAjjEgJsxYq8P9LcCdojaKjl9Rfsp1u6LMfJK/8a4K2OF1ew+09ROGpOYPb/qvG4RBuSZoftraJoZHeSFVQ==
   dependencies:
-    "@islands/hydration" "^0.3.3"
+    "@islands/hydration" "^0.3.4"
     "@islands/mdx" "^0.7.2"
     "@islands/pages" "^0.7.2"
     "@islands/prerender" "^0.3.1"
