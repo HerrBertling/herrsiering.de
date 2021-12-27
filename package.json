@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
-    "iles": "^0.7.17"
+    "iles": "^0.7.19"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
