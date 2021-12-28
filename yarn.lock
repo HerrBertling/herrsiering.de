@@ -3780,10 +3780,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-windicss@^3.3.0, windicss@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.4.0.tgz#2da63739089b5c6f6ca1b7cc28bd855cd5bc95cc"
-  integrity sha512-X+9Y1/FPxX253Xo4Hk/qfVuvoAxgKx686Z6yHxmBFMH7wRCPdRO42na9k/yEnrW6EqCFJP/GcMIHn3QENaE42g==
+windicss@^3.4.0, windicss@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.4.1.tgz#3337a228a99853d232d07f6f9725d263c29dd5ee"
+  integrity sha512-g6mX0q8divtPT+TSWqvI35lc77pOhGwMrwCdcX48dFA16wUlSDn1kOv5z1msZy3SlWLx3Bjbe7FA6uNTvdVH8A==
 
 word-wrap@^1.2.3:
   version "1.2.3"
