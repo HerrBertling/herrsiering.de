@@ -28,6 +28,6 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
     "vite-plugin-windicss": "^1.6.1",
-    "windicss": "^3.3.0"
+    "windicss": "^3.4.1"
   }
 }
