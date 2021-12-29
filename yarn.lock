@@ -1684,10 +1684,10 @@ ignore@^5.1.4, ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
-iles@^0.7.19:
-  version "0.7.19"
-  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.19.tgz#59d60f18fc19d46496d121edaad36c293cfa7f8c"
-  integrity sha512-g9Lcdio4Fj8aOipb4w75ICd4jjA4r8XYnnbCfKo6LVZWhEmZb5MHeN7CG2uQry4jnWGr/NVAT7xDwLDtuX+bzg==
+iles@^0.7.20:
+  version "0.7.20"
+  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.20.tgz#ed5d08de7879247ffd4ce6693dde7c4ff187b80b"
+  integrity sha512-Aj4Kg92lthrEdD8KN4qzqU9pAvv6un/l6+ET5MfgTfEXNoS/HbaAkR/BMg7QI75DRiwc13s2/SjBLlRQZ7P6Jw==
   dependencies:
     "@islands/hydration" "^0.3.4"
     "@islands/mdx" "^0.7.2"
@@ -1699,6 +1699,7 @@ iles@^0.7.19:
     "@vue/server-renderer" "^3.2.26"
     "@vueuse/head" "^0.7.3"
     debug "^4.3.2"
+    deep-equal "^2.0.5"
     es-module-lexer "^0.7.1"
     local-pkg "^0.4.0"
     mico-spinner "^1.4.0"
