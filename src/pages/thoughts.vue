@@ -7,7 +7,7 @@
         class="!no-underline opacity-80 hover:opacity-100 focus:opacity-100 active:opacity-100 transform-opacity"
       >
         <h2 class="!mb-1 !mt-0">{{ post.title }}</h2>
-        <div v-if="post.excerpt">{{ post.excerpt }}</div>
+        <div v-if="post.excerpt">{{ post.description }}</div>
         <aside class="flex opacity-80 gap-4 text-sm mt-4 mb-3">
           <time :datetime="post.lastUpdated.toISOString()">
             {{ getDateTime(post.lastUpdated) }}

@@ -18,10 +18,55 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'PageSkeleton',
+<script setup lang="ts">
+import { computed } from 'vue'
+
+const name = 'PageSkeleton'
+
+const baseAssetUrl = 'https://herrsiering.de/src/'
+
+const { frontmatter } = usePage()
+
+console.log(frontmatter.image)
+
+const usedMeta = []
+
+if (frontmatter.title) {
+  usedMeta.push({ property: 'twitter:title', content: frontmatter.title })
+  usedMeta.push({ property: 'og:title', content: frontmatter.title })
 }
+if (frontmatter.description) {
+  usedMeta.push({
+    property: 'twitter:description',
+    content: frontmatter.description,
+  })
+  usedMeta.push({
+    property: 'og:description',
+    content: frontmatter.description,
+  })
+  usedMeta.push({
+    property: 'description',
+    content: frontmatter.description,
+  })
+}
+
+if (frontmatter.image) {
+  const imageUrl = `${baseAssetUrl}${frontmatter.image}`
+  usedMeta.push({
+    property: 'twitter:image',
+    content: imageUrl,
+  })
+  usedMeta.push({ property: 'og:image', content: imageUrl })
+  usedMeta.push({ property: 'twitter:card', content: 'summary_large_image' })
+}
+
+if (frontmatter.href) {
+  usedMeta.push({ property: 'og:url', content: frontmatter.href })
+}
+
+useHead({
+  meta: [{ property: 'og:type', content: 'website' }, ...usedMeta],
+})
 </script>
 
 <style>
