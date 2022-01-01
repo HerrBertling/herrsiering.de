@@ -1,38 +1,14 @@
 <template>
   <div
-    class="
-      min-h-screen
-      bg-gradient-to-br
-      from-yellow-500
-      via-red-400
-      to-pink-600
-      pt-2
-      lg:px-4
-      lg:py-16
-      dark:from-violet-900
-      dark:via-indigo-900
-      dark:to-blue-gray-900
-    "
+    class="overflow-hidden min-h-screen bg-gradient-to-br from-yellow-500 via-red-400 to-pink-600 pt-2 lg:px-4 lg:py-16 dark:from-violet-900 dark:via-indigo-900 dark:to-blue-gray-900"
   >
     <div
-      class="
-        bg-white
-        dark:bg-gray-800
-        max-w-6xl
-        mb-4
-        lg:mx-auto
-        lg:shadow-2xl
-        py-2
-        px-4
-        lg:px-16
-        lg:py-12
-        lg:rounded-3xl
-      "
+      class="bg-white dark:bg-gray-800 max-w-6xl mb-4 py-2 px-4 lg:(mx-auto shadow-2xl px-16 py-12 rounded-3xl)"
     >
-      <header class="mb-4 flex justify-center md:justify-end">
+      <header class="mb-4 flex justify-end">
         <Nav />
       </header>
-      <main>
+      <main class="mb-8">
         <slot />
       </main>
     </div>
