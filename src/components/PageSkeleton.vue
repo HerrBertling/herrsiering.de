@@ -50,16 +50,6 @@ if (frontmatter.description) {
   })
 }
 
-if (frontmatter.image) {
-  const imageUrl = `${baseAssetUrl}${frontmatter.image}`
-  usedMeta.push({
-    property: 'twitter:image',
-    content: imageUrl,
-  })
-  usedMeta.push({ property: 'og:image', content: imageUrl })
-  usedMeta.push({ property: 'twitter:card', content: 'summary_large_image' })
-}
-
 if (frontmatter.href) {
   usedMeta.push({ property: 'og:url', content: frontmatter.href })
 }
