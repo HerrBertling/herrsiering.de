@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <h1 id="title">
+    {{ title }}
+  </h1>
+  <div id="footer">
+    <h2 id="description">
+      {{ description }}
+    </h2>
+  </div>
+</div>
+
+<script src="textFit.js"></script>
+<script>
+  window.onload = function() {
+    textFit(document.getElementById('title'), { maxFontSize: 500, multiLine: true });
+    textFit(document.getElementById('description'), { maxFontSize: 300, multiLine: true });
+  };
+</script>
