@@ -19,35 +19,11 @@
 </template>
 
 <script setup lang="ts">
-import { storeImageData } from '@resoc/img-data'
-import { computed } from 'vue'
-
 const name = 'PageSkeleton'
-
-const baseAssetUrl = 'https://herrsiering.de/src/'
 
 const { frontmatter } = usePage()
 
 const usedMeta = []
-
-const getImageData = async () => {
-  await storeImageData(
-    'resoc-image-data.json', // Mapping file, as declared in netlify.toml
-    frontmatter.href,
-    {
-      // `${templates_dir}/${template}/resoc.manifest.json` should exist,
-      // where templates_dir comes from netlify.toml and template is the parameter below
-      template: 'default',
-
-      values: {
-        title: frontmatter.title,
-        description: frontmatter.description,
-      },
-    }
-  )
-}
-
-getImageData()
 
 if (frontmatter.title) {
   usedMeta.push({ property: 'twitter:title', content: frontmatter.title })
@@ -71,11 +47,6 @@ if (frontmatter.description) {
 if (frontmatter.href) {
   usedMeta.push({ property: 'og:url', content: frontmatter.href })
 }
-
-usedMeta.push({
-  property: 'og:image',
-  content: `/social-images/${frontmatter.href}.jpg`,
-})
 
 useHead({
   meta: [{ property: 'og:type', content: 'website' }, ...usedMeta],
