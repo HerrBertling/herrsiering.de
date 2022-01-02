@@ -6,7 +6,7 @@
       class="bg-white dark:bg-gray-800 max-w-6xl mb-4 py-2 px-4 lg:(mx-auto shadow-2xl px-16 py-12 rounded-3xl)"
     >
       <header class="mb-4 flex justify-end">
-        <Nav />
+        <Nav client:load />
       </header>
       <main class="mb-8">
         <slot />

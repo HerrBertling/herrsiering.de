@@ -26,8 +26,6 @@ import { usePosts } from '../composables/usePosts'
 
 const posts = usePosts()
 
-console.log(posts)
-
 const getDateTime = (date: Date) => {
   const usedDate = new Date(date)
   return usedDate.toLocaleDateString('en-US', {

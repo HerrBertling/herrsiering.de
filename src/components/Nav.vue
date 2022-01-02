@@ -7,6 +7,7 @@
       ]"
       :aria-expanded="navExpanded"
       aria-controls="navigation"
+      type="button"
       @click="toggleNav"
     >
       <span class="inline-block w-6 h-6 mr-2">
@@ -63,40 +64,36 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: 'SiteNav',
-  data() {
-    return {
-      navExpanded: false,
-      navigation: [
-        {
-          title: 'Home',
-          slug: '/',
-        },
-        {
-          title: 'About',
-          slug: '/about',
-        },
-        {
-          title: 'Books',
-          slug: '/books',
-        },
-        {
-          title: 'Principles',
-          slug: '/principles',
-        },
-        {
-          title: 'Thoughts',
-          slug: '/thoughts',
-        },
-      ],
-    }
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const name = 'SiteNav'
+
+const navExpanded = ref(false)
+const navigation = [
+  {
+    title: 'Home',
+    slug: '/',
   },
-  methods: {
-    toggleNav() {
-      this.navExpanded = !this.navExpanded
-    },
+  {
+    title: 'About',
+    slug: '/about',
   },
+  {
+    title: 'Books',
+    slug: '/books',
+  },
+  {
+    title: 'Principles',
+    slug: '/principles',
+  },
+  {
+    title: 'Thoughts',
+    slug: '/thoughts',
+  },
+]
+
+const toggleNav = () => {
+  navExpanded.value = !navExpanded.value
 }
 </script>
