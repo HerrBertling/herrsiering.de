@@ -42,7 +42,7 @@
     </button>
     <ul
       id="navigation"
-      class="flex flex-col rounded-md overflow-hidden shadow-2xl absolute top-16 right-0 w-xs transform transition-transform translate-x-100vw duration-300 bg-white py-4 dark:(bg-gray-700) sm:(flex-row static w-auto shadow-none rounded-none bg-transparent justify-end items-center h-auto transform-none top-auto left-auto z-30) dark:sm:bg-transparent"
+      class="flex flex-col rounded-md overflow-hidden shadow-2xl absolute top-16 right-0 w-64 transform transition-transform translate-x-100vw z-50 duration-300 bg-white py-4 dark:(bg-gray-700) sm:(flex-row static w-auto shadow-none rounded-none bg-transparent justify-end items-center h-auto transform-none top-auto left-auto z-30) dark:sm:bg-transparent"
     >
       <li v-for="{ title, slug } in navigation" :key="slug">
         <a

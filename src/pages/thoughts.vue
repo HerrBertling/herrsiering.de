@@ -1,6 +1,6 @@
 <template>
   <h1>Thoughts.</h1>
-  <div class="grid grid-cols-1 gap-16 mb-32">
+  <div class="grid grid-cols-1 gap-16 mb-16">
     <article v-for="post of posts">
       <a
         :href="post.href"
