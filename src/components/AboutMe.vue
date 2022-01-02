@@ -14,16 +14,17 @@
         Apart from that, I like my family. Ice cream. Netflix. Kettlebells.
         Yoga.
       </p>
+      <p>
+        You can find me on <a href="https://github.com/HerrBertling">GitHub</a>,
+        <a href="https://www.linkedin.com/in/markussiering/">LinkedIn</a>,
+        <a href="https://www.xing.com/profile/Markus_Siering2/cv">Xing</a> and
+        <a href="/thoughts/pausing-twitter">not so often</a> on
+        <a href="https://twitter.com/herrbertling">Twitter</a>.
+      </p>
     </div>
-    <picture class="max-h-48 dark:hue-rotate-90 md:(col-span-1 self-end) ">
-      <source
-        :srcset="pngSrc"
-        type="image/png"
-      />
-      <source
-        :srcset="webpSrc"
-        type="image/webp"
-      />
+    <picture class="max-h-48 dark:hue-rotate-90 md:(col-span-1 self-end)">
+      <source :srcset="pngSrc" type="image/png" />
+      <source :srcset="webpSrc" type="image/webp" />
       <img
         loading="lazy"
         class="h-full object-contain mx-auto max-h-36"
@@ -37,7 +38,7 @@
 </template>
 
 <script>
-import { computed } from "vue"
+import { computed } from 'vue'
 import png1x from '@/assets/images/markus-siering.png'
 import png2x from '@/assets/images/markus-siering_2x.png'
 import webp1x from '@/assets/images/markus-siering.webp'
