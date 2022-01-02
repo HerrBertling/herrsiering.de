@@ -3,6 +3,7 @@
     class="rounded-xl max-w-full h-auto object-cover"
     :src="src"
     :alt="alt"
+    loading="lazy"
   />
 </template>
 
