@@ -114,24 +114,28 @@ export function onLoad() {
   })
 
   const path = window.location.pathname
+  const isHome = path === '/'
+
+  const addActiveClasses = (el) => {
+    el.classList.add(
+      'text-red-400',
+      'border-pink-600',
+      '!dark:text-violet-700',
+      'dark:border-purple-800'
+    )
+  }
 
   document
     .querySelectorAll<HTMLElement>('#navigation > li > a ')
     .forEach((el) => {
-      if (el.getAttribute('href') === '/' && path === '/') {
-        el.classList.add(
-          'text-red-400',
-          'border-pink-600',
-          '!dark:text-violet-700',
-          'dark:border-purple-800'
-        )
-      } else if (el.getAttribute('href').startsWith(path) && path !== '/') {
-        el.classList.add(
-          'text-red-400',
-          'border-pink-600',
-          '!dark:text-violet-700',
-          'dark:border-purple-800'
-        )
+      if (isHome) {
+        if (el.getAttribute('href') === '/') {
+          addActiveClasses(el)
+        }
+      } else {
+        if (el.getAttribute('href').startsWith(path)) {
+          addActiveClasses(el)
+        }
       }
     })
 }
