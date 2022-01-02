@@ -9,6 +9,8 @@ declare module 'vue' {
     Footer: typeof import('./src/components/Footer.vue')['default']
     Island: typeof import('./node_modules/iles/dist/client/app/components/Island.vue')['default']
     Nav: typeof import('./src/components/Nav.vue')['default']
+    NavButton: typeof import('./src/components/NavButton.vue')['default']
+    NavItem: typeof import('./src/components/NavItem.vue')['default']
     PageSkeleton: typeof import('./src/components/PageSkeleton.vue')['default']
     ProfileImage: typeof import('./src/components/ProfileImage.vue')['default']
     ResponsivePicture: typeof import('./src/components/ResponsivePicture.vue')['default']
