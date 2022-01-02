@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[
-      'rounded-full px-4 py-2 flex items-center justify-center text-gray-700 dark:(text-white opacity-70) lg:hidden border border-transparent',
+      'rounded-full px-4 py-2 flex items-center justify-center text-gray-700 dark:(text-white opacity-70) sm:hidden border border-transparent',
       open && 'border-white',
     ]"
     :aria-expanded="open"
