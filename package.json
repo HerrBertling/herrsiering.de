@@ -18,16 +18,12 @@
     "iles": "^0.7.20"
   },
   "devDependencies": {
-    "@netlify/functions": "^0.10.0",
     "babel-eslint": "^10.1.0",
-    "chrome-aws-lambda": "^10.1.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "path-match": "^1.2.4",
     "prettier": "^2.5.1",
-    "puppeteer-core": "^13.0.1",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
