@@ -6,4 +6,9 @@ export default defineConfig({
   vite: {
     plugins: [WindiCSS()],
   },
+  ssg: {
+    onSiteRendered: () => {
+      console.log('Site rendered!')
+    },
+  },
 })
