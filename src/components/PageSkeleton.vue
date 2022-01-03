@@ -48,15 +48,6 @@ if (frontmatter.href) {
   usedMeta.push({ property: 'og:url', content: frontmatter.href })
 }
 
-const addSocialImage = async () => {
-  const image = await fetch(
-    `https://herrsiering.de/.netlify/functions/social-image/title/${frontmatter.title}`
-  )
-  usedMeta.push({ property: 'og:image', content: image })
-}
-
-addSocialImage()
-
 useHead({
   meta: [{ property: 'og:type', content: 'website' }, ...usedMeta],
 })
