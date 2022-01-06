@@ -21,7 +21,7 @@
 <script setup lang="ts">
 const name = 'PageSkeleton'
 
-const { frontmatter } = usePage()
+const { frontmatter, meta } = usePage()
 
 const usedMeta = []
 
@@ -44,17 +44,19 @@ if (frontmatter.description) {
   })
 }
 
-if (frontmatter.href) {
-  usedMeta.push({ property: 'og:url', content: frontmatter.href })
+if (meta.href) {
+  usedMeta.push({ property: 'og:url', content: meta.href })
 }
 
-let usedPath = frontmatter.href
+let usedPath = `${meta.href.replace(/\//g, '')}.jpeg`
 
-if (usedPath === '/') {
-  usedPath = '/index'
+if (usedPath === '.jpeg') {
+  usedPath = 'index.jpeg'
 }
 
-const image = `${process.env.DEPLOY_URL}/og-images/${usedPath}.jpeg`
+const url = process.env.DEPLOY_URL || ''
+
+const image = `${url}og-images/${usedPath}`
 
 usedMeta.push({ property: 'og:image', content: image })
 usedMeta.push({ property: 'twitter:image', content: image })
