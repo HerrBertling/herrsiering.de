@@ -56,7 +56,7 @@ if (usedPath === '.jpeg') {
 
 const url = process.env.URL || ''
 
-const image = `${url}og-images/${usedPath}`
+const image = `${url}/og-images/${usedPath}`
 
 usedMeta.push({ property: 'og:image', content: image })
 usedMeta.push({ property: 'twitter:image', content: image })
