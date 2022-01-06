@@ -7,6 +7,7 @@ declare module 'vue' {
     AboutMe: typeof import('./src/components/AboutMe.vue')['default']
     BasicImage: typeof import('./src/components/BasicImage.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    Head: typeof import('@vueuse/head')['Head']
     Island: typeof import('./node_modules/iles/dist/client/app/components/Island.vue')['default']
     Nav: typeof import('./src/components/Nav.vue')['default']
     NavButton: typeof import('./src/components/NavButton.vue')['default']
