@@ -48,6 +48,18 @@ if (frontmatter.href) {
   usedMeta.push({ property: 'og:url', content: frontmatter.href })
 }
 
+let usedPath = frontmatter.href
+
+if (usedPath === '/') {
+  usedPath = '/index'
+}
+
+const image = `${process.env.DEPLOY_URL}/og-images/${usedPath}.jpeg`
+
+usedMeta.push({ property: 'og:image', content: image })
+usedMeta.push({ property: 'twitter:image', content: image })
+usedMeta.push({ property: 'twitter:card', content: 'summary_large_image' })
+
 useHead({
   meta: [{ property: 'og:type', content: 'website' }, ...usedMeta],
 })

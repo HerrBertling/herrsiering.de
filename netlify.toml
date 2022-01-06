@@ -3,4 +3,4 @@
 
 [build]
   publish = "dist"
-  command = "yarn build"
+  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer yarn build"

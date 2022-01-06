@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <title>Thoughts</title>
+  </Head>
   <h1>Thoughts.</h1>
   <div class="grid grid-cols-1 gap-16 mb-16">
     <article v-for="post of posts">
