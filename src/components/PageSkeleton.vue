@@ -54,7 +54,7 @@ if (usedPath === '.jpeg') {
   usedPath = 'index.jpeg'
 }
 
-const url = process.env.URL || ''
+const url = process.env.DEPLOY_URL || ''
 
 const image = `${url}/og-images/${usedPath}`
 
