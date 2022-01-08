@@ -1,7 +1,7 @@
 import { defineConfig } from 'iles'
 import WindiCSS from 'vite-plugin-windicss'
 
-import generateOgImage from './src/scripts/generateOgImage'
+import generateOgImages from './src/scripts/generateOgImage'
 
 export default defineConfig({
   siteUrl: 'https://herrsiering.de',
@@ -10,7 +10,6 @@ export default defineConfig({
   },
   ssg: {
     onSiteRendered: async (pages) => {
-      pages.pages.forEach(async (page) => await generateOgImage(page))
-    },
+      await generateOgImages(pages.pages)
   },
 })
