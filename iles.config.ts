@@ -11,5 +11,6 @@ export default defineConfig({
   ssg: {
     onSiteRendered: async (pages) => {
       await generateOgImages(pages.pages)
+    },
   },
 })
