@@ -89,9 +89,9 @@ module.exports = async (item) => {
 
       await browser.close()
     }
-  } catch (_err) {
+  } catch (err) {
     console.log(
-      `📸 ☑️ Already took a screenshot for page ${item.path} at ${imagePath}`
+      `📸 ☑️ Already took a screenshot for page ${item.path} at ${imagePath}, ${err}`
     )
   }
 }
