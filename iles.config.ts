@@ -10,7 +10,7 @@ export default defineConfig({
   },
   ssg: {
     onSiteRendered: async (pages) => {
-      pages.pages.forEach((page) => generateOgImage(page))
+      pages.pages.forEach(async (page) => await generateOgImage(page))
     },
   },
 })
