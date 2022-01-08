@@ -9,8 +9,8 @@ export default defineConfig({
     plugins: [WindiCSS()],
   },
   ssg: {
-    onSiteRendered: (pages) => {
-      pages.pages.forEach((page) => generateOgImage(page))
+    onSiteRendered: async (pages) => {
+      pages.pages.forEach(async (page) => await generateOgImage(page))
     },
   },
 })
