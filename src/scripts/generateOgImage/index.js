@@ -90,6 +90,8 @@ module.exports = async (item) => {
       await browser.close()
     }
   } catch (_err) {
-    console.log(`📸 ☑️ Already took a screenshot for page ${item.path} `)
+    console.log(
+      `📸 ☑️ Already took a screenshot for page ${item.path} at ${imagePath}`
+    )
   }
 }
