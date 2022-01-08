@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 
 module.exports = async (item) => {
-  const dir = path.resolve(__dirname, '../../static/og-images')
+  const dir = path.resolve(__dirname, '../../../dist/assets/og-images')
   if (!fs.existsSync(dir)) fs.mkdirSync(dir)
 
   let usedPath = item.path
