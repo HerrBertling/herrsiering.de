@@ -63,11 +63,20 @@ module.exports = async (items) => {
       .replace('undefined', '')
       .replace(' · Markus Siering', '')
 
+    const description = item.rendered
+      .split('<meta name="description" content="')[1]
+      .split('">')[0]
+
     // Update the H1 element with the post title
     await page.evaluate((title) => {
       const element = document.querySelector('#title')
       element.innerHTML = title
     }, title)
+
+    await page.evaluate((subtitle) => {
+      const element = document.querySelector('#subtitle')
+      element.innerHTML = subtitle
+    }, description)
 
     // Save a screenshot to public/og-images/slug-of-post.jpeg
     await page.screenshot({

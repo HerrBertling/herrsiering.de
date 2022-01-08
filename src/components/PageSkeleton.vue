@@ -29,18 +29,19 @@ if (frontmatter.title) {
   usedMeta.push({ property: 'twitter:title', content: frontmatter.title })
   usedMeta.push({ property: 'og:title', content: frontmatter.title })
 }
-if (frontmatter.description) {
+if (frontmatter.description || meta.description) {
+  const description = frontmatter.description || meta.description
   usedMeta.push({
     property: 'twitter:description',
-    content: frontmatter.description,
+    content: description,
   })
   usedMeta.push({
     property: 'og:description',
-    content: frontmatter.description,
+    content: description,
   })
   usedMeta.push({
     property: 'description',
-    content: frontmatter.description,
+    content: description,
   })
 }
 

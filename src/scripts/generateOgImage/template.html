@@ -24,6 +24,7 @@
         display: grid;
         align-items: stretch;
         justify-items: stretch;
+        line-height: 1.5;
       }
       section {
         margin: 3rem;
@@ -37,13 +38,15 @@
         grid-template-columns: 1fr;
         box-shadow: 0 25px 50px -12px rgb(0 0 0/0.25);
       }
-      h1 {
+      .title {
         grid-row: 1;
         grid-column: 1;
+      }
+      h1, h3 {
         color: transparent;
         background-clip: text;
         margin: 0;
-        font-size: 5rem;
+        font-size: 4rem;
         -webkit-background-clip: text;
         background-image: linear-gradient(
           to bottom right,
@@ -51,12 +54,16 @@
           #fb7185,
           #db2777
         );
+        
+      }
+      h3 {
+        font-size: 2.5rem;
       }
       p {
         color: #fb7185;
         text-align: right;
         grid-row: 2;
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 0;
         align-self: end;
       }
@@ -65,7 +72,10 @@
 
   <body>
     <section>
-      <h1 id="title">Lorem ipsum dolor sit amet</h1>
+      <div class="title">
+        <h1 id="title">Lorem ipsum dolor sit amet</h1>
+        <h3 id="subtitle">Lorem ipsum dolor sit amet</h1>
+      </div>
       <p>herrsiering.de</p>
     </section>
   </body>
