@@ -7,6 +7,9 @@
         src: url('./Rubik-Bold.ttf') format('truetype');
         font-weight: bold;
       }
+      * {
+        box-sizing: border-box;
+      }
       body {
         font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: bold;
@@ -28,6 +31,7 @@
         border-radius: 0.5rem;
         background-color: #fff;
         display: grid;
+        height: calc(100% - 6rem);
         grid-gap: 3rem;
         grid-template-rows: 1fr 200px;
         grid-template-columns: 1fr;
