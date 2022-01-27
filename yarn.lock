@@ -168,10 +168,10 @@
     unist-util-visit "^4.1.0"
     xdm "3.3"
 
-"@islands/pages@^0.7.7":
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/@islands/pages/-/pages-0.7.7.tgz#471358e8ce7112858a0a341d57caec559deeb8d8"
-  integrity sha512-sr7Xovb1OgoG8/JJnYURCNwYt1imn+5cM7iJ4yKKWeQ0jXmoWxsOUDPjGNXxBpVpOy/HeOD6EEBfRzKvx1lhYg==
+"@islands/pages@^0.7.9":
+  version "0.7.9"
+  resolved "https://registry.yarnpkg.com/@islands/pages/-/pages-0.7.9.tgz#6d689d757aa7ae7db8ed34eb535606cffc2436ff"
+  integrity sha512-lo6oCpHEQaJBJMbMybUTHSZu0IL10gmKWnuw++lCsziVGJfzJ3niFMexztI7CE4n5wtP06NikVDzYmHTd2Ce0g==
   dependencies:
     debug "^4.3.3"
     deep-equal "^2.0.5"
@@ -1815,14 +1815,14 @@ ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
-iles@^0.7.26:
-  version "0.7.26"
-  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.26.tgz#22faf435dcec53bb5f08f5dc1c916aa1e91dd6ea"
-  integrity sha512-EakJO1CFEC+Rj9qU4QdDGR0PnwHUHXABjgdcYiSWmTYmJ5jXn0ReIvegr8+sr+RSYjbhp5NvzelSSWhSLOfY0g==
+iles@^0.7.27:
+  version "0.7.27"
+  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.27.tgz#43dd137d023d3a92292becf0f7ac713422c0bf16"
+  integrity sha512-/dqjOwm2mnFDAnVKw4m04wOjXLRa/Akz0ZLgki9ZXiJQVueS/RpG8qpLw6D0zEUz4DYMF90S/I9XBUKzmbT9hA==
   dependencies:
     "@islands/hydration" "^0.3.6"
     "@islands/mdx" "^0.7.5"
-    "@islands/pages" "^0.7.7"
+    "@islands/pages" "^0.7.9"
     "@islands/prerender" "^0.3.1"
     "@nuxt/devalue" "^2.0.0"
     "@vitejs/plugin-vue" "^2.0.0"
