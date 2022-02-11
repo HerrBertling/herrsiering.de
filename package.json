@@ -16,7 +16,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.1",
     "chrome-aws-lambda": "^10.1.0",
-    "iles": "^0.7.27",
+    "iles": "^0.7.28",
     "puppeteer-core": "^13.2.0"
   },
   "devDependencies": {
