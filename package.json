@@ -14,23 +14,23 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.1",
     "chrome-aws-lambda": "^10.1.0",
-    "iles": "^0.7.21",
-    "puppeteer-core": "^13.0.1"
+    "iles": "^0.7.30",
+    "puppeteer-core": "^13.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.6.0",
+    "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
-    "puppeteer": "^13.0.1",
-    "stylelint": "^14.2.0",
+    "puppeteer": "^13.3.1",
+    "stylelint": "^14.5.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^24.0.0",
-    "vite-plugin-windicss": "^1.6.1",
-    "windicss": "^3.4.2"
+    "stylelint-config-standard": "^25.0.0",
+    "vite-plugin-windicss": "^1.7.0",
+    "windicss": "^3.4.3"
   }
 }
