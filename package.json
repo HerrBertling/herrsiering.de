@@ -17,7 +17,7 @@
     "@tailwindcss/typography": "^0.5.1",
     "chrome-aws-lambda": "^10.1.0",
     "iles": "^0.7.30",
-    "puppeteer-core": "^13.3.1"
+    "puppeteer-core": "^13.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
