@@ -14,10 +14,10 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.1",
+    "@tailwindcss/typography": "^0.5.2",
     "chrome-aws-lambda": "^10.1.0",
     "iles": "^0.7.30",
-    "puppeteer-core": "^13.3.1"
+    "puppeteer-core": "^13.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -26,7 +26,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
-    "puppeteer": "^13.3.1",
+    "puppeteer": "^13.3.2",
     "stylelint": "^14.5.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0",
