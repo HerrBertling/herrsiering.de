@@ -14,7 +14,7 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.1",
+    "@tailwindcss/typography": "^0.5.2",
     "chrome-aws-lambda": "^10.1.0",
     "iles": "^0.7.30",
     "puppeteer-core": "^13.3.1"
