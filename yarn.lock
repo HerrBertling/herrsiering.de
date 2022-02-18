@@ -1828,10 +1828,10 @@ ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
-iles@^0.7.30:
-  version "0.7.30"
-  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.30.tgz#1d71f4165e143e1e1e731f43c2eed5b2dff432eb"
-  integrity sha512-b8H8nY6XJXaAYtFPytJmHNi5mTJe9x91yNxtdQOf6fM5l5Unp3ysrwqDN+zynPe32vdwVnBhQwpfyysulF2jag==
+iles@^0.7.31:
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/iles/-/iles-0.7.31.tgz#6dc1f095ea811a4ef8b68056aa91ee7728d4f99f"
+  integrity sha512-dwqiErFx8fbJgespO6NJ2LJ8fW2oncP4EJ36X+5/N1IJPuu2cOVtdmDg2CHEcZ1pzUXGLjr8Bv48M32pIMcd+w==
   dependencies:
     "@islands/hydration" "^0.3.6"
     "@islands/mdx" "^0.7.5"
