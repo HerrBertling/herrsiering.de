@@ -4055,10 +4055,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-windicss@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.4.3.tgz#347d09fee8eb6b3fc5e6e68b435c76ccb24a748c"
-  integrity sha512-UnugThsvEgy8RsPm4/B5DYMCAqvZzD6yWU7Anh+f07t5RSJ8zvmAylGLbXrHPJEmCKzo2Mf+fOUvISH7IJqM3A==
+windicss@^3.4.3, windicss@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.5.0.tgz#cb6896b136bc21d32d50a742352eece4ce0400d1"
+  integrity sha512-+UNYm2Zy4TM2uLiz6bqY2a69LavMqGbILFIwuGhPEJ/uqsPT3kCGSaWlhMw/weIaFOkm1K1cEzZ015Y8pp8N1A==
 
 word-wrap@^1.2.3:
   version "1.2.3"
