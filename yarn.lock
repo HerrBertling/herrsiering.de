@@ -3169,14 +3169,14 @@ puppeteer-core@^13.5.0:
     unbzip2-stream "1.4.3"
     ws "8.5.0"
 
-puppeteer@^13.4.1:
-  version "13.4.1"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-13.4.1.tgz#495b91d2fae3e9761a31bab1820ad179caac0fd9"
-  integrity sha512-2arcYPEGvLV9HvOw01Zv1b1IAXrMWHqsFJn0Hn00qe9HtCmaF0b8FlrbdLjCIbkaFc6icH5+GqcG8R5KxlJSRg==
+puppeteer@^13.5.0:
+  version "13.5.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-13.5.0.tgz#fd30692fbed18bd4964dce3517cc952af9b45d7d"
+  integrity sha512-raPr2YZ3RZLboGwt7jJgusJTBRDaVEUiPOSOWWFLV1oj07xqT5UqqbjmNXFXlMlkhF/NwmcEInW64VhvyllVdw==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.3"
-    devtools-protocol "0.0.960912"
+    devtools-protocol "0.0.969999"
     extract-zip "2.0.1"
     https-proxy-agent "5.0.0"
     pkg-dir "4.2.0"
