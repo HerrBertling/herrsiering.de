@@ -980,11 +980,6 @@ dequal@^2.0.0:
   resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
   integrity sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==
 
-devtools-protocol@0.0.960912:
-  version "0.0.960912"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.960912.tgz#411c1fa355eddb72f06c4a8743f2808766db6245"
-  integrity sha512-I3hWmV9rWHbdnUdmMKHF2NuYutIM2kXz2mdXW8ha7TbRlGTVs+PF+PsB5QWvpCek4Fy9B+msiispCfwlhG5Sqg==
-
 devtools-protocol@0.0.969999:
   version "0.0.969999"
   resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.969999.tgz#3d6be0a126b3607bb399ae2719b471dda71f3478"
@@ -3169,10 +3164,10 @@ puppeteer-core@^13.5.0:
     unbzip2-stream "1.4.3"
     ws "8.5.0"
 
-puppeteer@^13.5.0:
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-13.5.0.tgz#fd30692fbed18bd4964dce3517cc952af9b45d7d"
-  integrity sha512-raPr2YZ3RZLboGwt7jJgusJTBRDaVEUiPOSOWWFLV1oj07xqT5UqqbjmNXFXlMlkhF/NwmcEInW64VhvyllVdw==
+puppeteer@^13.5.1:
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-13.5.1.tgz#d0f751bf36120efc2ebf74c7562a204a84e500e9"
+  integrity sha512-wWxO//vMiqxlvuzHMAJ0pRJeDHvDtM7DQpW1GKdStz2nZo2G42kOXBDgkmQ+zqjwMCFofKGesBeeKxIkX9BO+w==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.3"
