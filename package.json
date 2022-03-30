@@ -1,36 +1,42 @@
 {
   "name": "herrsiering.de",
-  "version": "3.0.0",
   "private": true,
-  "engines": {
-    "node": ">=10.0.0"
-  },
+  "description": "",
+  "license": "",
+  "sideEffects": false,
   "scripts": {
-    "dev": "iles --open",
-    "build": "iles build",
-    "preview": "vite preview --open",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style"
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+    "dev": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=development netlify dev\"",
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
+    "postinstall": "remix setup node",
+    "start": "cross-env NODE_ENV=production netlify dev"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.2",
-    "chrome-aws-lambda": "^10.1.0",
-    "iles": "^0.7.34",
-    "puppeteer-core": "^13.5.1"
+    "@netlify/functions": "^0.10.0",
+    "@remix-run/netlify": "^1.3.3",
+    "@remix-run/react": "^1.3.3",
+    "cross-env": "^7.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix": "^1.3.3"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.12.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-nuxt": "^3.2.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.1",
-    "puppeteer": "^13.5.1",
-    "stylelint": "^14.6.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^25.0.0",
-    "vite-plugin-windicss": "^1.8.3",
-    "windicss": "^3.5.1"
+    "@remix-run/dev": "^1.3.3",
+    "@remix-run/eslint-config": "^1.3.3",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "autoprefixer": "^10.4.4",
+    "concurrently": "^7.0.0",
+    "eslint": "^8.11.0",
+    "postcss": "^8.4.12",
+    "prettier": "2.6.1",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
