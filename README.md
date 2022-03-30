@@ -1,52 +1,15 @@
-# Welcome to Remix!
+# Hi! I'm Markus 👋
 
-- [Remix Docs](https://remix.run/docs)
+## I help companies design and deliver digital products faster.
 
-## Netlify Setup
+Doing so, I like well written CSS. Working with designers and frontend developers. Creating design systems. Caring for a smooth workflow for my team. Exploring new technologies.
 
-1. Install the [Netlify CLI](https://www.netlify.com/products/dev/):
+Apart from that, I like my family. Ice cream. Netflix. Kettlebells. Yoga.
 
-```sh
-npm i -g netlify-cli
-```
+## The technical stuff, if you want to…
 
-If you have previously installed the Netlify CLI, you should update it to the latest version:
-
-```sh
-npm i -g netlify-cli@latest
-```
-
-2. Sign up and log in to Netlify:
-
-```sh
-netlify login
-```
-
-3. Create a new site:
-
-```sh
-netlify init
-```
-
-## Development
-
-The Netlify CLI starts your app in development mode, rebuilding assets on file changes.
-
-```sh
-npm run dev
-```
-
-Open up [http://localhost:3000](http://localhost:3000), and you should be ready to go!
-
-## Deployment
-
-There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
-
-```sh
-npm run build
-# preview deployment
-netlify deploy
-
-# production deployment
-netlify deploy --prod
-```
+0. `git clone…` + `cd…` (you know the drill.)
+1. `npm i`
+2. `npm run dev`
+3. ???
+4. Profit! 💰💰💰
