@@ -20,7 +20,7 @@ export default function AboutMe() {
           <a href="https://github.com/HerrBertling">GitHub</a>,{" "}
           <a href="https://www.linkedin.com/in/markussiering/">LinkedIn</a>,{" "}
           <a href="https://www.xing.com/profile/Markus_Siering2/cv">Xing</a> and{" "}
-          <a href="/thoughts/pausing-twitter">not so often</a> on
+          <a href="/thoughts/pausing-twitter">not so often</a> on{" "}
           <a href="https://twitter.com/herrbertling">Twitter</a>.
         </p>
       </div>
