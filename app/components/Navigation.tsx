@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "remix";
+import { NavLink, useNavigate } from "@remix-run/react";
 
 export type NavigationItem = {
   slug: string;

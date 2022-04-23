@@ -1,4 +1,4 @@
-import { NavLink } from "remix";
+import { NavLink } from "@remix-run/react";
 import type { NavigationItem } from "./Navigation";
 
 export default function Footer() {

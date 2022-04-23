@@ -1,4 +1,4 @@
-import type { MetaFunction } from "remix";
+import type { MetaFunction } from "@remix-run/node";
 import Footer from "~/components/Footer";
 import Navigation from "~/components/Navigation";
 import PageSkeleton from "~/components/PageSkeleton";
