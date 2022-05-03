@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Footer from "~/components/Footer";
-import Navigation from "~/components/Navigation";
 import PageSkeleton from "~/components/PageSkeleton";
 import ProfileImage from "~/components/ProfileImage";
 
@@ -19,7 +17,7 @@ export const meta: MetaFunction = () => {
   };
 };
 
-export default function PageLayout() {
+export default function IndexPage() {
   return (
     <PageSkeleton>
       <section className="grid grid-cols-1 md:grid-cols-8">
