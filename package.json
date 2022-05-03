@@ -12,6 +12,7 @@
     "start": "cross-env NODE_ENV=production netlify dev"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.8.0",
     "@netlify/functions": "^0.10.0",
     "@remix-run/netlify": "^1.4.3",
     "@remix-run/node": "^1.4.3",
@@ -19,7 +20,8 @@
     "canvas": "^2.9.1",
     "cross-env": "^7.0.3",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "rehype-highlight": "^5.0.2"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.4.3",

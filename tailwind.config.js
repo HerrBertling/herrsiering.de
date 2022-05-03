@@ -103,10 +103,19 @@ module.exports = {
             strong: {
               color: "#cbd5e1",
             },
+            code: {
+              color: "#cbd5e1",
+            },
             a: {
               color: "#cbd5e1",
               "&:hover": {
-                color: "#cbd5e1",
+                color: "#f1f5f9",
+              },
+              "&:active": {
+                color: "#f1f5f9",
+              },
+              "&:focus": {
+                color: "#f1f5f9",
               },
             },
           },

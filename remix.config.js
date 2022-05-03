@@ -9,4 +9,12 @@ module.exports = {
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: ".netlify/functions-internal/server.js",
   // publicPath: "/build/",
+  mdx: async (filename) => {
+    const [rehypePrism] = await Promise.all([
+      import("@mapbox/rehype-prism").then((mod) => mod.default),
+    ]);
+    return {
+      rehypePlugins: [rehypePrism],
+    };
+  },
 };

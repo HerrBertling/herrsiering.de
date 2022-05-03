@@ -1,0 +1,49 @@
+---
+meta:
+  title: A simple "tweet this" React component
+  description: For a silly thing I built a tiny React component to easily send a pre-filled tweet. I thought I might as well share it.
+href: /thoughts/simple-tweet-this-react-component/
+date: "2022-05-03"
+readingtime: 2 minutes
+---
+
+import TwitterPrefilledTextLink from "~/components/TwitterPrefilledTextLink";
+
+# A simple "tweet this" React component
+
+While I was playing around with my website, I noticed that I hadn't set up a proper error page yet. Since this is a website made out of MDX files, the worst and only case probably is a `404` error.
+
+Reading the Remix docs on the [`CatchBoundary`](https://remix.run/docs/en/v1/guides/not-found#root-catch-boundary), I figured I could make the 404 page more fun. Why not have people shout at me on Twitter if a page is missing? I mean… that's what Twitter is made for, right?
+
+It's surprisingly easy to create a link that prefills the tweet text for people.
+
+Here's the code:
+
+```tsx
+import type { ReactNode } from "react";
+
+export default function TwitterPrefilledTextLink({
+  tweetText,
+  children,
+}: {
+  tweetText: string;
+  children: ReactNode;
+}) {
+  const encodedTweetText = encodeURIComponent(tweetText);
+  const link = `https://twitter.com/intent/tweet?text=${encodedTweetText}`;
+  return (
+    <a target="_blank" rel="noreferrer" href={link}>
+      {children}
+    </a>
+  );
+}
+```
+
+The one part that's interesting here is probably the `encodeURIComponent` – it ensures a properly encoded tweet text. The rest is… well, a link.
+
+Have fun with it! And <TwitterPrefilledTextLink tweetText="Yo, @herrbertling! Just read your post about links to Twitter with pre-filled text. Nice one ✌️ ➡️ https://herrsiering.de/thoughts/simple-tweet-this-react-component/">let me know</TwitterPrefilledTextLink> if you find it useful.
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/prism-themes@1.9.0/themes/prism-vsc-dark-plus.min.css"
+></link>

@@ -13,7 +13,7 @@ export default function Footer() {
     },
   ];
   return (
-    <nav className="py-3 text-right text-white dark:text-gray-200">
+    <nav className="py-3 text-right text-white dark:text-slate-200">
       <small className="px-4">Links to Amazon are affiliate links.</small>
       <ul className="mt-4 flex w-full flex-row justify-end text-sm">
         {FooterLinks.map(({ slug, title }) => (
@@ -27,7 +27,7 @@ export default function Footer() {
             text-white
             opacity-90
             hover:opacity-100
-            dark:text-gray-200
+            dark:text-slate-200
           "
             >
               {title}

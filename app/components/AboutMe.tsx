@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <aside className="grid grid-cols-1 gap-4 py-6 md:grid-cols-4">
-      <div className="prose-sm md:col-span-3">
+      <div className="prose-sm prose-slate md:col-span-3">
         <hr />
         <h3>Hi! I'm Markus 👋</h3>
         <h4>I help companies design and deliver digital products faster.</h4>

@@ -17,3 +17,8 @@
 html {
   font-family: "Rubik";
 }
+
+body pre[class*="language-"] {
+  background-color: #0f172a;
+  margin-bottom: 3rem;
+}

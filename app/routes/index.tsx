@@ -24,6 +24,7 @@ export default function IndexPage() {
         <div
           className="
           prose
+          prose-slate
           dark:prose-dark
           md:col-span-5
           md:col-start-1 md:row-start-1

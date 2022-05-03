@@ -65,7 +65,7 @@ export function CatchBoundary() {
       </head>
       <body>
         <PageSkeleton>
-          <section className="prose pt-12 dark:prose-dark lg:prose-xl">
+          <section className="prose prose-slate pt-12 dark:prose-dark lg:prose-xl">
             <h2>Whoops! #{caught.status}</h2>
             <p>
               Oh noez, this went wrong 😬 The machines tell us that this
