@@ -24,7 +24,7 @@
     "rehype-highlight": "^5.0.2"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.4.3",
+    "@remix-run/dev": "^1.5.1",
     "@remix-run/eslint-config": "^1.4.3",
     "@tailwindcss/typography": "^0.5.2",
     "@types/react": "^18.0.9",
