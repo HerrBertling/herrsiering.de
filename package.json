@@ -33,7 +33,7 @@
     "concurrently": "^7.2.1",
     "esbuild": "^0.14.39",
     "eslint": "^8.16.0",
-    "postcss": "^8.4.13",
+    "postcss": "^8.4.14",
     "prettier": "2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.11",
     "tailwindcss": "^3.0.24",
