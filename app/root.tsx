@@ -26,6 +26,7 @@ export const meta: MetaFunction = () => {
   const description =
     "I help companies design and deliver digital products faster";
   return {
+    viewport: "width=device-width, initial-scale=1",
     charset: "utf-8",
     title: "Hi, I'm Markus",
     description,
