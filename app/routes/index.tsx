@@ -39,6 +39,12 @@ export default function IndexPage() {
             workflow for my team. Exploring new technologies.
           </p>
           <p>
+            <a href="/freelance">
+              Check out how I can help you with your project
+            </a>
+            .
+          </p>
+          <p>
             Apart from that, I like my family. Ice cream. Netflix. Kettlebells.
             Yoga.
           </p>
