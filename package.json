@@ -14,7 +14,7 @@
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@netlify/functions": "^0.10.0",
-    "@remix-run/netlify": "^1.5.1",
+    "@remix-run/netlify": "^1.6.0",
     "@remix-run/node": "^1.5.1",
     "@remix-run/react": "^1.5.1",
     "canvas": "^2.9.1",
@@ -31,7 +31,7 @@
     "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.1",
-    "esbuild": "^0.14.42",
+    "esbuild": "^0.14.46",
     "eslint": "^8.16.0",
     "postcss": "^8.4.14",
     "prettier": "2.6.2",
