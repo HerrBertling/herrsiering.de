@@ -14,7 +14,7 @@
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@netlify/functions": "^0.10.0",
-    "@remix-run/netlify": "^1.6.0",
+    "@remix-run/netlify": "^1.7.1",
     "@remix-run/node": "^1.6.0",
     "@remix-run/react": "^1.6.0",
     "canvas": "^2.9.1",
