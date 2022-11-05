@@ -21,7 +21,7 @@
     "cross-env": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rehype-highlight": "^5.0.2"
+    "rehype-highlight": "^6.0.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.7.5",
