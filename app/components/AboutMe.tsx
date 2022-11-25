@@ -18,7 +18,7 @@ export default function AboutMe() {
         <p>
           You can find me on{" "}
           <a href="https://github.com/HerrBertling">GitHub</a>,{" "}
-          <a href="https://www.linkedin.com/in/markussiering/">LinkedIn</a> and
+          <a href="https://www.linkedin.com/in/markussiering/">LinkedIn</a> and{" "}
           <a href="https://www.xing.com/profile/Markus_Siering2/cv">Xing</a>.
         </p>
       </div>

@@ -28,12 +28,6 @@ export default function IndexPage() {
             workflow for my team. Exploring new technologies.
           </p>
           <p>
-            <a href="/freelance">
-              Check out how I can help you with your project
-            </a>
-            .
-          </p>
-          <p>
             Apart from that, I like my family. Ice cream. Netflix. Kettlebells.
             Yoga.
           </p>
@@ -41,7 +35,7 @@ export default function IndexPage() {
             You can find me on{" "}
             <a href="https://github.com/HerrBertling">GitHub</a>,{" "}
             <a href="https://www.linkedin.com/in/markussiering/">LinkedIn</a>{" "}
-            and
+            and{" "}
             <a href="https://www.xing.com/profile/Markus_Siering2/cv">Xing</a>.
           </p>
         </div>
