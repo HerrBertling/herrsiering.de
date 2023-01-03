@@ -38,9 +38,11 @@ export default function ThoughtsIndex() {
             >
               <h2 className="!mb-1 !mt-0">{post.title}</h2>
               {post.description && (
-                <p className="mb-0 text-slate-600">{post.description}</p>
+                <p className="mb-0 text-slate-600 dark:text-slate-100">
+                  {post.description}
+                </p>
               )}
-              <aside className="mt-4 mb-3 flex gap-4 text-sm text-slate-500">
+              <aside className="mt-4 mb-3 flex gap-4 text-sm text-slate-500 dark:text-slate-300">
                 <time dateTime={post.lastUpdated}>{post.niceDate}</time>
                 <p v-if="post.readingtime" className="!m-0">
                   Time to read: {post.readingtime}
