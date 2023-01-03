@@ -1,7 +1,12 @@
 node_modules
 
-/.cache
+/server/build
 /public/build
-/.netlify
+preferences.arc
+sam.json
+sam.yaml
 .env
-/app/styles/app.css
+
+/app/styles/tailwind.css
+
+/netlify/functions/server
