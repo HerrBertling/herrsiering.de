@@ -1,21 +1,19 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
-  serverBuildTarget: "netlify",
+  ignoredRouteFiles: ["**/.*"],
   server:
     process.env.NETLIFY || process.env.NETLIFY_LOCAL
-      ? "./server.js"
+      ? "./server.ts"
       : undefined,
-  ignoredRouteFiles: ["**/.*"],
-  // appDirectory: "app",
-  // assetsBuildDirectory: "public/build",
-  // serverBuildPath: ".netlify/functions-internal/server.js",
-  // publicPath: "/build/",
-  mdx: async (filename) => {
-    const [rehypePrism] = await Promise.all([
-      import("@mapbox/rehype-prism").then((mod) => mod.default),
-    ]);
-    return {
-      rehypePlugins: [rehypePrism],
-    };
+  serverBuildPath: ".netlify/functions-internal/server.js",
+  serverModuleFormat: "cjs",
+  tailwind: true,
+  future: {
+    v2_dev: true,
+    v2_errorBoundary: true,
+    v2_headers: true,
+    v2_meta: true,
+    v2_normalizeFormMethod: true,
+    v2_routeConvention: true,
   },
 };
