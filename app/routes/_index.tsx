@@ -1,19 +1,21 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { V2_MetaFunction } from "@remix-run/node";
 import PageSkeleton from "~/components/PageSkeleton";
 import ProfileImage from "~/components/ProfileImage";
 
-export const meta: MetaFunction = () => {
-  const description =
-    "I help companies design and deliver digital products faster";
-  return {
-    charset: "utf-8",
-    title: "Hi, I'm Markus",
-    description,
-    keywords: "Frontend, development, software, User interfaces, React, Vue",
-    "twitter:title": "Hi, I'm Markus",
-    "twitter:description": description,
-  };
-};
+export const meta: V2_MetaFunction = () => [
+    {
+      name: "title",
+      content: "Hi, I'm Markus",
+    },
+    {
+      name: "description",
+      content:  "I help companies design and deliver digital products faster",
+    },
+    {
+      name: "keywords",
+      content: "Frontend, development, software, User interfaces, React, Vue",
+    }
+  ]
 
 export default function IndexPage() {
   return (
