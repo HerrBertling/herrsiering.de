@@ -35,6 +35,10 @@ export default function Navigation() {
       slug: "/thoughts",
       title: "Thoughts",
     },
+    {
+      slug: "/til",
+      title: "TIL",
+    },
   ];
   return (
     <nav className="relative">
@@ -93,11 +97,17 @@ export default function Navigation() {
               prefetch="intent"
               className={({ isActive }) =>
                 isActive
-                  ? "mx-2 inline-block border-b-2 border-transparent border-pink-600 px-2 py-2 text-red-400 dark:border-purple-800 dark:text-violet-700"
+                  ? "mx-2 inline-block border-b-2 border-transparent border-emerald-600 px-2 py-2 text-emerald-400 dark:border-emerald-500 dark:text-emerald-400"
                   : "mx-2 inline-block border-b-2 border-transparent py-2 px-2 text-slate-600 dark:text-slate-200"
               }
             >
-              {title}
+              {title === "TIL" ? (
+                <abbr className="no-underline" title="Today I learned">
+                  {title}
+                </abbr>
+              ) : (
+                title
+              )}
             </NavLink>
           </li>
         ))}

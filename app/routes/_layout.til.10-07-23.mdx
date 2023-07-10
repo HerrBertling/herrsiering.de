@@ -1,0 +1,17 @@
+---
+meta:
+  - title: "@testing-library/user-event clipboard"
+href: /til/10-07-23/
+date: "2023-07-10"
+---
+
+## @testing-library/user-event clipboard
+
+While writing a test today for a rather simple "copy to clipboard" button, I learned that using the user-event package from `@testing-library` stubs the browser clipboard in a really nice way.
+
+> Note that the Clipboard API is usually not available outside of secure context.
+> To enable testing of workflows involving the clipboard, userEvent.setup() replaces window.navigator.clipboard with a stub.
+
+([link](https://testing-library.com/docs/user-event/clipboard/))
+
+Super helpful!

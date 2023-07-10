@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Rubik";
-  font-weight: 400;
-  src: url(/fonts/Rubik-Regular.ttf) format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  font-weight: 700;
-  src: url(/fonts/Rubik-Bold.ttf) format("truetype");
-  font-display: swap;
-}
-html {
-  font-family: "Rubik";
-}
-
 body pre[class*="language-"] {
   background-color: #0f172a;
   margin-bottom: 3rem;

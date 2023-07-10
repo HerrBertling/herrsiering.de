@@ -3,5 +3,5 @@ node_modules
 /public/build
 /.netlify
 .env
-
+.DS_Store
 /app/styles/app.css
