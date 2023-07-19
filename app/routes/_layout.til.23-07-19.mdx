@@ -1,0 +1,40 @@
+---
+meta:
+  - title: "Generating a small Node script with ChatGPT"
+href: /til/19-07-23
+date: "2023-07-19"
+---
+
+## Generating a small Node script with ChatGPT
+
+I was a bit bothered by the process of creating these TIL entries. So I figured
+I could enhance it by
+[automating the boring stuff](https://automatetheboringstuff.com/).
+
+Since it is 2023 and we are using AI to help us develop these types of scripts
+faster since <s>years</s> months, I asked ChatGPT to help me:
+
+```
+I want you to write a script in NodeJS that I can call from a package.json –
+in the end, I want to run `npm run scaffold-til` to kick off the process. It
+is supposed to lead me through a short question/answer dialogue to scaffold a
+new entry for the "today I learned" section of my website. The script should
+to the following:
+
+- Ask me for the title of today's "Today I learned" entry
+- Add an entry to the beginning of an array in the file `app/data/tils.mjs` The
+  file currently has this shape: […]
+- Scaffold an MDX file within the `app/routes` folder with the naming scheme
+  similar to this existing file: `_layout.til.23-07-18.mdx`
+- Add the basic scaffold of the MDX file as it is formatted in this example:
+  […]
+```
+
+It took a bit of back and forth to e.g. use `date-fns` instead of `moment` for
+date formatting and get some minor things to work. But after a few minutes, this
+entry was scaffolded with the title and date through
+[this wonderful script](https://github.com/HerrBertling/herrsiering.de/tree/main/scripts/scaffoldTIL.mjs).
+And it definitely took me less time than doing it on my own. Cool, eh?
+
+Mandatory ending for entries like these:
+[I, for one, welcome our new AI overlords.](https://www.youtube.com/watch?v=MKx3JlTnHbc)
