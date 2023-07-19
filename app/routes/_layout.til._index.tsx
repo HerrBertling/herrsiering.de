@@ -1,18 +1,6 @@
+import tils from "../data/tils.mjs";
+
 export default function ThoughtsIndex() {
-  const tils = [
-    {
-      title: "Testing thrown redirects in React Router v6",
-      lastUpdated: "July 18, 2023",
-      niceDate: "July 18, 2023",
-      href: "/til/18-07-23",
-    },
-    {
-      title: "@testing-library/user-event clipboard",
-      lastUpdated: "July 10, 2023",
-      niceDate: "July 10, 2023",
-      href: "/til/10-07-23",
-    },
-  ];
   return (
     <>
       <h1>Today I Learned.</h1>

@@ -1,0 +1,48 @@
+---
+meta:
+  - title: "Testing thrown redirects in React Router v6"
+href: /til/18-07-23/
+date: "2023-07-18"
+---
+
+## Testing thrown redirects in React Router v6
+
+I had to re-wire some tests today. In the app I'm working on, we are moving to
+using the
+[React Router data features](https://reactrouter.com/en/main/routers/picking-a-router#using-v64-data-apis).
+
+In the process, I transferred an `AuthCheck` component to use
+`throw redirect(…)` when checking for route allowance/user role.
+
+Today, I wrote tests for this auth check method. Since we're throwing an actual
+`Response`, I wrote a small wrapper for each test like so:
+
+```js
+const getAuthCheckResponse = async (authCheckInput) => {
+  let response;
+  let thrown;
+  try {
+    response = await pageAuthCheck(authCheckInput);
+  } catch (error) {
+    thrown = error;
+  }
+  return { response, thrown };
+};
+```
+
+This way, I can check for the response status code and the thrown error. I could
+also check for the response body, but the method only reacts in negative cases,
+so I don't need to check for the response body.
+
+```js
+it("throws an error and redirects if token is missing", async () => {
+  const { response, thrown } = await getAuthCheckResponse({});
+  expect(response).toBeUndefined();
+  expect(thrown).toBeDefined();
+  expect(thrown.headers.get("Location")).toBe(`/${LOGIN}`);
+});
+```
+
+It still feels a bit weird to `throw` a `Response`, but within the context of
+the data router – where it is all about `Request`/`Response` handling, it
+totally makes sense.

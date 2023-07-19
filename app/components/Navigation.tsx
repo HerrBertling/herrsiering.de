@@ -101,13 +101,7 @@ export default function Navigation() {
                   : "mx-2 inline-block border-b-2 border-transparent py-2 px-2 text-slate-600 dark:text-slate-200"
               }
             >
-              {title === "TIL" ? (
-                <abbr className="no-underline" title="Today I learned">
-                  {title}
-                </abbr>
-              ) : (
-                title
-              )}
+              {title}
             </NavLink>
           </li>
         ))}
