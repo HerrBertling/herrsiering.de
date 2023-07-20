@@ -1,0 +1,36 @@
+---
+meta:
+  - title: "Naming AWS resources is against best practices, apparently"
+href: /til/23-07-20
+date: "23-07-20"
+---
+
+## Naming AWS resources is against best practices, apparently
+
+I worked on some AWS CDK stuff today and ran into a few problems of the same
+shape. Some resource could not be created because I already had a resource with
+that name in the stack.
+
+After a bit of googling, I found
+[a comment in the aws-cdk repo issues](https://github.com/aws/aws-cdk/issues/16686#issuecomment-938135845)
+outlining what went wrong.
+
+I had happily added a custom name to both a S3 bucket and a CloudFront
+OriginRequestPolicy – a simple copy&paste "this will do" error as I took the CDK
+template for a Remix app
+[from here](https://github.com/florianwiech/remix-aws-cdk-example/blob/main/infrastructure/lib/remix-stack.ts)
+
+The template absolutely works for one deployment of one stack. But with handling
+different environments, the static names for these resources do not work. As
+lined out in the issue:
+
+> Assigning physical names to resources has some disadvantages in AWS
+> CloudFormation. Most importantly, any changes to deployed resources that
+> require a resource replacement, such as changes to a resource's properties
+> that are immutable after creation, will fail if a resource has a physical name
+> assigned.
+
+The best part: I can simply remove the custom name and the naming is done
+automagically. How nice is that?
+
+Well, now I know.
