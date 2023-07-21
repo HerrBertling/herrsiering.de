@@ -42,7 +42,7 @@ export default function ThoughtsIndex() {
                   {post.description}
                 </p>
               )}
-              <aside className="mt-4 mb-3 flex gap-4 text-sm text-slate-500 dark:text-slate-300">
+              <aside className="mb-3 mt-4 flex gap-4 text-sm text-slate-500 dark:text-slate-300">
                 <time dateTime={post.lastUpdated}>{post.niceDate}</time>
                 <p className="!m-0">Time to read: {post.readingtime}</p>
               </aside>

@@ -86,7 +86,7 @@ export default function Navigation() {
         {open ? <span>Close</span> : <span>Menu</span>}
       </button>
       <ul
-        className={`absolute top-16 right-0 z-50 flex w-64 transform flex-col overflow-hidden rounded-md bg-white py-4 shadow-2xl transition-transform duration-300 dark:bg-slate-700 sm:static sm:top-auto sm:left-auto sm:z-30 sm:h-auto sm:w-auto sm:transform-none sm:flex-row sm:items-center sm:justify-end sm:rounded-none sm:bg-transparent sm:shadow-none dark:sm:bg-transparent ${
+        className={`absolute right-0 top-16 z-50 flex w-64 transform flex-col overflow-hidden rounded-md bg-white py-4 shadow-2xl transition-transform duration-300 dark:bg-slate-700 sm:static sm:left-auto sm:top-auto sm:z-30 sm:h-auto sm:w-auto sm:transform-none sm:flex-row sm:items-center sm:justify-end sm:rounded-none sm:bg-transparent sm:shadow-none dark:sm:bg-transparent ${
           open ? "translate-x-0" : "translate-x-[100vw] "
         }`}
       >
@@ -97,8 +97,8 @@ export default function Navigation() {
               prefetch="intent"
               className={({ isActive }) =>
                 isActive
-                  ? "mx-2 inline-block border-b-2 border-transparent border-emerald-600 px-2 py-2 text-emerald-400 dark:border-emerald-500 dark:text-emerald-400"
-                  : "mx-2 inline-block border-b-2 border-transparent py-2 px-2 text-slate-600 dark:text-slate-200"
+                  ? "mx-2 inline-block border-b-2 border-emerald-600 border-transparent px-2 py-2 text-emerald-400 dark:border-emerald-500 dark:text-emerald-400"
+                  : "mx-2 inline-block border-b-2 border-transparent px-2 py-2 text-slate-600 dark:text-slate-200"
               }
             >
               {title}

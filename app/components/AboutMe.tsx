@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <aside className="opacity-80 prose-sm prose-herrsiering dark:prose-invert py-6">
+    <aside className="prose-sm prose-herrsiering py-6 opacity-80 dark:prose-invert">
       <hr />
       <h3>Hi! I'm Markus 👋</h3>
       <p>I help companies design and deliver digital products faster.</p>

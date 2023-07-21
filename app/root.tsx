@@ -64,7 +64,7 @@ const Document = ({ children }: { children: ReactNode }) => {
       </head>
       <body>
         <PageSkeleton>
-          <section className="prose prose-herrsiering pt-12 dark:prose-dark lg:prose-xl">
+          <section className="dark:prose-dark prose prose-herrsiering pt-12 lg:prose-xl">
             {children}
             <AboutMe />
           </section>
