@@ -1,6 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import PageSkeleton from "~/components/PageSkeleton";
-import ProfileImage from "~/components/ProfileImage";
+import { Link } from "@remix-run/react"
+import PageSkeleton from "~/components/PageSkeleton"
 
 export const meta: V2_MetaFunction = () => [
   {
@@ -32,6 +32,7 @@ export default function IndexPage() {
           Apart from that, I like my family. Ice cream. Netflix. Kettlebells.
           Yoga.
         </p>
+        <p><Link to="/about">More about me</Link></p>
         <p>
           You can find me on{" "}
           <a href="https://github.com/HerrBertling">GitHub</a>,{" "}
