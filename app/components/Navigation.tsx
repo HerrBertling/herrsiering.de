@@ -31,14 +31,14 @@ export default function Navigation() {
       slug: "/principles",
       title: "Principles",
     },
-    {
-      slug: "/thoughts",
-      title: "Thoughts",
-    },
-    {
-      slug: "/til",
-      title: "TIL",
-    },
+    // {
+    //   slug: "/thoughts",
+    //   title: "Thoughts",
+    // },
+    // {
+    //   slug: "/til",
+    //   title: "TIL",
+    // },
   ];
   return (
     <nav className="relative">
