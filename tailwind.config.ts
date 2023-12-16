@@ -1,4 +1,5 @@
-import { type Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
@@ -74,4 +75,4 @@ export default {
     },
   },
   plugins: [require("@tailwindcss/typography")],
-} satisfies Config;
+}

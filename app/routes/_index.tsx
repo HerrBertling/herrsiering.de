@@ -1,8 +1,8 @@
-import type { V2_MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import PageSkeleton from "~/components/PageSkeleton";
 
-export const meta: V2_MetaFunction = () => [
+export const meta: MetaFunction = () => [
   {
     name: "title",
     content: "Hi, I'm Markus",
