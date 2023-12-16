@@ -11,11 +11,11 @@ import {
   useLocation,
   useRouteError,
 } from "@remix-run/react";
+import type { ReactNode } from "react";
 import AboutMe from "./components/AboutMe";
 import PageSkeleton from "./components/PageSkeleton";
 import TwitterPrefilledTextLink from "./components/TwitterPrefilledTextLink";
 import styles from "./tailwind.css";
-import type { ReactNode } from "react";
 
 export function links() {
   return [

@@ -1,5 +1,4 @@
 import { type Config } from "tailwindcss";
-import { ThemeConfig } from "tailwindcss/types/config";
 export default {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
@@ -40,7 +39,7 @@ export default {
             "--tw-prose-body": theme("colors.slate[700]"),
             "--tw-prose-headings": theme("colors.slate[600]"),
             "--tw-prose-lead": theme("colors.slate[600]"),
-            "--tw-prose-links": theme("colors.emerald[600]"),
+            "--tw-prose-links": theme("colors.emerald[500]"),
             "--tw-prose-bold": theme("colors.slate[800]"),
             "--tw-prose-counters": theme("colors.slate[600]"),
             "--tw-prose-bullets": theme("colors.slate[400]"),

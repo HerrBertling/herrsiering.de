@@ -95,9 +95,10 @@ export default function Navigation() {
             <NavLink
               to={slug}
               prefetch="intent"
+              unstable_viewTransition
               className={({ isActive }) =>
                 isActive
-                  ? "mx-2 inline-block border-b-2 border-emerald-600 border-transparent px-2 py-2 text-emerald-400 dark:border-emerald-500 dark:text-emerald-400"
+                  ? "mx-2 inline-block border-b-2 border-emerald-500 border-transparent px-2 py-2 text-emerald-500 dark:text-emerald-400"
                   : "mx-2 inline-block border-b-2 border-transparent px-2 py-2 text-slate-600 dark:text-slate-200"
               }
             >
