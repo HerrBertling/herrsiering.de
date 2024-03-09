@@ -1,4 +1,4 @@
-import tils from "../data/tils.mjs";
+import tils from "../../app/data/tils.mjs";
 
 export default function TilIndex() {
   return (

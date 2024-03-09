@@ -1,21 +1,18 @@
-import type { V2_MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
-  LiveReload,
   Meta,
   NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
   isRouteErrorResponse,
-  useLocation,
   useRouteError,
 } from "@remix-run/react";
+import type { PropsWithChildren } from "react";
 import AboutMe from "./components/AboutMe";
 import PageSkeleton from "./components/PageSkeleton";
-import TwitterPrefilledTextLink from "./components/TwitterPrefilledTextLink";
-import styles from "./tailwind.css";
-import type { ReactNode } from "react";
+import styles from "./tailwind.css?url";
 
 export function links() {
   return [
@@ -24,7 +21,7 @@ export function links() {
   ];
 }
 
-export const meta: V2_MetaFunction = () => [
+export const meta: MetaFunction = () => [
   { name: "title", content: "Hi, I'm Markus" },
   {
     name: "description",
@@ -36,29 +33,12 @@ export const meta: V2_MetaFunction = () => [
   },
 ];
 
-export default function App() {
+export const Layout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      </body>
-    </html>
-  );
-}
-
-const Document = ({ children }: { children: ReactNode }) => {
-  return (
-    <html lang="en">
-      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
@@ -69,17 +49,22 @@ const Document = ({ children }: { children: ReactNode }) => {
             <AboutMe />
           </section>
         </PageSkeleton>
+        <ScrollRestoration />
+        <Scripts />
       </body>
     </html>
   );
 };
 
+export default function App() {
+  return <Outlet />;
+}
+
 export function ErrorBoundary() {
   const error = useRouteError();
-  const location = useLocation();
   if (isRouteErrorResponse(error)) {
     return (
-      <Document>
+      <>
         <h2>Whoops! #{error.status}</h2>
         <p>
           Oh noez, this went wrong 😬 The machines tell us that this happened:
@@ -94,22 +79,10 @@ export function ErrorBoundary() {
           </NavLink>
           ? 🤔
         </p>
-        {error.status === 404 && (
-          <p>
-            If you feel like the page <code>{location.pathname}</code> should
-            exist, feel free to{" "}
-            <TwitterPrefilledTextLink
-              tweetText={`@herrbertling I tried to access the page ${location.pathname} on your website, but it doesn't exist. It absolutely should, so stop what you're doing and build it! 🚀 https://tenor.com/view/dew-it-galactic-republic-palpatine-gif-21847982`}
-            >
-              click here and shout at me on Twitter about it!
-            </TwitterPrefilledTextLink>{" "}
-            😤
-          </p>
-        )}
-      </Document>
+      </>
     );
   } else if (error instanceof Error) {
-    <Document>
+    <>
       <h2>Whoops!</h2>
       <p>
         Oh noez, this went wrong 😬 The machines tell us that this happened:
@@ -125,9 +98,9 @@ export function ErrorBoundary() {
         </NavLink>
         ? 🤔
       </p>
-    </Document>;
+    </>;
   } else {
-    <Document>
+    <>
       <h2>Whoops!</h2>
       <p>
         Something went wrong. So wrong, that we don't even know what exactly
@@ -140,6 +113,6 @@ export function ErrorBoundary() {
         </NavLink>
         ? 🤔
       </p>
-    </Document>;
+    </>;
   }
 }
