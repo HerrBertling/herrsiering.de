@@ -1,17 +1,22 @@
 import { NavLink } from "@remix-run/react";
-import type { NavigationItem } from "./Navigation";
+
+type FooterNavItem = {
+  slug: string;
+  title: string;
+};
+
+const FooterLinks: FooterNavItem[] = [
+  {
+    slug: "/legal",
+    title: "Legal",
+  },
+  {
+    slug: "/privacy",
+    title: "Privacy",
+  },
+];
 
 export default function Footer() {
-  const FooterLinks: NavigationItem[] = [
-    {
-      slug: "/legal",
-      title: "Legal",
-    },
-    {
-      slug: "/privacy",
-      title: "Privacy",
-    },
-  ];
   return (
     <nav className="py-3 text-right text-white dark:text-slate-200">
       <small className="px-4">Links to Amazon are affiliate links.</small>

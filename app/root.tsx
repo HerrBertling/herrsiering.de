@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import stylesheet from "~/tailwind.css?url";
 import AboutMe from "./components/AboutMe";
 import PageSkeleton from "./components/PageSkeleton";

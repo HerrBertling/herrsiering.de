@@ -1,5 +1,6 @@
 import Buzzword from "./Buzzword";
-export type BuzzwordsProps = {
+
+type BuzzwordsProps = {
   words: string[];
 };
 
