@@ -1,5 +1,5 @@
-import { type Config } from "tailwindcss";
-import { ThemeConfig } from "tailwindcss/types/config";
+import type { Config } from "tailwindcss";
+
 export default {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {

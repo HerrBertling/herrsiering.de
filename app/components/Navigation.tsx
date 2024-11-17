@@ -1,10 +1,29 @@
 import { NavLink, useNavigate } from "@remix-run/react";
 import { useEffect, useState } from "react";
 
-export type NavigationItem = {
+type NavigationItem = {
   slug: string;
   title: string;
 };
+
+const navigation: NavigationItem[] = [
+  {
+    slug: "/",
+    title: "Home",
+  },
+  {
+    slug: "/about",
+    title: "About",
+  },
+  {
+    slug: "/books",
+    title: "Books",
+  },
+  {
+    slug: "/principles",
+    title: "Principles",
+  },
+];
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -14,32 +33,6 @@ export default function Navigation() {
     setOpen(false);
   }, [navigate]);
 
-  const navigation: NavigationItem[] = [
-    {
-      slug: "/",
-      title: "Home",
-    },
-    {
-      slug: "/about",
-      title: "About",
-    },
-    {
-      slug: "/books",
-      title: "Books",
-    },
-    {
-      slug: "/principles",
-      title: "Principles",
-    },
-    // {
-    //   slug: "/thoughts",
-    //   title: "Thoughts",
-    // },
-    // {
-    //   slug: "/til",
-    //   title: "TIL",
-    // },
-  ];
   return (
     <nav className="relative">
       <button

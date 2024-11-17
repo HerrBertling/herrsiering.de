@@ -1,13 +1,12 @@
 export default function ThoughtsIndex() {
   const posts = [
     {
-      title: 'A simple "tweet this" React component',
-      description:
-        "For a silly thing I built a tiny React component to send a prefilled tweet. I thought I might as well share it.",
-      lastUpdated: "May 03, 2022",
-      niceDate: "May 03, 2022",
-      readingtime: "2 minutes",
-      href: "/thoughts/simple-tweet-this-react-component/",
+      title: "Surprising lessons learned from a silly side project",
+      description: "Do silly stuff. Learn tons of things.",
+      lastUpdated: "November 17, 2024",
+      niceDate: "November 17, 2024",
+      readingtime: "3 minutes",
+      href: "/thoughts/silly-sideproject-learnings",
     },
     {
       title: "My Ocean Forest",
