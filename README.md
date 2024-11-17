@@ -1,68 +1,15 @@
-# Welcome to Remix!
+# Hi! I'm Markus 👋
 
-- [Remix Docs](https://remix.run/docs)
-- [Netlify Functions Overview](https://docs.netlify.com/functions/overview)
+## I help companies design and deliver digital products faster.
 
-## Netlify Setup
+Doing so, I like well written CSS. Working with designers and frontend developers. Creating design systems. Caring for a smooth workflow for my team. Exploring new technologies.
 
-1. Install the [Netlify CLI](https://docs.netlify.com/cli/get-started/):
+Apart from that, I like my family. Ice cream. Netflix. Kettlebells. Yoga.
 
-```sh
-npm i -g netlify-cli
-```
+## The technical stuff, if you want to…
 
-If you have previously installed the Netlify CLI, you should update it to the latest version:
-
-```sh
-npm i -g netlify-cli@latest
-```
-
-2. Sign up and log in to Netlify:
-
-```sh
-netlify login
-```
-
-3. Create a new site:
-
-```sh
-netlify init
-```
-
-## Development
-
-Ensure all packages are installed by running:
-
-```sh
-npm install
-```
-
-Run
-
-```sh
-netlify dev
-```
-
-Open up [http://localhost:8888](http://localhost:8888), and you're ready to go!
-
-### Serve your site locally
-
-To serve your site locally in a production-like environment, run
-
-```sh
-netlify serve
-```
-
-Your site will be available at [http://localhost:8888](http://localhost:8888). Note that it will not auto-reload when you make changes.
-
-## Deployment
-
-There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
-
-```sh
-# preview deployment
-netlify deploy --build
-
-# production deployment
-netlify deploy --build --prod
-```
+0. `git clone…` + `cd…` (you know the drill.)
+1. `npm i`
+2. `npm run dev`
+3. ???
+4. Profit! 💰💰💰

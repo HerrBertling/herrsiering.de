@@ -1,6 +1,14 @@
 export default function ThoughtsIndex() {
   const posts = [
     {
+      title: "Surprising lessons learned from a silly side project",
+      description: "Do silly stuff. Learn tons of things.",
+      lastUpdated: "November 17, 2024",
+      niceDate: "November 17, 2024",
+      readingtime: "3 minutes",
+      href: "/thoughts/silly-sideproject-learnings",
+    },
+    {
       title: "My Ocean Forest",
       description: "Building a forest. In the ocean.",
       lastUpdated: "March 29, 2022",
