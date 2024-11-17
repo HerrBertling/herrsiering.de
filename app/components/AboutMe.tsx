@@ -2,7 +2,6 @@ import { useLocation } from "@remix-run/react";
 
 export default function AboutMe() {
   const location = useLocation();
-  console.log({ location });
   if (location.pathname === "/") return null;
   return (
     <aside className="prose-sm prose-herrsiering py-6 opacity-80 dark:prose-invert">
