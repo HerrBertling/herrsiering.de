@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body pre[class*="language-"] {
+  background-color: #0f172a;
+  margin-bottom: 3rem;
+}
