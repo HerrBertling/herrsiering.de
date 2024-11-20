@@ -11,7 +11,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@netlify/edge-functions": "^2.11.0",
+    "@netlify/edge-functions": "^2.11.1",
     "@netlify/remix-edge-adapter": "^3.4.2",
     "@netlify/remix-runtime": "^2.3.1",
     "@remix-run/node": "^2.14.0",
